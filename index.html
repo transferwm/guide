@@ -8,88 +8,134 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a href="#main" class="skip">Skip to content</a>
-
-  <header>
-    <h1>W&amp;M Transfer Guide (Student-built)</h1>
-    <p class="small">Unofficial resource. Always confirm details on official W&amp;M pages.</p>
+  <!-- Top bar -->
+  <header class="site">
+    <h1>W&amp;M Transfer Guide</h1>
+    <div class="sub">Unofficial student resource — verify with official W&amp;M pages.</div>
   </header>
 
-  <nav aria-label="Primary">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="vccs.html">VCCS (Guaranteed Admission)</a>
-    <a href="rbc.html">Richard Bland College</a>
-    <a href="other.html">Other U.S. Colleges</a>
-    <a href="international.html">International</a>
-    <a href="appendix.html">Appendix (Tables)</a>
-  </nav>
-
-  <main id="main">
-    <section class="card">
-      <h2>Welcome</h2>
-      <p>This site consolidates steps, checklists, and links for the main transfer paths to William &amp; Mary. Use the navigation above to jump straight to your path.</p>
-      <ul class="checklist">
-        <li>Know your path: <a href="vccs.html">VCCS (GAA)</a>, <a href="rbc.html">RBC</a>, <a href="other.html">Other U.S.</a>, or <a href="international.html">International</a>.</li>
-        <li>Use the <a href="appendix.html">Appendix</a> for VCCS course lists that meet W&amp;M COLL areas and sample equivalencies.</li>
-        <li>When in doubt, verify against official W&amp;M pages linked throughout.</li>
+  <!-- 3-column shell -->
+  <div class="shell">
+    <!-- LEFT: site navigation -->
+    <aside class="sidebar">
+      <h2>Pages</h2>
+      <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="vccs.html">VCCS (GAA)</a></li>
+        <li><a href="rbc.html">Richard Bland College</a></li>
+        <li><a href="other.html">Other U.S.</a></li>
+        <li><a href="international.html">International</a></li>
+        <li><a href="appendix.html">Appendix (Tables)</a></li>
       </ul>
-    </section>
+    </aside>
 
-    <section>
-      <h2>Quick start by pathway</h2>
+    <!-- CENTER: page content -->
+    <main id="content">
+      <article class="content">
+        <h1>W&amp;M Transfer Guide (Student-built)</h1>
 
-      <div class="card">
-        <h3>VCCS (Guaranteed Admission Agreement)</h3>
-        <p>Complete a qualifying transfer-oriented associate degree, submit the Letter of Intent on time, meet GPA/credit requirements, and apply via the Common App.</p>
-        <p>
-          <a class="badge" href="vccs.html">View step-by-step →</a>
-          &nbsp; <a class="badge" href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">Letter of Intent →</a>
-        </p>
-      </div>
+        <section class="card">
+          <h2>Welcome</h2>
+          <p>This site consolidates steps, checklists, and links for the main transfer paths to William &amp; Mary. Use the navigation to jump straight to your path.</p>
+          <ul class="checklist">
+            <li>Know your path: <a href="vccs.html">VCCS (GAA)</a>, <a href="rbc.html">RBC</a>, <a href="other.html">Other U.S.</a>, or <a href="international.html">International</a>.</li>
+            <li>Use the <a href="appendix.html">Appendix</a> for VCCS courses that meet W&amp;M COLL areas and sample equivalencies.</li>
+            <li>When in doubt, verify against official W&amp;M pages linked throughout.</li>
+          </ul>
+        </section>
 
-      <div class="card">
-        <h3>Richard Bland College (RBC)</h3>
-        <p>Follow the RBC–W&amp;M GAA, file the Letter of Intent, and apply via the Common App. Some programs (e.g., Business) have separate admissions.</p>
-        <p><a class="badge" href="rbc.html">View step-by-step →</a></p>
-      </div>
+        <section>
+          <h2>Quick start by pathway</h2>
 
-      <div class="card">
-        <h3>Other U.S. Colleges/Universities</h3>
-        <p>Apply via the Common App, send official transcripts, and be ready with syllabi for course-by-course credit evaluation by W&amp;M.</p>
-        <p><a class="badge" href="other.html">View step-by-step →</a></p>
-      </div>
+          <div class="card">
+            <h3>VCCS (Guaranteed Admission Agreement)</h3>
+            <p>Complete a qualifying transfer-oriented associate degree, submit the Letter of Intent on time, meet GPA/credit requirements, and apply via the Common App.</p>
+            <p>
+              <a class="badge" href="vccs.html">View step-by-step →</a>
+              &nbsp; <a class="badge" href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">Letter of Intent →</a>
+            </p>
+          </div>
 
-      <div class="card">
-        <h3>International Transfers</h3>
-        <p>Apply via the Common App; English-proficiency testing is strongly recommended for non-native speakers. Course credit is evaluated from syllabi.</p>
-        <p><a class="badge" href="international.html">View step-by-step →</a></p>
-      </div>
-    </section>
+          <div class="card">
+            <h3>Richard Bland College (RBC)</h3>
+            <p>Follow the RBC–W&amp;M agreement, file the Letter of Intent, and apply via the Common App. Some programs (e.g., Business) have separate admissions.</p>
+            <p><a class="badge" href="rbc.html">View step-by-step →</a></p>
+          </div>
 
-    <section class="card">
-      <h2>What an associate’s degree typically covers</h2>
-      <ul>
-        <li><strong>Junior standing</strong> on entry (credit limits apply; program admissions may be separate).</li>
-        <li>Many lower-division general education areas may be satisfied, but you’ll still complete remaining COLL requirements in residence (e.g., COLL 150, part of COLL 200, COLL 400) and at least <strong>60 W&amp;M credits in residence</strong> to graduate.</li>
-      </ul>
-      <p class="small">Details vary by pathway and catalog year — verify on official pages.</p>
-    </section>
+          <div class="card">
+            <h3>Other U.S. Colleges/Universities</h3>
+            <p>Apply via the Common App, send official transcripts, and be ready with syllabi for course-by-course credit evaluation by W&amp;M.</p>
+            <p><a class="badge" href="other.html">View step-by-step →</a></p>
+          </div>
 
-    <section>
-      <h2>Helpful links</h2>
-      <ul>
-        <li><a href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">W&amp;M Letter of Intent</a></li>
-        <li><a href="https://www.transfervirginia.org/resources?f%5B0%5D=field_cc_from_school%3A88&f%5B1%5D=field_cc_resource_category%3A27">Transfer Virginia — W&amp;M program-specific guides</a></li>
-        <li><a href="appendix.html">Appendix — VCCS COLL lists &amp; sample equivalencies</a></li>
-      </ul>
-    </section>
-  </main>
+          <div class="card">
+            <h3>International Transfers</h3>
+            <p>Apply via the Common App; English-proficiency testing is strongly recommended for non-native speakers. Course credit is evaluated from syllabi.</p>
+            <p><a class="badge" href="international.html">View step-by-step →</a></p>
+          </div>
+        </section>
 
-  <footer>
-    <p class="small">Last updated: <span id="lu">today</span>. Unofficial student resource.</p>
-    <script>
-      document.getElementById('lu').textContent = new Date().toLocaleDateString();
-    </script>
-  </footer>
+        <section class="card">
+          <h2>What an associate’s degree typically covers</h2>
+          <ul>
+            <li><strong>Junior standing</strong> on entry (credit limits apply; program admissions may be separate).</li>
+            <li>Many lower-division general education areas may be satisfied, but you’ll still complete remaining COLL requirements in residence (e.g., COLL 150, part of COLL 200, COLL 400) and at least <strong>60 W&amp;M credits in residence</strong> to graduate.</li>
+          </ul>
+          <p class="small">Details vary by pathway and catalog year — verify on official pages.</p>
+        </section>
+
+        <section>
+          <h2>Helpful links</h2>
+          <ul>
+            <li><a href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">W&amp;M Letter of Intent</a></li>
+            <li><a href="https://www.transfervirginia.org/resources?f%5B0%5D=field_cc_from_school%3A88&f%5B1%5D=field_cc_resource_category%3A27">Transfer Virginia — W&amp;M program-specific guides</a></li>
+            <li><a href="appendix.html">Appendix — VCCS COLL lists &amp; sample equivalencies</a></li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <!-- RIGHT: table of contents -->
+    <aside class="sidebar">
+      <h2>Contents</h2>
+      <nav id="toc"></nav>
+    </aside>
+  </div>
+
+  <!-- Scripts: left filter + right ToC -->
+  <script>
+    function filterNav(){
+      const q = (document.getElementById('navSearch').value || '').toLowerCase();
+      document.querySelectorAll('#navList li').forEach(li=>{
+        li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    }
+    (function buildTOC(){
+      const container = document.getElementById('toc');
+      if(!container) return;
+      const heads = document.querySelectorAll('.content h2, .content h3');
+      const ul = document.createElement('ul');
+      heads.forEach(h=>{
+        if(!h.id){
+          h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-');
+        }
+        const li = document.createElement('li');
+        li.style.marginLeft = h.tagName==='H3' ? '12px' : '0';
+        const a = document.createElement('a'); a.href = '#'+h.id; a.textContent = h.textContent;
+        li.appendChild(a); ul.appendChild(li);
+      });
+      container.appendChild(ul);
+      const links = container.querySelectorAll('a');
+      const obs = new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){
+            links.forEach(a=>a.classList.toggle('active', a.hash === '#'+e.target.id));
+          }
+        });
+      }, { rootMargin:'-40% 0% -55% 0%', threshold:0.01 });
+      document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
+    })();
+  </script>
 </body>
 </html>
