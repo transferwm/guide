@@ -8,72 +8,123 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-  <h1>Transferring from Other U.S. Colleges/Universities</h1>
-  <p class="small">Unofficial, student-built guide. Policies can change—verify on official W&amp;M pages.</p>
-</header>
+  <!-- Top bar -->
+  <header class="site">
+    <h1>W&amp;M Transfer Guide</h1>
+    <div class="sub">Unofficial student resource — verify with official W&amp;M pages.</div>
+  </header>
 
-<nav aria-label="Primary">
-  <a href="index.html">Home</a>
-  <a href="vccs.html">VCCS (GAA)</a>
-  <a href="rbc.html">RBC</a>
-  <a href="other.html" aria-current="page">Other U.S.</a>
-  <a href="international.html">International</a>
-  <a href="appendix.html">Appendix (Tables)</a>
-</nav>
-
-<main id="main">
-  <section class="card">
-    <h2>Overview</h2>
-    <p>This path is for students transferring from accredited U.S. institutions other than VCCS or RBC. There is no guaranteed-admission agreement; applications are reviewed holistically. Transfer credit is evaluated course-by-course by the Registrar.</p>
-  </section>
-
-  <section>
-    <h2>Step-by-step checklist</h2>
-
-    <div class="card">
-      <h3>1) Plan your courses with the W&amp;M core/major in mind</h3>
-      <ul class="checklist">
-        <li>Review W&amp;M general education areas (COLL) and your intended major’s prerequisites.</li>
-        <li>Save <strong>syllabi</strong> for all courses you hope to transfer—these help with equivalency decisions.</li>
-        <li>Use the <a href="appendix.html#coll-lists">COLL lists</a> as a guide to the types of courses that tend to satisfy W&amp;M areas.</li>
+  <!-- 3-column shell -->
+  <div class="shell">
+    <!-- LEFT: site navigation -->
+    <aside class="sidebar">
+      <h2>Pages</h2>
+      <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vccs.html">VCCS (GAA)</a></li>
+        <li><a href="rbc.html">Richard Bland College</a></li>
+        <li><a href="other.html" class="current">Other U.S.</a></li>
+        <li><a href="international.html">International</a></li>
+        <li><a href="appendix.html">Appendix (Tables)</a></li>
       </ul>
-    </div>
+    </aside>
 
-    <div class="card">
-      <h3>2) Apply</h3>
-      <ul class="checklist">
-        <li>Submit the <strong>Common App for Transfer</strong> by W&amp;M deadlines (typically Mar 1 for fall, Oct 1 for spring).</li>
-        <li>Send <strong>official transcripts</strong> from every college attended (and high school if W&amp;M requires it based on your completed credits).</li>
-        <li>Provide course <strong>syllabi</strong> promptly if the Registrar requests them.</li>
-      </ul>
-    </div>
+    <!-- CENTER: page content -->
+    <main id="content">
+      <article class="content">
+        <h1>Transferring from Other U.S. Colleges/Universities</h1>
+        <p class="small">Unofficial, student-built guide. Policies can change—verify on official W&amp;M pages.</p>
 
-    <div class="card">
-      <h3>3) After admission (what remains at W&amp;M)</h3>
-      <ul class="checklist">
-        <li>Complete at least <strong>60 credits in residence at W&amp;M</strong> to graduate.</li>
-        <li>Finish any remaining <strong>COLL</strong> requirements that were not satisfied via transfer credit (e.g., COLL 150, part of COLL 200, COLL 400, and language/arts proficiencies if not previously met).</li>
-        <li>Declare your major on the W&amp;M timeline and follow department prerequisites.</li>
-      </ul>
-    </div>
-  </section>
+        <section class="card">
+          <h2>Overview</h2>
+          <p>This path is for students transferring from accredited U.S. institutions other than VCCS or RBC. There is no guaranteed-admission agreement; applications are reviewed holistically. Transfer credit is evaluated course-by-course by the Registrar.</p>
+        </section>
 
-  <section>
-    <h2>Helpful planning links</h2>
-    <div class="card">
-      <ul>
-        <li><a href="appendix.html#coll-lists">COLL area guidance</a></li>
-        <li><a href="appendix.html#equivalencies">Sample equivalencies (for reference)</a></li>
-      </ul>
-      <p class="small">Final transfer-credit decisions rest with the Registrar based on official documentation.</p>
-    </div>
-  </section>
-</main>
+        <section>
+          <h2>Step-by-step checklist</h2>
 
-<footer>
-  <p class="small">Last updated: <span id="lu">today</span>. Unofficial student resource.</p>
-  <script>document.getElementById('lu').textContent=new Date().toLocaleDateString();</script>
-</footer>
+          <div class="card">
+            <h3>1) Plan your courses with the W&amp;M core/major in mind</h3>
+            <ul class="checklist">
+              <li>Review W&amp;M general education areas (COLL) and your intended major’s prerequisites.</li>
+              <li>Save <strong>syllabi</strong> for all courses you hope to transfer—these help with equivalency decisions.</li>
+              <li>Use the <a href="appendix.html#coll-lists">COLL lists</a> as a guide to the types of courses that tend to satisfy W&amp;M areas.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>2) Apply</h3>
+            <ul class="checklist">
+              <li>Submit the <strong>Common App for Transfer</strong> by W&amp;M deadlines (typically Mar 1 for fall, Oct 1 for spring).</li>
+              <li>Send <strong>official transcripts</strong> from every college attended (and high school if W&amp;M requires it based on your completed credits).</li>
+              <li>Provide course <strong>syllabi</strong> promptly if the Registrar requests them.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>3) After admission (what remains at W&amp;M)</h3>
+            <ul class="checklist">
+              <li>Complete at least <strong>60 credits in residence at W&amp;M</strong> to graduate.</li>
+              <li>Finish any remaining <strong>COLL</strong> requirements that were not satisfied via transfer credit (e.g., COLL 150, part of COLL 200, COLL 400, and language/arts proficiencies if not previously met).</li>
+              <li>Declare your major on the W&amp;M timeline and follow department prerequisites.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Helpful planning links</h2>
+          <div class="card">
+            <ul>
+              <li><a href="appendix.html#coll-lists">COLL area guidance</a></li>
+              <li><a href="appendix.html#equivalencies">Sample equivalencies (for reference)</a></li>
+            </ul>
+            <p class="small">Final transfer-credit decisions rest with the Registrar based on official documentation.</p>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- RIGHT: table of contents -->
+    <aside class="sidebar">
+      <h2>Contents</h2>
+      <nav id="toc"></nav>
+    </aside>
+  </div>
+
+  <!-- Scripts: left filter + right ToC -->
+  <script>
+    function filterNav(){
+      const q = (document.getElementById('navSearch').value || '').toLowerCase();
+      document.querySelectorAll('#navList li').forEach(li=>{
+        li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    }
+    (function buildTOC(){
+      const container = document.getElementById('toc');
+      if(!container) return;
+      const heads = document.querySelectorAll('.content h2, .content h3');
+      const ul = document.createElement('ul');
+      heads.forEach(h=>{
+        if(!h.id){
+          h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-');
+        }
+        const li = document.createElement('li');
+        li.style.marginLeft = h.tagName==='H3' ? '12px' : '0';
+        const a = document.createElement('a'); a.href = '#'+h.id; a.textContent = h.textContent;
+        li.appendChild(a); ul.appendChild(li);
+      });
+      container.appendChild(ul);
+      const links = container.querySelectorAll('a');
+      const obs = new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){
+            links.forEach(a=>a.classList.toggle('active', a.hash === '#'+e.target.id));
+          }
+        });
+      }, { rootMargin:'-40% 0% -55% 0%', threshold:0.01 });
+      document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
+    })();
+  </script>
 </body>
 </html>
