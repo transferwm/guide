@@ -17,16 +17,20 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a href="#content" class="visually-hidden-focusable" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+    Skip to content
+  </a>
+
   <!-- Top bar -->
   <header class="site">
     <h1>W&amp;M Transfer Guide</h1>
-    <div class="sub">Unofficial student resource — verify with official W&amp;M pages - SA Dept. of Accademic Affairs</div>
+    <div class="sub">Unofficial student resource — verify with official W&amp;M pages - SA Dept. of Academic Affairs</div>
   </header>
 
   <!-- 3-column shell -->
   <div class="shell">
     <!-- LEFT: site navigation -->
-    <aside class="sidebar">
+    <aside class="sidebar" role="navigation" aria-label="Site">
       <h2>Pages</h2>
       <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
       <ul class="nav-list" id="navList">
@@ -42,9 +46,9 @@
         <li class="has-submenu">
           <div class="submenu-head">
             <a href="registration.html" class="parent-link">Registration</a>
-            <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle Registration submenu"></button>
+            <button class="submenu-toggle" aria-expanded="false" aria-controls="registration-submenu" aria-label="Toggle Registration submenu">▾</button>
           </div>
-          <ul class="submenu">
+          <ul class="submenu" id="registration-submenu" style="display:none">
             <li><a href="registration-how.html">How to Register</a></li>
             <li><a href="path101.html">PATH 101</a></li>
           </ul>
@@ -76,7 +80,7 @@
             <p>Complete a qualifying transfer-oriented associate degree, submit the Letter of Intent on time, meet GPA/credit requirements, and apply via the Common App.</p>
             <p>
               <a class="badge" href="vccs.html">View step-by-step →</a>
-              &nbsp; <a class="badge" href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">Letter of Intent →</a>
+              &nbsp; <a class="badge" href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd" target="_blank" rel="noopener noreferrer">Letter of Intent →</a>
             </p>
           </div>
 
@@ -117,8 +121,8 @@
         <section>
           <h2>Helpful links</h2>
           <ul>
-            <li><a href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">W&amp;M Letter of Intent</a></li>
-            <li><a href="https://www.transfervirginia.org/resources?f%5B0%5D=field_cc_from_school%3A88&f%5B1%5D=field_cc_resource_category%3A27">Transfer Virginia — W&amp;M program-specific guides</a></li>
+            <li><a href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd" target="_blank" rel="noopener noreferrer">W&amp;M Letter of Intent</a></li>
+            <li><a href="https://www.transfervirginia.org/resources?f%5B0%5D=field_cc_from_school%3A88&f%5B1%5D=field_cc_resource_category%3A27" target="_blank" rel="noopener noreferrer">Transfer Virginia — W&amp;M program-specific guides</a></li>
             <li><a href="appendix.html">Appendix — VCCS COLL lists &amp; sample equivalencies</a></li>
             <li><a href="coll-rules.html">COLL Rules &amp; Requirements — full rules &amp; tables</a></li>
           </ul>
@@ -168,19 +172,31 @@
       document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
     })();
 
-    // Submenu: link navigates; caret toggles open/close
+    // Submenu: link navigates; caret toggles open/close (+ auto-open when on a Registration page)
     (function initSubmenu(){
-      const host   = document.querySelector('.has-submenu');
+      const host    = document.querySelector('.has-submenu');
       if(!host) return;
-      const toggle = host.querySelector('.submenu-toggle');
-      const submenu= host.querySelector('.submenu');
+      const toggle  = host.querySelector('.submenu-toggle');
+      const submenu = host.querySelector('.submenu');
+      const parent  = host.querySelector('.parent-link');
 
+      // Toggle behavior
       toggle.addEventListener('click', (e)=>{
         e.preventDefault();
         const expanded = toggle.getAttribute('aria-expanded') === 'true';
         toggle.setAttribute('aria-expanded', String(!expanded));
         submenu.style.display = expanded ? 'none' : 'block';
       });
+
+      // Auto-open when you're on registration.html or one of its children is current
+      const onRegistration =
+        /registration(\.html)?$/i.test(location.pathname) ||
+        document.querySelector('.submenu a.current');
+
+      if (onRegistration) {
+        toggle.setAttribute('aria-expanded','true');
+        submenu.style.display = 'block';
+      }
     })();
   </script>
   <script src="disclaimer.js" defer></script>
