@@ -24,27 +24,27 @@
 
   <!-- 3-column shell -->
   <div class="shell">
-    <!-- LEFT: site navigation -->
-  <aside class="sidebar">
-  <h2>Pages</h2>
-  <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
-  <ul class="nav-list" id="navList">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="vccs.html">VCCS (GAA)</a></li>
-    <li><a href="rbc.html">Richard Bland College</a></li>
-    <li><a href="other.html" class="current">Other U.S.</a></li>
-    <li><a href="international.html">International</a></li>
-    <li><a href="coll-rules.html">COLL Rules & Requirements</a></li>
-    <li class="has-submenu">
-      <button class="submenu-toggle" aria-expanded="false">Registration</button>
-      <ul class="submenu">
-        <li><a href="registration-how.html">How to Register</a></li>
-        <li><a href="path101.html">PATH 101</a></li>
+    <!-- LEFT: site navigation (static so it’s always visible) -->
+    <aside class="sidebar">
+      <h2>Pages</h2>
+      <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vccs.html" class="current">VCCS (GAA)</a></li>
+        <li><a href="rbc.html">Richard Bland College</a></li>
+        <li><a href="other.html">Other U.S.</a></li>
+        <li><a href="international.html">International</a></li>
+        <li><a href="coll-rules.html">COLL Rules &amp; Requirements</a></li>
+        <li class="has-submenu">
+          <button class="submenu-toggle" aria-expanded="false">Registration</button>
+          <ul class="submenu">
+            <li><a href="registration-how.html">How to Register</a></li>
+            <li><a href="path101.html">PATH 101</a></li>
+          </ul>
+        </li>
+        <li><a href="appendix.html">Appendix (Tables)</a></li>
       </ul>
-    </li>
-    <li><a href="appendix.html">Appendix (Tables)</a></li>
-  </ul>
-</aside>
+    </aside>
 
     <!-- CENTER: page content -->
     <main id="content">
@@ -107,7 +107,7 @@
             <ul class="checklist">
               <li>Enter with <strong>junior standing</strong> (credit/degree rules apply).</li>
               <li>Complete at least <strong>60 W&amp;M in-residence credits</strong> to graduate.</li>
-              <li>Your associates degree will fulfill the COLL 100 requirement and Coll 200 requie Finish remaining COLL requirements in residence (e.g., COLL 150, part of COLL 200, COLL 400; language/arts proficiencies if not met pre-matriculation).</li>
+              <li>Your associate degree will typically waive COLL 100; finish remaining COLL in residence (e.g., COLL 150, COLL 200, COLL 400; language/arts proficiencies if not met pre-matriculation).</li>
             </ul>
           </div>
         </section>
@@ -153,10 +153,7 @@
     </aside>
   </div>
 
-  <!-- Build shared sidebar FIRST -->
-  <script src="nav.js"></script>
-
-  <!-- Scripts: left filter + right ToC + equivalency search -->
+  <!-- Scripts: left filter + right ToC + submenu + equivalency search -->
   <script>
     // Left filter
     function filterNav(){
@@ -165,6 +162,18 @@
         li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
       });
     }
+
+    // Collapsible Registration submenu (works even without nav.js)
+    (function(){
+      document.querySelectorAll('.submenu-toggle').forEach(btn=>{
+        const submenu = btn.nextElementSibling;
+        btn.addEventListener('click', ()=>{
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          if (submenu) submenu.style.display = expanded ? 'none' : 'block';
+        });
+      });
+    })();
 
     // Build a Table of Contents from h2/h3
     (function buildTOC(){
@@ -270,6 +279,9 @@
 
     function esc(s){return (s||'').replace(/[&<>"']/g,m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
   </script>
+
+  <!-- Optional: keep if you have shared behaviors in nav.js -->
+  <script src="nav.js" defer></script>
   <script src="disclaimer.js" defer></script>
 </body>
 </html>
