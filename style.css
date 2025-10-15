@@ -208,7 +208,8 @@ code{background:var(--code-bg); padding:.1em .35em; border-radius:6px}
 /* ===== Full-screen Disclaimer ===== */
 body.modal-open{ overflow:hidden; }
 .disclaimer-overlay{
-  position:fixed; inset:0; z-index:9999;
+  position:fixed; inset:0; 
+  z-index:9999 !important;   /* force above all */
   background:var(--wm-green);
   display:flex; align-items:center; justify-content:center; padding:24px;
 }
@@ -239,30 +240,26 @@ body.modal-open{ overflow:hidden; }
 .disclaimer-dont input[type="checkbox"]{ width:1.05em; height:1.05em; accent-color:var(--focus); }
 
 /* ===== Centered faded background logo ===== */
-body::before {
-  content: "";
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
-  background: url("wm_cypher_gold.png") no-repeat center center;
-  background-size: contain;
-  opacity: 0.06;
-  pointer-events: none;
-  z-index: 0;
+body::before{
+  content:"";
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:600px;
+  height:600px;
+  background:url("wm_cypher_gold.png") no-repeat center center;
+  background-size:contain;
+  opacity:0.06;
+  pointer-events:none;
+  z-index:-1;                 /* sit underneath EVERYTHING */
 }
 
-/* Ensure all content layers above it */
-header.site, .shell, .disclaimer-overlay {
-  position: relative;
-  z-index: 1;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 1200px){
-  .shell{grid-template-columns: 240px 1fr 240px}
+/* Ensure regular content sits above the logo */
+header.site,
+.shell{
+  position:relative;
+  z-index:1;
 }
 
 /* ===== Responsive ===== */
@@ -276,6 +273,13 @@ header.site, .shell, .disclaimer-overlay {
     position:static; height:auto; min-width:0;
   }
 }
+
+/* ===== Reduced motion ===== */
 @media (prefers-reduced-motion: reduce){
-  *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+  *{
+    animation-duration:0.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:0.01ms !important;
+    scroll-behavior:auto !important;
+  }
 }
