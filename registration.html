@@ -34,8 +34,13 @@
         <li><a href="other.html">Other U.S.</a></li>
         <li><a href="international.html">International</a></li>
         <li><a href="appendix.html">Appendix (Tables)</a></li>
+
+        <!-- Registration parent: link + caret toggle -->
         <li class="has-submenu">
-          <button class="submenu-toggle current" aria-expanded="false">Registration</button>
+          <div class="submenu-head">
+            <a href="registration.html" class="parent-link current">Registration</a>
+            <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle Registration submenu"></button>
+          </div>
           <ul class="submenu">
             <li><a href="registration-how.html">How to Register</a></li>
             <li><a href="path101.html">PATH 101</a></li>
@@ -111,21 +116,25 @@
       document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
     })();
 
-    // Collapsible Registration submenu
+    // Submenu: link navigates; caret toggles open/close
     (function initSubmenu(){
-      const btn = document.querySelector('.has-submenu .submenu-toggle');
-      const submenu = document.querySelector('.has-submenu .submenu');
-      if(!btn || !submenu) return;
+      const host   = document.querySelector('.has-submenu');
+      if(!host) return;
+      const toggle = host.querySelector('.submenu-toggle');
+      const submenu= host.querySelector('.submenu');
 
-      // Auto-open on Registration page
-      if (location.pathname.endsWith('registration.html') || document.title.toLowerCase().includes('registration')) {
-        btn.setAttribute('aria-expanded', 'true');
+      // Auto-open on any Registration-related page
+      const p = location.pathname.toLowerCase();
+      const onReg = p.endsWith('registration.html') || p.endsWith('registration-how.html') || p.endsWith('path101.html');
+      if (onReg) {
+        toggle.setAttribute('aria-expanded','true');
         submenu.style.display = 'block';
       }
 
-      btn.addEventListener('click', () => {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
+      toggle.addEventListener('click', (e)=>{
+        e.preventDefault();
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
         submenu.style.display = expanded ? 'none' : 'block';
       });
     })();
