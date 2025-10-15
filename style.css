@@ -59,30 +59,73 @@ header.site .sub{color:var(--muted); font-size:13px}
 .nav-list li{margin:6px 0}
 .nav-list a.current{font-weight:700;}
 
-/* 🔽 NEW: Nested submenu styling */
-.nav-list ul {
+/* 🔽 NEW: Nested submenu styling (generic) */
+.nav-list ul{
   list-style:none;
   margin:4px 0 4px 18px;
   padding:0;
   border-left:1px solid var(--border);
 }
-.nav-list ul li {
+.nav-list ul li{
   margin:4px 0;
   padding-left:10px;
 }
-.nav-list ul li a {
+.nav-list ul li a{
   font-size:15px;
   color:var(--muted);
   transition:color 0.2s ease;
 }
-.nav-list ul li a:hover {
+.nav-list ul li a:hover{
   color:var(--link);
   text-decoration:underline;
 }
-.nav-list li a:focus-visible {
+.nav-list li a:focus-visible{
   outline:2px solid var(--focus);
   outline-offset:3px;
   border-radius:6px;
+}
+
+/* 🔽 Expandable sidebar submenu (collapsible behavior) */
+.nav-list .has-submenu{ margin:6px 0 10px; }
+.submenu-toggle{
+  background:none;
+  border:none;
+  padding:0;
+  color:var(--link);
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+}
+.submenu-toggle:hover{ text-decoration:underline; }
+.submenu-toggle:focus-visible{
+  outline:2px solid var(--focus);
+  outline-offset:3px;
+  border-radius:6px;
+}
+.submenu-toggle::before{
+  content:"➕";
+  margin-right:8px;
+  font-size:14px;
+  line-height:1;
+}
+.submenu-toggle[aria-expanded="true"]::before{ content:"➖"; }
+ul.submenu{
+  list-style:none;
+  margin:4px 0 0 18px; /* matches generic nested margin */
+  padding:0;
+  border-left:1px solid var(--border);
+  display:none; /* collapsed by default; JS toggles to block */
+}
+ul.submenu li{ margin:4px 0; padding-left:10px; }
+ul.submenu li a{
+  font-size:15px;
+  color:var(--muted);
+}
+ul.submenu li a:hover{
+  color:var(--link);
+  text-decoration:underline;
 }
 
 /* Search input (left) */
