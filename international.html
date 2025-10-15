@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>International Transfers → William & Mary</title>
   <meta name="description" content="Checklist for international transfer applicants to William & Mary." />
+
+  <!-- Favicons / manifest -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,14 +28,7 @@
     <aside class="sidebar">
       <h2>Pages</h2>
       <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
-      <ul class="nav-list" id="navList">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="vccs.html">VCCS (GAA)</a></li>
-        <li><a href="rbc.html">Richard Bland College</a></li>
-        <li><a href="other.html">Other U.S.</a></li>
-        <li><a href="international.html" class="current">International</a></li>
-        <li><a href="appendix.html">Appendix (Tables)</a></li>
-      </ul>
+      <ul class="nav-list" id="navList"><!-- populated by nav.js --></ul>
     </aside>
 
     <!-- CENTER: content -->
@@ -99,6 +100,9 @@
     </aside>
   </div>
 
+  <!-- Build shared sidebar FIRST -->
+  <script src="nav.js"></script>
+
   <!-- Scripts: left filter + right ToC -->
   <script>
     function filterNav(){
@@ -132,9 +136,7 @@
       }, { rootMargin:'-40% 0% -55% 0%', threshold:0.01 });
       document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
     })();
-    // footer date
-    // (if you keep a footer element, you can also stamp the date there)
   </script>
-   <script src="disclaimer.js" defer></script>
+  <script src="disclaimer.js" defer></script>
 </body>
 </html>
