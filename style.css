@@ -1,0 +1,14 @@
+:root { --wm-green:#115740; --ink:#111; --muted:#666; --bg:#fff; --paper:#fafafa; }
+*{box-sizing:border-box} body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper)}
+header{background:var(--wm-green);color:#fff;padding:18px 20px}
+header h1{margin:0;font-size:20px} .small{color:var(--muted);font-size:13px}
+nav{background:#e9efe9;padding:10px 16px;display:flex;gap:14px;flex-wrap:wrap;border-bottom:1px solid #d7e2d7}
+nav a{color:var(--wm-green);text-decoration:none;font-weight:600}
+main{max-width:960px;margin:24px auto;padding:0 16px 48px;background:var(--bg);border:1px solid #eee;border-radius:12px}
+.card{background:#fff;border:1px solid #eee;border-radius:10px;padding:14px 16px;margin:12px 0}
+.badge{background:#eef6ef;border:1px solid #d7e2d7;color:#0f4e2f;padding:2px 8px;border-radius:999px;font-size:12px}
+ul.checklist{list-style:none;padding-left:0} ul.checklist li{padding-left:26px;position:relative;margin:8px 0}
+ul.checklist li::before{content:"✓";position:absolute;left:0;color:var(--wm-green);font-weight:700}
+.table{width:100%;border-collapse:collapse;background:#fff} .table th,.table td{border:1px solid #ddd;padding:8px;vertical-align:top}
+.table th{background:#f7faf7;text-align:left}
+footer{padding:32px 16px;text-align:center;color:var(--muted)}
