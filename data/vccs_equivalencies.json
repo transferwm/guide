@@ -1,63 +1,6162 @@
 [
-  {"dept":"ACC","number":"211","title":"Principles of Accounting I","wm_equiv":"BUAD 203 + BUAD 2XX (total 6 cr)","coll":"","notes":"ACC 211 + 212 together award BUAD 203 (3 cr) and BUAD 2XX (3 cr)."},
-  {"dept":"ACC","number":"212","title":"Principles of Accounting II","wm_equiv":"BUAD 2XX (see note)","coll":"","notes":"Pairs with ACC 211."},
-
-  {"dept":"ADJ","number":"201","title":"Criminology","wm_equiv":"SOCL 302","coll":"CSI, NQR","notes":""},
-  {"dept":"ADJ","number":"100","title":"Survey of Criminal Justice","wm_equiv":"SOCL ELT","coll":"","notes":""},
-
-  {"dept":"ARA","number":"101","title":"Beginning Arabic I","wm_equiv":"ARAB 1XX","coll":"","notes":""},
-  {"dept":"ARA","number":"202","title":"Intermediate Arabic II","wm_equiv":"MDLL 2XX","coll":"FLP","notes":""},
-
-  {"dept":"ARC","number":"123","title":"Architectural Graphics I","wm_equiv":"ART ELT","coll":"ARTS","notes":""},
-  {"dept":"ARC","number":"201","title":"History of Modern Architecture","wm_equiv":"ARTH 272 (2 cr)","coll":"ALV, CSI","notes":""},
-
-  {"dept":"ART","number":"101","title":"History/Appreciation of Art I","wm_equiv":"ARTH 251","coll":"ALV, CSI","notes":""},
-  {"dept":"ART","number":"102","title":"History/Appreciation of Art II","wm_equiv":"ARTH 252","coll":"ALV, CSI","notes":""},
-  {"dept":"ART","number":"120","title":"Beginning Drawing","wm_equiv":"ART 211","coll":"ALV, ARTS","notes":""},
-  {"dept":"ART","number":"132","title":"Three-Dimensional Design","wm_equiv":"ART 212","coll":"ALV, ARTS","notes":""},
-
-  {"dept":"ASL","number":"202","title":"American Sign Language IV","wm_equiv":"INTR ELT","coll":"FLP","notes":""},
-
-  {"dept":"BIO","number":"101","title":"General Biology I","wm_equiv":"BIOL 203/203L","coll":"NQR","notes":""},
-  {"dept":"BIO","number":"102","title":"General Biology II","wm_equiv":"BIOL 204/204L","coll":"NQR","notes":""},
-  {"dept":"BIO","number":"141","title":"Human Anatomy & Physiology I","wm_equiv":"HHP 210/210L","coll":"NQR","notes":""},
-  {"dept":"BIO","number":"142","title":"Human Anatomy & Physiology II","wm_equiv":"HHP 320/320L","coll":"NQR","notes":""},
-
-  {"dept":"BUS","number":"216","title":"Probability & Statistics for Business & Econ","wm_equiv":"ECON 307","coll":"MATH","notes":""},
-  {"dept":"BUS","number":"224","title":"Statistical Analysis for Business","wm_equiv":"BUAD 231 (3 cr)","coll":"","notes":""},
-
-  {"dept":"CHM","number":"111","title":"General Chemistry I","wm_equiv":"CHEM 103/103L","coll":"NQR","notes":""},
-  {"dept":"CHM","number":"112","title":"General Chemistry II","wm_equiv":"CHEM 208/254","coll":"","notes":""},
-  {"dept":"CHM","number":"241","title":"Organic Chemistry I","wm_equiv":"CHEM 206","coll":"NQR","notes":""},
-  {"dept":"CHM","number":"242","title":"Organic Chemistry II","wm_equiv":"CHEM 207","coll":"","notes":""},
-
-  {"dept":"CSC","number":"201","title":"Computer Science I","wm_equiv":"CSCI 141","coll":"","notes":""},
-  {"dept":"CSC","number":"202","title":"Computer Science II","wm_equiv":"CSCI 141","coll":"","notes":"Department may place you; confirm."},
-  {"dept":"CSC","number":"208","title":"Introduction to Discrete Structures","wm_equiv":"CSCI 243","coll":"","notes":""},
-
-  {"dept":"CST","number":"100","title":"Principles of Public Speaking","wm_equiv":"SPCH 201","coll":"ARTS, ALV","notes":""},
-
-  {"dept":"ECO","number":"201","title":"Principles of Macroeconomics","wm_equiv":"ECON 102","coll":"CSI","notes":""},
-  {"dept":"ECO","number":"202","title":"Principles of Microeconomics","wm_equiv":"ECON 101","coll":"CSI","notes":""},
-
-  {"dept":"ENG","number":"111","title":"College Composition I","wm_equiv":"WRIT 101","coll":"","notes":""},
-  {"dept":"ENG","number":"112","title":"College Composition II","wm_equiv":"ENGL 210","coll":"","notes":""},
-  {"dept":"ENG","number":"200","title":"Introduction to Linguistics","wm_equiv":"ENGL 220","coll":"CSI","notes":""},
-
-  {"dept":"ENV","number":"121","title":"General Environmental Science I","wm_equiv":"ENSP 101 (3 cr)","coll":"","notes":"Often paired with ENV 122; confirm pairing."},
-
-  {"dept":"FRE","number":"202","title":"Intermediate French II","wm_equiv":"FREN 2XX","coll":"FLP","notes":""},
-
-  {"dept":"GEO","number":"200","title":"Intro to Physical Geography","wm_equiv":"GEOL 110","coll":"NQR","notes":""},
-  {"dept":"GOL","number":"105","title":"Physical Geology","wm_equiv":"GEOL 101/160","coll":"NQR","notes":""},
-
-  {"dept":"HIS","number":"101","title":"History of Western Civilization I","wm_equiv":"HIST 1XX","coll":"CSI, ALV","notes":""},
-  {"dept":"HIS","number":"102","title":"History of Western Civilization II","wm_equiv":"HIST 1XX","coll":"CSI, ALV","notes":""},
-
-  {"dept":"MTH","number":"154","title":"Quantitative Reasoning","wm_equiv":"MATH 1XX","coll":"MATH","notes":""},
-  {"dept":"MTH","number":"155","title":"Statistical Reasoning","wm_equiv":"MATH 1XX","coll":"MATH","notes":""},
-  {"dept":"MTH","number":"263","title":"Discrete Mathematics","wm_equiv":"MATH 214","coll":"MATH","notes":""},
-
-  {"dept":"PHY","number":"201","title":"General College Physics I","wm_equiv":"PHYS 101/101L","coll":"NQR","notes":""},
-  {"dept":"PHY","number":"202","title":"General College Physics II","wm_equiv":"PHYS 102/102L","coll":"NQR","notes":""}
+  {
+    "dept": "ACC",
+    "number": "211",
+    "title": "PRINCIPLES",
+    "wm_equiv": "OF ACCOUNTING I TAKEN WITH BUAD 203 (3 CR) BUAD 2XX (3 CR) ACC 212 PRINCIPLES OF ACCOUNTING II",
+    "coll": "",
+    "notes": "TAKEN WITH BUAD 203 (3 CR) BUAD 2XX (3 CR) ACC 212 PRINCIPLES OF ACCOUNTING II"
+  },
+  {
+    "dept": "ADJ",
+    "number": "100",
+    "title": "SURVEY",
+    "wm_equiv": "OF CRIMINAL JUSTICE SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "105",
+    "title": "THE",
+    "wm_equiv": "JUVENILE JUSTICE SYSTEM SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "106",
+    "title": "CRIME",
+    "wm_equiv": "AND JUSTICE IN AMERICA SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "107",
+    "title": "SURVEY",
+    "wm_equiv": "OF CRIMINOLOGY SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "133",
+    "title": "ETHICS",
+    "wm_equiv": "AND CRIMINAL JUSTICE PROFESSIONAL SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "145",
+    "title": "CORRECTIONS",
+    "wm_equiv": "AND THE COMMUNITY SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "201",
+    "title": "CRIMINOLOGY",
+    "wm_equiv": "SOCL 302",
+    "coll": "CSI, NQR",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "205",
+    "title": "CAUSES",
+    "wm_equiv": "OF CRIME AND DELINQUENCY SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "216",
+    "title": "ORGANIZED",
+    "wm_equiv": "CRIME AND CORRUPTION SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "229",
+    "title": "LAW",
+    "wm_equiv": "ENFORCEMENT AND THE COMMUNITY SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "234",
+    "title": "TERRORISM",
+    "wm_equiv": "AND COUNTER-TERRORISM SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "235",
+    "title": "RESEARCH",
+    "wm_equiv": "IN CRIMINAL JUSTICE SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "243",
+    "title": "HOMELAND",
+    "wm_equiv": "SECURITY AND LAW SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ADJ",
+    "number": "247",
+    "title": "CRIMINAL",
+    "wm_equiv": "BEHAVIOR SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ARA",
+    "number": "101",
+    "title": "BEGINNING",
+    "wm_equiv": "ARABIC I ARAB 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ARA",
+    "number": "102",
+    "title": "BEGINNING",
+    "wm_equiv": "ARABIC II ARAB 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ARA",
+    "number": "201",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "ARABIC I MDLL 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ARA",
+    "number": "202",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "ARABIC II MDLL 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "ARC",
+    "number": "100",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO ARCHITECTURE ARTH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ARC",
+    "number": "123",
+    "title": "ARCHITECTURAL",
+    "wm_equiv": "GRAPHICS I ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ARC",
+    "number": "124",
+    "title": "ARCHITECTURAL",
+    "wm_equiv": "GRAPHICS II ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ARC",
+    "number": "201",
+    "title": "HISTORY",
+    "wm_equiv": "OF MODERN ARCHITECTURE ARTH 272 (2 CR.) ALV, CSI 2 ARC 221 ARCHITECTURAL CAD APPLICATIONS SOFTWARE I ART 340",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ARC",
+    "number": "231",
+    "title": "ADVANCED",
+    "wm_equiv": "ARCHITECTURAL DESIGN & GRAPHICS I ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ARC",
+    "number": "232",
+    "title": "ADVANCED",
+    "wm_equiv": "ARCHITECTURAL DESIGN & GRAPHICS II ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ARC",
+    "number": "240",
+    "title": "DESIGNING",
+    "wm_equiv": "SUSTAINABLE BUILT ENVIRONMENTS ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "100",
+    "title": "ART",
+    "wm_equiv": "APPRECIATION ARTH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "101",
+    "title": "HISTORY/APPRECIATION",
+    "wm_equiv": "ART I ARTH 251",
+    "coll": "ALV, CSI",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "102",
+    "title": "HISTORY/APPRECIATION",
+    "wm_equiv": "OF ART II ARTH 252",
+    "coll": "ALV, CSI",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "103",
+    "title": "HISTORY",
+    "wm_equiv": "OF FAR EASTERN ART I ARTH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "104",
+    "title": "HISTORY",
+    "wm_equiv": "OF FAR EASTERN ART II ARTH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "106",
+    "title": "HISTORY",
+    "wm_equiv": "OF MODERN ART ARTH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "109",
+    "title": "HISTORY",
+    "wm_equiv": "OF WOMEN ARTISTS ARTH ELT OR GSWS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "111",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO THE ARTS I ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "112",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO THE ARTS II ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "114",
+    "title": "GENERAL",
+    "wm_equiv": "ART ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "120",
+    "title": "BEGINNING",
+    "wm_equiv": "DRAWING ART 211",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "121",
+    "title": "DRAWING I",
+    "wm_equiv": "ART 211",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "122",
+    "title": "DRAWING",
+    "wm_equiv": "II ART 311",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "125",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO PAINTING ART 315",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "131",
+    "title": "TWO-DIMENSIONAL",
+    "wm_equiv": "DESIGN ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "132",
+    "title": "THREE-DIMENSIONAL",
+    "wm_equiv": "DESIGN ART 212",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "134",
+    "title": "THREE-DIMENSIONAL",
+    "wm_equiv": "DESIGN ART 212",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "135",
+    "title": "VISUAL",
+    "wm_equiv": "COMMUNICATIONS ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "153",
+    "title": "CERAMICS I",
+    "wm_equiv": "ART 327",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "154",
+    "title": "CERAMICS",
+    "wm_equiv": "II ART 328",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "184",
+    "title": "SURVEY",
+    "wm_equiv": "OF MUSEUM PRACTICE ANTH 350",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "200",
+    "title": "SURVEY",
+    "wm_equiv": "OF NON-WESTERN ART ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "201",
+    "title": "HISTORY",
+    "wm_equiv": "OF ART I ARTH 251",
+    "coll": "ALV, CSI",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "202",
+    "title": "HISTORY",
+    "wm_equiv": "OF ART II ARTH 252",
+    "coll": "ALV, CSI",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "211",
+    "title": "HISTORY",
+    "wm_equiv": "OF AMERICAN ART I ARTH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "212",
+    "title": "HISTORY",
+    "wm_equiv": "OF AMERICAN ART II ARTH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "221",
+    "title": "DRAWING",
+    "wm_equiv": "III ART 408",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "222",
+    "title": "DRAWING",
+    "wm_equiv": "IV ART 408",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "223",
+    "title": "DRAWING V",
+    "wm_equiv": "ART 311",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "231",
+    "title": "SCULPTURE I",
+    "wm_equiv": "ART 325",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "232",
+    "title": "SCULPTURE",
+    "wm_equiv": "II ART 326",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "235",
+    "title": "FUNCTIONAL",
+    "wm_equiv": "CERAMICS ART 327",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "236",
+    "title": "SCULPTURAL",
+    "wm_equiv": "CERAMICS ART 327",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "237",
+    "title": "CERAMIC",
+    "wm_equiv": "DECORATION ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "241",
+    "title": "PAINTING I",
+    "wm_equiv": "ART 315",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "242",
+    "title": "PAINTING",
+    "wm_equiv": "II ART 316 ALV, ARTS 3 ART 243 WATERCOLOR I ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "244",
+    "title": "WATERCOLOR",
+    "wm_equiv": "II ART 340",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "245",
+    "title": "PORTRAIT",
+    "wm_equiv": "PAINTING ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "246",
+    "title": "FIGURE",
+    "wm_equiv": "PAINTING ART 340",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "259",
+    "title": "LANDSCAPE",
+    "wm_equiv": "PAINTING ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "271",
+    "title": "PRINTMAKING I",
+    "wm_equiv": "ART 323",
+    "coll": "ALV, ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "272",
+    "title": "PRINTMAKING",
+    "wm_equiv": "II ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "275",
+    "title": "RELIEF",
+    "wm_equiv": "MAKING ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ART",
+    "number": "277",
+    "title": "ADVANCED",
+    "wm_equiv": "PRINTMAKING ART ELT",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "ASL",
+    "number": "101",
+    "title": "AMERICAN",
+    "wm_equiv": "SIGN LANGUAGE I INTR ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ASL",
+    "number": "102",
+    "title": "AMERICAN",
+    "wm_equiv": "SIGN LANGUAGE II INTR ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ASL",
+    "number": "201",
+    "title": "AMERICAN",
+    "wm_equiv": "SIGN LANGUAGE III INTR ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ASL",
+    "number": "202",
+    "title": "AMERICAN",
+    "wm_equiv": "SIGN LANGUAGE IV INTR ELT",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "ASL",
+    "number": "220",
+    "title": "COMPARATIVE",
+    "wm_equiv": "LINGUISTICS: ASL & ENGLISH LING 230",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BCS",
+    "number": "110",
+    "title": "FUNDAMENTALS",
+    "wm_equiv": "IN VIDEO PRODUCTION NS FMST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "BIO",
+    "number": "100",
+    "title": "BASIC",
+    "wm_equiv": "HUMAN BIOLOGY BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "101",
+    "title": "GENERAL",
+    "wm_equiv": "BIOLOGY I BIOL 203/203L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "102",
+    "title": "GENERAL",
+    "wm_equiv": "BIOLOGY II BIOL 204/204L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "106",
+    "title": "LIFE",
+    "wm_equiv": "SCIENCE BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "107",
+    "title": "BIOLOGY",
+    "wm_equiv": "OF THE ENVIRONMENT BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "110",
+    "title": "GENERAL",
+    "wm_equiv": "BOTANY BIOL 304",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "114",
+    "title": "ORGANISMS",
+    "wm_equiv": "BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "120",
+    "title": "GENERAL",
+    "wm_equiv": "ZOOLOGY BIOL 302",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "141",
+    "title": "HUMAN",
+    "wm_equiv": "ANATOMY & PHYSIOLOGY I HHP 210/210L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "142",
+    "title": "HUMAN",
+    "wm_equiv": "ANATOMY & PHYSIOLOGY II HHP 320/ 320L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "146",
+    "title": "HUMAN",
+    "wm_equiv": "HEREDITY BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "150",
+    "title": "MICROBIOLOGY",
+    "wm_equiv": "FOR LIFE SCIENCES BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "170",
+    "title": "BIOTECHNOLOGY",
+    "wm_equiv": "METHODS BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "173",
+    "title": "BIOLOGY",
+    "wm_equiv": "FOR BIOTECHNOLOGY BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "205",
+    "title": "GENERAL",
+    "wm_equiv": "MICROBIOLOGY BIOL 306",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "206",
+    "title": "CELL",
+    "wm_equiv": "BIOLOGY BIOL 310",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "215",
+    "title": "PLANT",
+    "wm_equiv": "LIFE OF VIRGINIA BIOL 404",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "220",
+    "title": "IMMUNOLOGY",
+    "wm_equiv": "BIOL 437",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "227",
+    "title": "ANIMAL",
+    "wm_equiv": "LIFE OF VIRGINIA BIOL 404",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "231",
+    "title": "HUMAN",
+    "wm_equiv": "ANATOMY & PHYSIOLOGY I TAKEN WITH BIOL 404 (3 CR.) BIO 232 HUMAN ANATOMY & PHYSIOLOGY II 4 BIO 250 BIOTECHNOLOGY RESEARCH METHODS AND SKILLS BIOL ELT",
+    "coll": "",
+    "notes": "TAKEN WITH BIOL 404 (3 CR.) BIO 232 HUMAN ANATOMY & PHYSIOLOGY II 4 BIO 250 BIOTECHNOLOGY RESEARCH METHODS AND SKILLS BIOL ELT"
+  },
+  {
+    "dept": "BIO",
+    "number": "254",
+    "title": "CAPSTONE",
+    "wm_equiv": "SEMINAR IN BIOTECHNOLOGY BIOL 404",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "255",
+    "title": "BIOINFORMATICS &",
+    "wm_equiv": "COMPUTER APPLICATIONS BIOL 404",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "256",
+    "title": "GENERAL",
+    "wm_equiv": "GENETICS BIOL 420/421",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "270",
+    "title": "GENERAL",
+    "wm_equiv": "ECOLOGY BIOL 417",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "271",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO ECOLOGICAL SYSTEMS BIOL 427",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "275",
+    "title": "MARINE",
+    "wm_equiv": "ECOLOGY BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "276",
+    "title": "FRESHWATER",
+    "wm_equiv": "ECOLOGY BIOL 426",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "278",
+    "title": "COASTAL",
+    "wm_equiv": "ECOLOGY BIOL 404",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "285",
+    "title": "BIOLOGICAL",
+    "wm_equiv": "PROBLEMS IN CONTEMPORARY SOCIETY BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "293",
+    "title": "STUDIES",
+    "wm_equiv": "IN BIOL 404",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "295",
+    "title": "TOPICS",
+    "wm_equiv": "IN BIOL 404",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BIO",
+    "number": "299",
+    "title": "SUPERVISED",
+    "wm_equiv": "STUDY BIOL 404",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BUS",
+    "number": "216",
+    "title": "PROBABILITY",
+    "wm_equiv": "AND STATISTICS FOR BUSINESS & ECON ECON 307",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "BUS",
+    "number": "221",
+    "title": "BUSINESS",
+    "wm_equiv": "STATISTICS I TAKEN WITH BUAD 231 (3 CR.) BUS 222 BUSINESS STATISTICS II",
+    "coll": "",
+    "notes": "TAKEN WITH BUAD 231 (3 CR.) BUS 222 BUSINESS STATISTICS II"
+  },
+  {
+    "dept": "BUS",
+    "number": "224",
+    "title": "STATISTICAL",
+    "wm_equiv": "ANALYSIS FOR BUSINESS BUAD 231 (3 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BUS",
+    "number": "240",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO BUSINESS LAW BUAD 343 (2 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "BUS",
+    "number": "241",
+    "title": "BUSINESS",
+    "wm_equiv": "LAW I TAKEN WITH BUAD 343 (3 CR.) BUS 242 BUSINESS LAW II",
+    "coll": "",
+    "notes": "TAKEN WITH BUAD 343 (3 CR.) BUS 242 BUSINESS LAW II"
+  },
+  {
+    "dept": "CHM",
+    "number": "101",
+    "title": "INTRODUCTORY",
+    "wm_equiv": "CHEMISTRY CHEM 1XX",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "102",
+    "title": "INTRODUCTORY",
+    "wm_equiv": "CHEMISTRY II CHEM ELT/254",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "110",
+    "title": "SURVEY",
+    "wm_equiv": "OF CHEMISTRY CHEM ELT/254",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "111",
+    "title": "GENERAL",
+    "wm_equiv": "CHEMISTRY I CHEM 103/103L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "112",
+    "title": "GENERAL",
+    "wm_equiv": "CHEMISTRY II CHEM 208/254",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "121",
+    "title": "HEALTH",
+    "wm_equiv": "SCIENCE CHEMISTRY I CHEM ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "122",
+    "title": "HEALTH",
+    "wm_equiv": "SCIENCE CHEMISTRY II CHEM ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "125",
+    "title": "CHEMISTRY",
+    "wm_equiv": "FOR NURSES CHEM ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "129",
+    "title": "CHEMISTRY",
+    "wm_equiv": "FOR SUSTAINABLE WORLD I CHEM ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "130",
+    "title": "CHEMISTRY",
+    "wm_equiv": "FOR SUSTAINABLE WORLD II CHEM ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "241",
+    "title": "ORGANIC",
+    "wm_equiv": "CHEMISTRY I CHEM 206",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "242",
+    "title": "ORGANIC",
+    "wm_equiv": "CHEMISTRY II CHEM 207",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "243",
+    "title": "ORGANIC",
+    "wm_equiv": "CHEMISTRY LABORATORY I CHEM 206L",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "244",
+    "title": "ORGANIC",
+    "wm_equiv": "CHEMISTRY LABORATORY II CHEM 253",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "245",
+    "title": "ORGANIC",
+    "wm_equiv": "CHEMISTRY I LABORATORY CHEM 206L",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "246",
+    "title": "ORGANIC",
+    "wm_equiv": "CHEMISTRY II LABORATRY CHEM 253",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "260",
+    "title": "INTRODUCTORY",
+    "wm_equiv": "BIOCHEMISTRY CHEM 314 OR BIOL 314",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHM",
+    "number": "261",
+    "title": "BIOCHEMISTRY",
+    "wm_equiv": "LAB CHEM 420 5",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHD",
+    "number": "117",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO READING METHODS EDUC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHD",
+    "number": "118",
+    "title": "LANGUAGE",
+    "wm_equiv": "ARTS FOR YOUNG CHILDREN EDUC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHD",
+    "number": "120",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO EARLY CHILDHOOD EDUCATION EDUC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHD",
+    "number": "121",
+    "title": "CHILDHOOD",
+    "wm_equiv": "EDUCATIONAL DEV I TAKEN WITH EDUC ELT (3 CR.) CHD 122 CHILDHOOD EDUCATIONAL DEV II",
+    "coll": "",
+    "notes": "TAKEN WITH EDUC ELT (3 CR.) CHD 122 CHILDHOOD EDUCATIONAL DEV II"
+  },
+  {
+    "dept": "CHD",
+    "number": "145",
+    "title": "TEACHING",
+    "wm_equiv": "ART, MUSIC, & MOVEMENT TO CHILDREN EDUC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHD",
+    "number": "225",
+    "title": "CURRICULUM",
+    "wm_equiv": "DEVELOPMENT EDUC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHD",
+    "number": "230",
+    "title": "BEHAVIOR",
+    "wm_equiv": "MANAGEMENT EDUC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHI",
+    "number": "101",
+    "title": "BEGINNING",
+    "wm_equiv": "CHINESE I CHIN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHI",
+    "number": "102",
+    "title": "BEGINNING",
+    "wm_equiv": "CHINESE II CHIN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHI",
+    "number": "103",
+    "title": "BEGINNING",
+    "wm_equiv": "SPOKEN CHINESE I CHIN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHI",
+    "number": "104",
+    "title": "BEGINNING",
+    "wm_equiv": "SPOKEN CHINESE II CHIN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHI",
+    "number": "111",
+    "title": "BEGINNING",
+    "wm_equiv": "CHINESE READING & WRITING I CHIN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHI",
+    "number": "112",
+    "title": "BEGINNING",
+    "wm_equiv": "CHINESE READING & WRITING II CHIN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHI",
+    "number": "121",
+    "title": "BEGINNING",
+    "wm_equiv": "CHINESE READING & WRITING I CHIN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHI",
+    "number": "122",
+    "title": "BEGINNING",
+    "wm_equiv": "CHINESE READING & WRITING II CHIN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHI",
+    "number": "201",
+    "title": "CONVERSATIONAL",
+    "wm_equiv": "CHINESE I CHIN 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CHI",
+    "number": "202",
+    "title": "CONVERSATIONAL",
+    "wm_equiv": "CHINESE II CHIN 2XX (2 cr.)",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "100",
+    "title": "PRINCIPLES",
+    "wm_equiv": "OF PUBLIC SPEAKING SPCH 201",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "105",
+    "title": "ORAL",
+    "wm_equiv": "COMMUNICATION SPCH 102",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "110",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO COMMUNICATION SPCH 102",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "115",
+    "title": "SMALL",
+    "wm_equiv": "GROUP COMMUNICATION SPCH 310",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "126",
+    "title": "INTERPERSONAL",
+    "wm_equiv": "COMMUNICATION SPCH 102",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "130",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO THEATRE THEA 200",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "131",
+    "title": "ACTING I",
+    "wm_equiv": "THEA 201",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "132",
+    "title": "ACTING",
+    "wm_equiv": "II THEA 302",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "136",
+    "title": "THEATRE/MUSICAL",
+    "wm_equiv": "WORKSHOP THEA 180 (1 cr.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "145",
+    "title": "STAGECRAFT",
+    "wm_equiv": "THEA 205",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "151",
+    "title": "FILM",
+    "wm_equiv": "APPRECIATION I FMST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "200",
+    "title": "ADVANCED",
+    "wm_equiv": "PUBLIC SPEAKING SPCH 201",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "229",
+    "title": "INTERCULTURAL",
+    "wm_equiv": "COMMUNICATION SPCH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "231",
+    "title": "HISTORY",
+    "wm_equiv": "OF THEATRE I THEA 328",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "232",
+    "title": "HISTORY",
+    "wm_equiv": "OF THEATRE II THEA 329",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "245",
+    "title": "BASIC",
+    "wm_equiv": "LIGHTING THEA 213",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "250",
+    "title": "THE",
+    "wm_equiv": "ART OF FILM NS FMST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "CST",
+    "number": "251",
+    "title": "STAGE",
+    "wm_equiv": "LIGHTING AND SOUND THEA 460 6 CST 252 COSTUME AND MAKE-UP FOR THE THEATRE THEA 460",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "256",
+    "title": "PRODUCTION",
+    "wm_equiv": "AND STAGE MANAGEMENT THEA 320",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CST",
+    "number": "266",
+    "title": "OUTDOOR",
+    "wm_equiv": "DRAMA THEA 460",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "110",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO COMPUTING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "130",
+    "title": "SCIENTIFIC",
+    "wm_equiv": "PROGRAMMING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "155",
+    "title": "COMPUTER",
+    "wm_equiv": "CONCEPTS AND APPLICATIONS CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "200",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO COMPUTER SCIENCE CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "201",
+    "title": "COMPUTER",
+    "wm_equiv": "SCIENCE I CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "202",
+    "title": "COMPUTER",
+    "wm_equiv": "SCIENCE II CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "205",
+    "title": "COMPUTER",
+    "wm_equiv": "ORGANIZATION CSCI ELT (3-4 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "206",
+    "title": "ASSEMBLY",
+    "wm_equiv": "LANGUAGE CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "208",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO DISCRETE STRUCTURES CSCI 243",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "210",
+    "title": "PROGRAMMING",
+    "wm_equiv": "WITH C++ CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "215",
+    "title": "COMPUTER",
+    "wm_equiv": "SYSTEMS CSCI ELT (3-4 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "221",
+    "title": "INTRO",
+    "wm_equiv": "PROBLEM SOLVING, PROGRAMMING CSCI ELT (3 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "222",
+    "title": "OBJECT-ORIENTED",
+    "wm_equiv": "PROGRAMMING CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "223",
+    "title": "DATA",
+    "wm_equiv": "STRUCTURES, ANALYSIS OF ALGORITHMS CSCI ELT (3-4 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CSC",
+    "number": "215",
+    "title": "ADVANCED",
+    "wm_equiv": "COMPUTER ORGANIZATION CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CRF",
+    "number": "101",
+    "title": "HAND",
+    "wm_equiv": "BUILT POTTERY ART 327",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "CRF",
+    "number": "102",
+    "title": "WHEEL",
+    "wm_equiv": "THROWN POTTERY ART 328",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "CRF",
+    "number": "105",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO POTTERY ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CRF",
+    "number": "106",
+    "title": "POTTERY",
+    "wm_equiv": "GLAZING AND DECORATING ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CRF",
+    "number": "109",
+    "title": "SPECIAL",
+    "wm_equiv": "TECHNIQUES IN POTTERY ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "CRF",
+    "number": "159",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO FINE WOODWORKING ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "DAN",
+    "number": "160",
+    "title": "MODERN",
+    "wm_equiv": "DANCE DANC 111",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "DAN",
+    "number": "164",
+    "title": "JAZZ",
+    "wm_equiv": "II DANC 264",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "DAN",
+    "number": "166",
+    "title": "BALLET",
+    "wm_equiv": "DANC 261",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "DAN",
+    "number": "167",
+    "title": "DANCE",
+    "wm_equiv": "IMPROVISATION DANC 301",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "DAN",
+    "number": "171",
+    "title": "BALLROOM",
+    "wm_equiv": "DANCE I DANC 115",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "DAN",
+    "number": "210",
+    "title": "DANCE",
+    "wm_equiv": "COMPOSITION I DANC 305",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "DIT",
+    "number": "90",
+    "title": "COORDINATED",
+    "wm_equiv": "INTERNSHIP HHP 498",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "DIT",
+    "number": "121",
+    "title": "NUTRITION I",
+    "wm_equiv": "HHP 130",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "DIT",
+    "number": "125",
+    "title": "CURRENT",
+    "wm_equiv": "CONCEPTS IN DIET AND NUTRITION HHP 130",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "DIT",
+    "number": "210",
+    "title": "NUTRITIONAL",
+    "wm_equiv": "ASSESSMENT HHP 130 NQR 7",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "DRF",
+    "number": "201",
+    "title": "COMPUTER",
+    "wm_equiv": "AIDED DRAFTING AND DESIGN I ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ECO",
+    "number": "201",
+    "title": "PRINCIPLES",
+    "wm_equiv": "OF MACROECONOMICS ECON 102",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "ECO",
+    "number": "202",
+    "title": "PRINCIPLES",
+    "wm_equiv": "OF MICROECONOMICS ECON 101",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "EDU",
+    "number": "100",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO EDUCATION EDUC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EDU",
+    "number": "120",
+    "title": "MATH",
+    "wm_equiv": "FOR ELEM & MIDDLE SCHOOL EDUCATORS EDUC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EDU",
+    "number": "200",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO TEACHING AS PROFESSION EDUC 200",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EDU",
+    "number": "204",
+    "title": "TEACHING",
+    "wm_equiv": "IN A DIVERSE SOCIETY ELEM 441",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EDU",
+    "number": "206",
+    "title": "CLASSROOM",
+    "wm_equiv": "AND BEHAVIORAL MANAGEMENT EDUC 311 or ELEM 410",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EDU",
+    "number": "207",
+    "title": "HUMAN",
+    "wm_equiv": "GROWTH AND DEVELOPMENT EDUC 301",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EDU",
+    "number": "250",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO DEVELOPMENTAL DISABILITIES EDUC or ELEM 312",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EDU",
+    "number": "254",
+    "title": "TEACHING",
+    "wm_equiv": "BASIC SKILLS TO EXCEPTIONAL CHILDREN EDUC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EDU",
+    "number": "255",
+    "title": "BEHAVIOR",
+    "wm_equiv": "MODIFICATION EDUC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EDU",
+    "number": "270",
+    "title": "INTRO",
+    "wm_equiv": "TO AUTISM SPECTRUM DISORDERS EDUC 426",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EMS",
+    "number": "153",
+    "title": "BASIC",
+    "wm_equiv": "ECG RECOGNITION HHP ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EMS",
+    "number": "256",
+    "title": "12",
+    "wm_equiv": "LEAD ECG INTERPRETATION HHP ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "125",
+    "title": "INTRO",
+    "wm_equiv": "TO COMPUTER PROGRAMMING FOR ENGINEERS CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "126",
+    "title": "COMPUTER",
+    "wm_equiv": "PROGRAMMING FOR ENGINEERS CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "127",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO COMPUTER PROGRAMMING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "130",
+    "title": "STATISTICS",
+    "wm_equiv": "AND STRENGTH OF MATERIALS PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "135",
+    "title": "STATICS",
+    "wm_equiv": "FOR ENGINEERING TECHNOLOGY PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "140",
+    "title": "ENGINEERING",
+    "wm_equiv": "MECHANICS - STATICS PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "216",
+    "title": "COMPUTER",
+    "wm_equiv": "METHODS IN ENGINEERING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "240",
+    "title": "SOLID",
+    "wm_equiv": "MECHANICS (STATICS) PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "245",
+    "title": "ENGINEERING",
+    "wm_equiv": "MECHANICS – DYNAMICS PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "246",
+    "title": "MECHANICS",
+    "wm_equiv": "OF MATERIALS PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "248",
+    "title": "THERMODYNAMICS",
+    "wm_equiv": "FOR ENGINEERING PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "251",
+    "title": "BASIC",
+    "wm_equiv": "ELECTRIC CIRCUITS I TAKEN WITH PHYS 252 (2 CR.) EGR 252 BASIC ELECTRIC CIRCUITS II",
+    "coll": "",
+    "notes": "TAKEN WITH PHYS 252 (2 CR.) EGR 252 BASIC ELECTRIC CIRCUITS II"
+  },
+  {
+    "dept": "EGR",
+    "number": "255",
+    "title": "ELECTRIC",
+    "wm_equiv": "CIRCUITS LABORATORY PHYS 252",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "260",
+    "title": "CIRCUIT",
+    "wm_equiv": "ANALYSIS PHYS 252",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "265",
+    "title": "DIGITAL",
+    "wm_equiv": "ELECTRONICS AND LOGIC DESIGN PHYS 351",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "267",
+    "title": "ENGINEERING",
+    "wm_equiv": "ANALYSIS TOOLS MATH 110 8 EGR 271 CIRCUIT THEORY I PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "272",
+    "title": "CIRCUIT",
+    "wm_equiv": "THEORY II PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "EGR",
+    "number": "277",
+    "title": "DIGITAL",
+    "wm_equiv": "LOGIC NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "EGR",
+    "number": "278",
+    "title": "DIGITAL",
+    "wm_equiv": "LOGIC LABORATORY PHYS 252",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "111",
+    "title": "COLLEGE",
+    "wm_equiv": "COMPOSITION I WRIT 101",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "112",
+    "title": "COLLEGE",
+    "wm_equiv": "COMPOSITION II ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "125",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO LITERATURE ENGL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "137",
+    "title": "COMMUNICATION",
+    "wm_equiv": "PROCESSES I WRIT 101",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "200",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO LINGUISTICS ENGL 220",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "210",
+    "title": "ADVANCED",
+    "wm_equiv": "COMPOSITION WRIT ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "211",
+    "title": "CREATIVE",
+    "wm_equiv": "WRITING I TAKEN WITH CRWR 212 (3 CR.) ARTS ENG 212 CREATIVE WRITING II",
+    "coll": "",
+    "notes": "TAKEN WITH CRWR 212 (3 CR.) ARTS ENG 212 CREATIVE WRITING II"
+  },
+  {
+    "dept": "ENG",
+    "number": "215",
+    "title": "CREATIVE",
+    "wm_equiv": "WRITING FICTION I TAKEN WITH CRWR 368 (3 CR.) ENG 216 CREATIVE WRITING FICTION II",
+    "coll": "",
+    "notes": "TAKEN WITH CRWR 368 (3 CR.) ENG 216 CREATIVE WRITING FICTION II"
+  },
+  {
+    "dept": "ENG",
+    "number": "217",
+    "title": "CREATIVE",
+    "wm_equiv": "WRITING POETRY I TAKEN WITH CRWR 369 (3 CR.) ENG 218 CREATIVE WRITING POETRY II",
+    "coll": "",
+    "notes": "TAKEN WITH CRWR 369 (3 CR.) ENG 218 CREATIVE WRITING POETRY II"
+  },
+  {
+    "dept": "ENG",
+    "number": "219",
+    "title": "CREATIVE",
+    "wm_equiv": "WRITING DRAMA NS THEA",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "ENG",
+    "number": "225",
+    "title": "READING",
+    "wm_equiv": "LITERATURE: CULTURE & IDEAS ENGL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "230",
+    "title": "MYSTERING",
+    "wm_equiv": "IN LITERATURE AND FILM ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "233",
+    "title": "THE",
+    "wm_equiv": "BIBLE AS LITERATURE ENGL 310",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "236",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO SHORT STORY ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "237",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO POETRY ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "241",
+    "title": "SURVEY",
+    "wm_equiv": "OF AMERICAN LITERATURE I ENGL 207",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "242",
+    "title": "SURVEY",
+    "wm_equiv": "OF AMERICAN LITERATURE II ENGL 363",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "243",
+    "title": "SURVEY",
+    "wm_equiv": "OF ENGLISH LITERATURE I ENGL 203",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "244",
+    "title": "SURVEY",
+    "wm_equiv": "OF ENGLISH LITERATURE II ENGL 204",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "245",
+    "title": "BRITISH",
+    "wm_equiv": "LITERATURE ENGL 2XX",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "246",
+    "title": "AMERICAN",
+    "wm_equiv": "LITERATURE ENGL 207",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "247",
+    "title": "SURVEY",
+    "wm_equiv": "OF POPULAR CULTURE NS AMST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "ENG",
+    "number": "249",
+    "title": "SURVEY",
+    "wm_equiv": "OF ASIAN AMERICAN LITERATURE AMES 290",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "250",
+    "title": "CHILDREN’S",
+    "wm_equiv": "LITERATURE EDUC 421",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "251",
+    "title": "SURVEY",
+    "wm_equiv": "OF WORLD LITERATURE I ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "252",
+    "title": "SURVEY",
+    "wm_equiv": "OF WORLD LITERATURE II ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "253",
+    "title": "SURVEY",
+    "wm_equiv": "OF AFRICAN AMERICAN LITERATURE I ENGL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "254",
+    "title": "SURVEY",
+    "wm_equiv": "OF AFRICAN AMERICAN LITERATURE II ENGL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "255",
+    "title": "WORLD",
+    "wm_equiv": "LITERATURE ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "257",
+    "title": "MYTHOLOGICAL",
+    "wm_equiv": "LITERATURE CLCV ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "258",
+    "title": "AFRICAN",
+    "wm_equiv": "AMERICAN LITERATURE ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "262",
+    "title": "ADVANCED",
+    "wm_equiv": "CREATIVE WRITING II ENGL 368",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "267",
+    "title": "THE",
+    "wm_equiv": "MODERN NOVEL ENGL 355 9 ENG 268 THE MODERN DRAMA ENGL 358",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "271",
+    "title": "THE",
+    "wm_equiv": "WORKS OF SHAKESPEARE I ENGL 205",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "272",
+    "title": "THE",
+    "wm_equiv": "WORKS OF SHAKESPEARE II ENGL 205",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "273",
+    "title": "WOMEN",
+    "wm_equiv": "IN LITERATURE I ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "274",
+    "title": "WOMEN",
+    "wm_equiv": "IN LITERATURE II ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "275",
+    "title": "WOMEN’S",
+    "wm_equiv": "LITERATURE ENGL 210",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "276",
+    "title": "SOUTHERN",
+    "wm_equiv": "LITERATURE ENGL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "278",
+    "title": "APPALACHIAN",
+    "wm_equiv": "LITERATURE ENGL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "279",
+    "title": "FILM",
+    "wm_equiv": "AND LITERATURE ENGL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENG",
+    "number": "288",
+    "title": "APPALACHIAN",
+    "wm_equiv": "FOLKLORE NS AMST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "ENV",
+    "number": "121",
+    "title": "GENERAL",
+    "wm_equiv": "ENVIRONMENTAL SCIENCE I TAKEN WITH ENSP 101 (3 CR.) ENV 122 GENERAL ENVIRONMENTAL SCIENCE II",
+    "coll": "",
+    "notes": "TAKEN WITH ENSP 101 (3 CR.) ENV 122 GENERAL ENVIRONMENTAL SCIENCE II"
+  },
+  {
+    "dept": "ENV",
+    "number": "136",
+    "title": "SURVEY",
+    "wm_equiv": "OF ENVIRONMENTAL CONCERNS ENSP 101",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENV",
+    "number": "161",
+    "title": "INTRO",
+    "wm_equiv": "TO ENVIRONMENTAL COMPLIANCE NS ENSP",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "ENV",
+    "number": "162",
+    "title": "ENVIRONMENTAL",
+    "wm_equiv": "PRINCIPLES IN PUBLIC HEALTH NS ENSP",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "ENV",
+    "number": "220",
+    "title": "ENVIRONMENTAL",
+    "wm_equiv": "PROBLEMS ENSP 101",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ENV",
+    "number": "221",
+    "title": "NATIONAL",
+    "wm_equiv": "RESOURCE MANAGEMENT NS ENSP",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "ENV",
+    "number": "227",
+    "title": "ENVIRONMENTAL",
+    "wm_equiv": "LAW NS ENSP",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "FRE",
+    "number": "101",
+    "title": "BEGINNING",
+    "wm_equiv": "FRENCH I FREN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "FRE",
+    "number": "102",
+    "title": "BEGINNING",
+    "wm_equiv": "FRENCH II FREN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "FRE",
+    "number": "201",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "FRENCH I FREN 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "FRE",
+    "number": "202",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "FRENCH II FREN 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "FRE",
+    "number": "203",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "FRENCH I FREN 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "FRE",
+    "number": "204",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "FRENCH II FREN 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "FRE",
+    "number": "211",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "FRENCH CONVERSATION I FREN 206",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "FRE",
+    "number": "212",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "FRENCH CONVERSATION II FREN 206",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GIS",
+    "number": "200",
+    "title": "GEOGRAPHICAL",
+    "wm_equiv": "INFORMATION SYSTEMS I NS GEOL",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "GIS",
+    "number": "201",
+    "title": "GEOGRAPHICAL",
+    "wm_equiv": "INFORMATION SYSTEMS II NS GEOL",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "GIS",
+    "number": "205",
+    "title": "GIS 3-DIMENSIONAL",
+    "wm_equiv": "ANALYSIS NS GEOL",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "GIS",
+    "number": "210",
+    "title": "UNDERSTANDING",
+    "wm_equiv": "GEOGRAPHIC DATA NS GEOL",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "GIS",
+    "number": "255",
+    "title": "EXPLORING",
+    "wm_equiv": "OUR EARTH GEOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GEO",
+    "number": "200",
+    "title": "INTRO",
+    "wm_equiv": "TO PHYSICAL GEOGRAPHY GEOL 110",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "GEO",
+    "number": "210",
+    "title": "PEOPLE",
+    "wm_equiv": "AND THE LAND HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GEO",
+    "number": "220",
+    "title": "WORLD",
+    "wm_equiv": "REGIONAL GEOGRAPHY HIST ELT 10 GEO 221 REGIONS OF THE WORLD I GOVT 382",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GEO",
+    "number": "222",
+    "title": "REGIONS",
+    "wm_equiv": "OF THE WORLD II HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GEO",
+    "number": "230",
+    "title": "POLITICAL",
+    "wm_equiv": "GEOGRAPHY HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GOL",
+    "number": "105",
+    "title": "PHYSICAL",
+    "wm_equiv": "GEOLOGY GEOL 101/160",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "GOL",
+    "number": "106",
+    "title": "HISTORICAL",
+    "wm_equiv": "GEOLOGY GEOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GOL",
+    "number": "110",
+    "title": "EARTH",
+    "wm_equiv": "SYSTEMS: AN ENVIRONMENTAL GEOL PERSP GEOL 110/160",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "GOL",
+    "number": "111",
+    "title": "OCEANOGRAPHY I",
+    "wm_equiv": "TAKEN WITH",
+    "coll": "",
+    "notes": "TAKEN WITH "
+  },
+  {
+    "dept": "GOL",
+    "number": "112",
+    "title": "OCEANOGRAPHY",
+    "wm_equiv": "II MSCI 330",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "GOL",
+    "number": "135",
+    "title": "FIELD",
+    "wm_equiv": "STUDIES IN GEOLOGY GEOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GOL",
+    "number": "206",
+    "title": "PALEONTOLOGY",
+    "wm_equiv": "GEOL 325",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GOL",
+    "number": "207",
+    "title": "MINERALOGY",
+    "wm_equiv": "GEOL 321",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GOL",
+    "number": "225",
+    "title": "ENVIRONMENTAL",
+    "wm_equiv": "GEOLOGY GEOL 305",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "GER",
+    "number": "101",
+    "title": "BEGINNING",
+    "wm_equiv": "GERMAN I GRMN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GER",
+    "number": "102",
+    "title": "BEGINNING",
+    "wm_equiv": "GERMAN II GRMN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GER",
+    "number": "201",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "GERMAN I GRMN 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "GER",
+    "number": "202",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "GERMAN II GRMN 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "GER",
+    "number": "293",
+    "title": "STUDIES",
+    "wm_equiv": "IN NS GRMN",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "GER",
+    "number": "295",
+    "title": "TOPICS",
+    "wm_equiv": "IN NS GRMN",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "GRE",
+    "number": "101",
+    "title": "INTRO",
+    "wm_equiv": "TO ANCIENT GREEK I GREK 1XX",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "GRE",
+    "number": "102",
+    "title": "INTRO",
+    "wm_equiv": "TO ANCIENT GREEK II GREK 1XX",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "GRE",
+    "number": "201",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "GREEK I GREK 2XX",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "GRE",
+    "number": "202",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "GREEK II GREK 2XX",
+    "coll": "ALV, FLP",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "110",
+    "title": "CONCEPTS",
+    "wm_equiv": "PERSONAL & COMMUNITY HEALTH HHP 130",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "115",
+    "title": "INTRO",
+    "wm_equiv": "TO PERSONAL & COMMUNITY HEALTH HHP ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "116",
+    "title": "INTRO",
+    "wm_equiv": "TO PERSONAL WELLNESS CONCEPTS HHP ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "122",
+    "title": "INTRO",
+    "wm_equiv": "TO ALCOHOL ABUSE & CONTROL HHP ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "138",
+    "title": "PRINCIPLES",
+    "wm_equiv": "OF NUTRITION HHP 130",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "143",
+    "title": "MEDICAL",
+    "wm_equiv": "TERMINOLOGY I* TAKEN WITH",
+    "coll": "",
+    "notes": "TAKEN WITH "
+  },
+  {
+    "dept": "HLT",
+    "number": "144",
+    "title": "MEDICAL",
+    "wm_equiv": "TERMINOLOGY II* *if only one is taken, it will transfer as KINE ELT HHP 314",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "200",
+    "title": "HUMAN",
+    "wm_equiv": "SEXUALITY PSYC 362",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "204",
+    "title": "WOMEN’S",
+    "wm_equiv": "HEALTH GSWS 390",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "205",
+    "title": "SEX",
+    "wm_equiv": "ROLES IN CONTEMPORARY AMERICA SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "206",
+    "title": "EXERCISE",
+    "wm_equiv": "SCIENCE HHP ELT",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "HLT",
+    "number": "215",
+    "title": "PERSONAL",
+    "wm_equiv": "STRESS & STRESS MANAGEMENT HHP ELT 11",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIM",
+    "number": "111",
+    "title": "MEDICAL",
+    "wm_equiv": "TERMINOLOGY I HHP 410",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIM",
+    "number": "112",
+    "title": "MEDICAL",
+    "wm_equiv": "TERMINOLOGY II HHP 410",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIM",
+    "number": "113",
+    "title": "MEDICAL",
+    "wm_equiv": "TERMINOLOGY AND DISEASE PROCESSES I HHP 410",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIM",
+    "number": "114",
+    "title": "MEDICAL",
+    "wm_equiv": "TERMINOLOGY AND DISEASE PROCESSES II HHP 410",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "101",
+    "title": "WESTERN",
+    "wm_equiv": "CIVILIZATIONS PRE-1600 CE HIST 111",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "102",
+    "title": "WESTERN",
+    "wm_equiv": "CIVILIZATION POST-1600 CE HIST 112",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "111",
+    "title": "WORLD",
+    "wm_equiv": "CIVILIZATIONS PRE-1500 CE HIST 191",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "112",
+    "title": "WORLD",
+    "wm_equiv": "CIVILIZATIONS POST-1500 CE HIST 192",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "121",
+    "title": "UNITED",
+    "wm_equiv": "STATES HISTORY TO 1877 HIST 121",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "122",
+    "title": "UNITED",
+    "wm_equiv": "STATES HISTORY SINCE 1865 HIST 122",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "125",
+    "title": "HISTORY",
+    "wm_equiv": "OF AMERICAN INDIAN HIST 238",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "126",
+    "title": "WOMEN",
+    "wm_equiv": "IN WORLD HISTORY HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "127",
+    "title": "WOMEN",
+    "wm_equiv": "IN AMERICAN HISTORY HIST 222",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "135",
+    "title": "HISTORY",
+    "wm_equiv": "OF THE CONTEMPORARY WORLD HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "141",
+    "title": "AFRICAN",
+    "wm_equiv": "AMERICAN HISTORY I HIST 235",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "142",
+    "title": "AFRICAN",
+    "wm_equiv": "AMERICAN HISTORY II HIST 236",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "155",
+    "title": "LIFE",
+    "wm_equiv": "IN COLONIAL VIRGINIA HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "165",
+    "title": "GENEOLOGY",
+    "wm_equiv": "NS HIST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "HIS",
+    "number": "180",
+    "title": "HISTORICAL",
+    "wm_equiv": "ARCHAEOLOGY ANTH 350",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "183",
+    "title": "SURVEY",
+    "wm_equiv": "OF MUSEUM PRACTICE ANTH 350",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "187",
+    "title": "INTERPRETING",
+    "wm_equiv": "MATERIAL CULTURE NS AMST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "HIS",
+    "number": "188",
+    "title": "FIELD",
+    "wm_equiv": "SURVEY TECHNIQUES FOR ARCHAEOLOGY ANTH 225",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "193",
+    "title": "STUDIES",
+    "wm_equiv": "IN HISTORY NS HIST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "HIS",
+    "number": "195",
+    "title": "TOPICS",
+    "wm_equiv": "IN HISTORY NS HIST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "HIS",
+    "number": "203",
+    "title": "HISTORY",
+    "wm_equiv": "OF AFRICAN CIVILIZATIONS I HIST 181",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "204",
+    "title": "HISTORY",
+    "wm_equiv": "OF AFRICAN CIVILIZATIONS II HIST 182",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "211",
+    "title": "HISTORY",
+    "wm_equiv": "OF ENGLAND I HIST 369",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "212",
+    "title": "HISTORY",
+    "wm_equiv": "OF ENGLAND II HIST 370",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "214",
+    "title": "HISTORY",
+    "wm_equiv": "OF SCOTLAND HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "218",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO DIGITAL HISTORY NS HIST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "HIS",
+    "number": "225",
+    "title": "TOPICS",
+    "wm_equiv": "IN EUROPEAN HISTORY I HIST 211",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "226",
+    "title": "TOPICS",
+    "wm_equiv": "IN EUROPEAN HISTORY II HIST 211",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "231",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO LATIN AMERICAN HISTORY HIST 131",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "232",
+    "title": "HISTORY",
+    "wm_equiv": "OF LATIN AMERICAN CIVILIZATION II HIST 132",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "241",
+    "title": "HISTORY",
+    "wm_equiv": "OF RUSSIA HIST 377",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "242",
+    "title": "HISTORY",
+    "wm_equiv": "OF RUSSIA II HIST 378",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "243",
+    "title": "HISTORY",
+    "wm_equiv": "OF THE ANCIENT WORLD I HIST 365",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "244",
+    "title": "HISTORY",
+    "wm_equiv": "OF THE ANCIENT WORLD II HIST 366 12 HIS 251 HISTORY OF MIDDLE EAST CIVILIZATION I HIST 171",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "252",
+    "title": "HISTORY",
+    "wm_equiv": "OF MIDDLE EAST CIVILIZATION II HIST 172",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "253",
+    "title": "HISTORY",
+    "wm_equiv": "OF ASIAN CIVILIZATION I HIST 141",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "254",
+    "title": "HISTORY",
+    "wm_equiv": "OF MODERN EAST ASIAN CIVILIZATIONS HIST 142",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "255",
+    "title": "HISTORY",
+    "wm_equiv": "CHINESE CULTURE & INSTITUTIONS HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "256",
+    "title": "HISTORY",
+    "wm_equiv": "JAPANESE CULTURE & INSTITUTIONS HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "261",
+    "title": "TOPICS",
+    "wm_equiv": "IN CULTURAL ETHNICITY NS HIST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "HIS",
+    "number": "262",
+    "title": "UNITED",
+    "wm_equiv": "STATES HISTORY IN FILM HIST 212",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "266",
+    "title": "MILITARY",
+    "wm_equiv": "HISTORY OF THE CIVIL WAR HIST 211",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "267",
+    "title": "THE",
+    "wm_equiv": "SECOND WORLD WAR HIST 211",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "268",
+    "title": "THE",
+    "wm_equiv": "AMERICAN CONSTITUTION HIST 211",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "269",
+    "title": "CIVIL",
+    "wm_equiv": "WAR AND RECONSTRUCTION HIST 347",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "270",
+    "title": "AMERICA",
+    "wm_equiv": "IN THE GILDED AGE HIST 351",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "271",
+    "title": "THE",
+    "wm_equiv": "AMERICAN FRONTIER: 1607-1890 HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "276",
+    "title": "US",
+    "wm_equiv": "HISTORY SINCE WORLD WAR II HIST 211",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "277",
+    "title": "THE",
+    "wm_equiv": "AMERICAN EXPERIENCE IN VIETNAM HIST 354",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIST",
+    "number": "279",
+    "title": "AGE",
+    "wm_equiv": "OF THE AMERICAN REVOLUTION HIST 345",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "280",
+    "title": "AMERICAN",
+    "wm_equiv": "FOREIGN POLICY SINCE 1890 HIST 353",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "281",
+    "title": "HISTORY",
+    "wm_equiv": "OF VIRIGNIA I HIST 400",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "282",
+    "title": "HISTORY",
+    "wm_equiv": "OF VIRGINIA II HIST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HIS",
+    "number": "293",
+    "title": "STUDIES",
+    "wm_equiv": "IN HISTORY NS HIST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "HIS",
+    "number": "295",
+    "title": "TOPICS",
+    "wm_equiv": "IN HISTORY NS HIST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "HMS",
+    "number": "210",
+    "title": "MARRIAGE",
+    "wm_equiv": "AND FAMILY RELATIONSHIPS SOCL 332",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HMS",
+    "number": "231",
+    "title": "GERONTOLOGY I",
+    "wm_equiv": "TAKEN WITH SOCL ELT (3 CR.) HMS 232 GERONOTOLOGY II",
+    "coll": "",
+    "notes": "TAKEN WITH SOCL ELT (3 CR.) HMS 232 GERONOTOLOGY II"
+  },
+  {
+    "dept": "HMS",
+    "number": "236",
+    "title": "GERONTOLOGY",
+    "wm_equiv": "SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HSM",
+    "number": "255",
+    "title": "ADOLESCENT",
+    "wm_equiv": "ALCOHOL USE AND ABUSE SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HUM",
+    "number": "201",
+    "title": "EARLY",
+    "wm_equiv": "HUMANITIES HIST 111",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HUM",
+    "number": "202",
+    "title": "MODERN",
+    "wm_equiv": "HUMANITIES HIST 112",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "HUM",
+    "number": "220",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO AFRICAN AMERICAN STUDIES AFST 351",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "HUM",
+    "number": "259",
+    "title": "THE",
+    "wm_equiv": "GREEK AND ROMAN TRADITION CLCV 205",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "110",
+    "title": "WEB",
+    "wm_equiv": "PAGE DESIGN I CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "111",
+    "title": "WEB",
+    "wm_equiv": "DESIGN FOR PERSONAL USE CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "112",
+    "title": "DESIGNING",
+    "wm_equiv": "WEB PAGE GRAPHICS CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "115",
+    "title": "WEB",
+    "wm_equiv": "PAGE DESIGN & SITE MANAGEMENT CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "120",
+    "title": "DESIGN",
+    "wm_equiv": "CONCEPTS FOR MOBILE APPLICATIONS CSCI ELT (1 CR.) 13 ITD 130 DATABASE FUNDAMENTALS CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "132",
+    "title": "STRUCTURED",
+    "wm_equiv": "QUERY LANGUAGE CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "134",
+    "title": "PL/SQL",
+    "wm_equiv": "PROGRAMMING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "136",
+    "title": "DATABASE",
+    "wm_equiv": "MANAGEMENT SOFTWARD CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "150",
+    "title": "ORACLE",
+    "wm_equiv": "REPORTS CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "152",
+    "title": "ORACLE",
+    "wm_equiv": "FORMS DEVELOPER CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "210",
+    "title": "WEB",
+    "wm_equiv": "PAGE DESIGN II CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "212",
+    "title": "INTERACTIVE",
+    "wm_equiv": "WEB DESIGN CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "220",
+    "title": "E-COMMERCE",
+    "wm_equiv": "ADMINISTRATION CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "250",
+    "title": "DATABASE",
+    "wm_equiv": "ARCHITECTURE & ADMINISTRATION CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "251",
+    "title": "DATABASE",
+    "wm_equiv": "SYSTEM DEVELOPMENT CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "252",
+    "title": "DATABASE",
+    "wm_equiv": "BACKUP AND RECOVERY CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "256",
+    "title": "ADVANCED",
+    "wm_equiv": "DATABASE MANAGEMENT CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "258",
+    "title": "DATABASE",
+    "wm_equiv": "PERFORMANCE AND TUNING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITD",
+    "number": "260",
+    "title": "DATA",
+    "wm_equiv": "MODELING AND DESIGN CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITE",
+    "number": "115",
+    "title": "INTRO",
+    "wm_equiv": "TO DIGITAL & INFO LITERACY & COMP APPL CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITE",
+    "number": "120",
+    "title": "PRINCIPLES",
+    "wm_equiv": "OF INFORMATION SYSTEMS CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITE",
+    "number": "150",
+    "title": "DESKTOP",
+    "wm_equiv": "DATABASE SOFTWARE CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITE",
+    "number": "215",
+    "title": "ADV.",
+    "wm_equiv": "COMPUTER APPLICATIONS AND INTEGRATION CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITE",
+    "number": "221",
+    "title": "PC",
+    "wm_equiv": "HARDWARE AND OS ARCHITECTURE CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "100",
+    "title": "SOFTWARE",
+    "wm_equiv": "DESIGN CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "110",
+    "title": "VISUAL",
+    "wm_equiv": "BASIC PROGRAMMING I CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "112",
+    "title": "VISUAL",
+    "wm_equiv": "BASIC.NET I CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "120",
+    "title": "JAVA",
+    "wm_equiv": "PROGRAMMING I CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "130",
+    "title": "C",
+    "wm_equiv": "PROGRAMMING I CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "132",
+    "title": "C++",
+    "wm_equiv": "PROGRAMMING I CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "134",
+    "title": "VISUAL C++",
+    "wm_equiv": "PROGRAMMING I CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "136",
+    "title": "C#",
+    "wm_equiv": "PROGRAMMING I CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "137",
+    "title": "PROGRAMMING",
+    "wm_equiv": "IOS DEVICES CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "140",
+    "title": "CLIENT",
+    "wm_equiv": "SIDE SCRIPTING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "150",
+    "title": "PYTHON",
+    "wm_equiv": "PROGRAMMING CSCI 141",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "154",
+    "title": "BASIC",
+    "wm_equiv": "PROGRAMMING I CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "158",
+    "title": "MICRO",
+    "wm_equiv": "ASSEMBLER I CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "160",
+    "title": "INTRO",
+    "wm_equiv": "TO GAME DESIGN AND DEVELOPMENT CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "165",
+    "title": "GAMING",
+    "wm_equiv": "AND SIMULATION CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "175",
+    "title": "CONCEPTS",
+    "wm_equiv": "OF PROGRAMMING LANGUAGES CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "200",
+    "title": "DATA",
+    "wm_equiv": "STRUCTURE AND ALGORITHMS CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "210",
+    "title": "VISUAL",
+    "wm_equiv": "BASIC PROGRAMMING II CSCI ELT (1 CR.) 14 ITP 214 WINDOWS MOVILE DEVELOPMENT CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "215",
+    "title": "XML",
+    "wm_equiv": "WEB SERVICES CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "220",
+    "title": "JAVA",
+    "wm_equiv": "PROGRAMMING II CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "224",
+    "title": "MOBILE",
+    "wm_equiv": "JAVA ME CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "225",
+    "title": "WEB",
+    "wm_equiv": "SCRIPTING LANGUAGES CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "226",
+    "title": "MOBILE",
+    "wm_equiv": "JAVA ANDROID DEVELOPMENT CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "232",
+    "title": "C++",
+    "wm_equiv": "PROGRAMMING II CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "234",
+    "title": "VISUAL C++",
+    "wm_equiv": "PROGRAMMING II CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "236",
+    "title": "C#",
+    "wm_equiv": "PROGRAMMING II CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "240",
+    "title": "SERVER",
+    "wm_equiv": "SIDE PROGRAMMING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "242",
+    "title": "ASP",
+    "wm_equiv": "SERVER SIDE SCRIPTING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "244",
+    "title": "ASP.NET",
+    "wm_equiv": "SERVER SIDE PROGRAMMING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "246",
+    "title": "JAVA",
+    "wm_equiv": "SERVER SIDE PROGRAMMING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "247",
+    "title": "NATIVE",
+    "wm_equiv": "MOBILE PROGRAMMING CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "251",
+    "title": "SYSTEMS",
+    "wm_equiv": "ANALYSIS AND DESIGN CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "258",
+    "title": "SYSTEMS",
+    "wm_equiv": "DEVELOPMENT PROJECT CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "260",
+    "title": "CONCEPTS",
+    "wm_equiv": "OF SIMULATION CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITP",
+    "number": "265",
+    "title": "APPLICATIONS",
+    "wm_equiv": "OF MODELING AND SIMULATION CSCI ELT (1 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITA",
+    "number": "101",
+    "title": "BEGINNING",
+    "wm_equiv": "ITALIAN ITAL 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITA",
+    "number": "102",
+    "title": "BEGINNING",
+    "wm_equiv": "ITALIAN ITAL 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITA",
+    "number": "201",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "ITALIAN ITAL 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "ITA",
+    "number": "202",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "ITALIAN ITAL 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "JPN",
+    "number": "101",
+    "title": "ELEMENTARY",
+    "wm_equiv": "JAPANESE JAPN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "JPN",
+    "number": "102",
+    "title": "ELEMENTARY",
+    "wm_equiv": "JAPANESE JAPN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "JPN",
+    "number": "201",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "JAPANESE JAPN 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "JPN",
+    "number": "202",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "JAPANESE JAPN 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "LAT",
+    "number": "101",
+    "title": "ELEMENTARY",
+    "wm_equiv": "LATIN I LATN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "LAT",
+    "number": "102",
+    "title": "ELEMENTARY",
+    "wm_equiv": "LATIN II LATN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "LAT",
+    "number": "201",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "LATIN I LATN 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "LAT",
+    "number": "202",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "LATIN II LATN 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "LGL",
+    "number": "235",
+    "title": "LEGAL",
+    "wm_equiv": "ASPECTS OF BUSINESS ORGANIZATIONS BUAD 342 (2 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "LBR",
+    "number": "105",
+    "title": "LIBRARY",
+    "wm_equiv": "SKILLS FOR RESEARCH INTR 322 15",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MAR",
+    "number": "101",
+    "title": "GENERAL",
+    "wm_equiv": "OCEANOGRAPHY I MSCI 330",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "MAR",
+    "number": "102",
+    "title": "GENERAL",
+    "wm_equiv": "OCEANOGRAPHY II MSCI ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MAR",
+    "number": "121",
+    "title": "BIOLOGICAL",
+    "wm_equiv": "OCEANOGRAPHY I MSCI ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MAR",
+    "number": "130",
+    "title": "MARINE",
+    "wm_equiv": "MAINTENANCE MECHANICS MSCI ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MAR",
+    "number": "201",
+    "title": "MARINE",
+    "wm_equiv": "ECOLOGY I MSCI ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MAR",
+    "number": "202",
+    "title": "MARINE",
+    "wm_equiv": "ECOLOGY II MSCI ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "115",
+    "title": "TECHNICAL",
+    "wm_equiv": "MATHEMATICS I TAKEN WITH MATH 103 (3 CR.) MTH 116 TECHNICAL MATHEMATICS II",
+    "coll": "",
+    "notes": "TAKEN WITH MATH 103 (3 CR.) MTH 116 TECHNICAL MATHEMATICS II"
+  },
+  {
+    "dept": "MTH",
+    "number": "128",
+    "title": "MATHEMATICAL",
+    "wm_equiv": "MODELING IN THE SCIENCES I MATH ELT",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "146",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO ELEMENTARY STATISTICS MATH ELT",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "154",
+    "title": "QUANTITATIVE",
+    "wm_equiv": "REASONING MATH ELT",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "155",
+    "title": "STATISTICAL",
+    "wm_equiv": "REASONING MATH 106",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "157",
+    "title": "ELEMENTARY",
+    "wm_equiv": "STATISTICS MATH 106",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "161",
+    "title": "PRECALCULUS I",
+    "wm_equiv": "TAKEN WITH",
+    "coll": "",
+    "notes": "TAKEN WITH "
+  },
+  {
+    "dept": "MATH",
+    "number": "103",
+    "title": "(3 CR.)",
+    "wm_equiv": "MTH 162 PRECALCULUS II",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "163",
+    "title": "PRECALCULUS I",
+    "wm_equiv": "TAKEN WITH MATH 103 (3 CR.) MTH 164 PRECALCULUS II",
+    "coll": "",
+    "notes": "TAKEN WITH MATH 103 (3 CR.) MTH 164 PRECALCULUS II"
+  },
+  {
+    "dept": "MTH",
+    "number": "166",
+    "title": "PRECALCULUS",
+    "wm_equiv": "WITH TRIGONOMETRY TAKEN WITH MATH 103 (3 CR.) MTH 167 PRECALCULUS WITH TRIGONOMETRY",
+    "coll": "",
+    "notes": "TAKEN WITH MATH 103 (3 CR.) MTH 167 PRECALCULUS WITH TRIGONOMETRY"
+  },
+  {
+    "dept": "MTH",
+    "number": "167",
+    "title": "PRECALCULUS",
+    "wm_equiv": "WITH TRIGONOMETRY MATH 103",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "168",
+    "title": "PRECALCULUS",
+    "wm_equiv": "II WITH INTRODUCTORY CALCULUS MATH 103 ( IF 163 OR 166 TAKEN ) (3 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "169",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO CRYPTOGRAPHY MATH ELT",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "170",
+    "title": "FOUNDATIONS",
+    "wm_equiv": "IN CONTEMPORARY MATHEMATICS MATH ELT",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "173",
+    "title": "CALCULUS",
+    "wm_equiv": "WITH ANALYTIC GEOMETRY I MATH 111",
+    "coll": "NQR, MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "174",
+    "title": "CALCULUS",
+    "wm_equiv": "WITH ANALYTIC GEOMETRY II MATH 112",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "175",
+    "title": "CALCULUS",
+    "wm_equiv": "OF ONE VARIABLE I MATH 111",
+    "coll": "NQR, MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "176",
+    "title": "CALCULUS",
+    "wm_equiv": "OF ONE VARIABLE II MATH 112",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "177",
+    "title": "INTRODUCTORY",
+    "wm_equiv": "LINEAR ALGEBRA MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "180",
+    "title": "FINITE",
+    "wm_equiv": "MATHEMATICS MATH ELT",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "181",
+    "title": "FINITE",
+    "wm_equiv": "MATHEMATICS I MATH ELT",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "182",
+    "title": "FINITE",
+    "wm_equiv": "MATHEMATICS II MATH ELT",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "200",
+    "title": "ABSTRACT",
+    "wm_equiv": "ALGEBRA MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "213",
+    "title": "ADV",
+    "wm_equiv": "ENGINEERING TECHNICAL MATH I TAKEN WITH MATH 111 (4 CR.) MATH MTH 214 ADV ENGINEERING TECHNICAL MATH II",
+    "coll": "",
+    "notes": "TAKEN WITH MATH 111 (4 CR.) MATH MTH 214 ADV ENGINEERING TECHNICAL MATH II"
+  },
+  {
+    "dept": "MTH",
+    "number": "240",
+    "title": "STATISTICS",
+    "wm_equiv": "BIOL ELT, ECON 307, HHP 300, MATH 106,",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOCL",
+    "number": "353",
+    "title": "MATH 16",
+    "wm_equiv": "MTH 241 STATISTICS I TAKEN WITH BIOL 327, ECON 307, HHP 300, MATH 106, PSYC 301, SOCL 353",
+    "coll": "MATH",
+    "notes": "TAKEN WITH BIOL 327, ECON 307, HHP 300, MATH 106, PSYC 301, SOCL 353"
+  },
+  {
+    "dept": "MTH",
+    "number": "242",
+    "title": "STATISTICS II",
+    "wm_equiv": "",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "243",
+    "title": "PROBABILITY",
+    "wm_equiv": "AND STATISTICS I MATH 351",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "244",
+    "title": "PROBABILITY",
+    "wm_equiv": "AND STATISTICS II MATH 352",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "245",
+    "title": "STATISTICS I",
+    "wm_equiv": "BIOL 327, ECON 307, HHP 300, MATH 106,",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOCL",
+    "number": "353",
+    "title": "MATH",
+    "wm_equiv": "",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "246",
+    "title": "STATISTICS",
+    "wm_equiv": "II MATH ELT",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "250",
+    "title": "COLLEGE",
+    "wm_equiv": "GEOMETRY MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "261",
+    "title": "APPLIED",
+    "wm_equiv": "CALCULUS I MATH ELT",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "262",
+    "title": "APPLIED",
+    "wm_equiv": "CALCULUS II MATH 108",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "263",
+    "title": "CALCULUS I",
+    "wm_equiv": "MATH 111",
+    "coll": "MATH, NQR",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "264",
+    "title": "CALCULUS",
+    "wm_equiv": "II MATH 112",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "265",
+    "title": "CALCULUS",
+    "wm_equiv": "III MATH 212",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "266",
+    "title": "LINEAR",
+    "wm_equiv": "ALGEBRA MATH 211",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "267",
+    "title": "DIFFERENTIAL",
+    "wm_equiv": "EQUATIONS MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "270",
+    "title": "APPLIED",
+    "wm_equiv": "CALCULUS MATH 108",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "271",
+    "title": "APPLIED",
+    "wm_equiv": "CALCULUS I MATH 111",
+    "coll": "NQR, MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "272",
+    "title": "APPLIED",
+    "wm_equiv": "CALCULUS II MATH 112",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "273",
+    "title": "CALCULUS I",
+    "wm_equiv": "MATH 111",
+    "coll": "NQR, MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "274",
+    "title": "CALCULUS",
+    "wm_equiv": "II MATH 112",
+    "coll": "MATH",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "275",
+    "title": "MULTIVARIABLE",
+    "wm_equiv": "CALCULUS AND LINEAR ALGEBRA MATH 212",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "277",
+    "title": "VECTOR",
+    "wm_equiv": "CALCULUS MATH 212",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "279",
+    "title": "ORDINARY",
+    "wm_equiv": "DIFFERENTIAL EQUATIONS MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "280",
+    "title": "COLLEGE",
+    "wm_equiv": "GEOMETRY MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "281",
+    "title": "INTRODUCTORY",
+    "wm_equiv": "ABSTRACT ALGEBRA MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "282",
+    "title": "INTRO",
+    "wm_equiv": "TO HIGHER MATHEMATICS MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "283",
+    "title": "PROBABILITY",
+    "wm_equiv": "AND STATISTICS MATH 351",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "285",
+    "title": "LINEAR",
+    "wm_equiv": "ALGEBRA MATH 211",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "286",
+    "title": "DISCRETE",
+    "wm_equiv": "MATHEMATICS MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "287",
+    "title": "MATHEMATICAL",
+    "wm_equiv": "STRUCTURES MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "288",
+    "title": "DISCRETE",
+    "wm_equiv": "MATHEMATICS MATH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "289",
+    "title": "DIFFERENTIAL",
+    "wm_equiv": "EQUATIONS EXTENDED MATH 302",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "291",
+    "title": "DIFFERENTIAL",
+    "wm_equiv": "EQUATIONS MTH ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "292",
+    "title": "TOPICS",
+    "wm_equiv": "IN DIFFERENTIAL EQUATIONS MATH 302",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MTH",
+    "number": "293",
+    "title": "STUDIES",
+    "wm_equiv": "IN NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "MTH",
+    "number": "295",
+    "title": "TOPICS",
+    "wm_equiv": "IN NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "MTH",
+    "number": "299",
+    "title": "SUPERVISED",
+    "wm_equiv": "STUDY NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "MSC",
+    "number": "101",
+    "title": "THE",
+    "wm_equiv": "FOUNDATIONS OF THE AIRFORCE MLSC 101",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MSC",
+    "number": "102",
+    "title": "THE",
+    "wm_equiv": "FOUNDATIONS OF THE AIRFORCE MLSC 102 17 MSC 111 MILITARY SCIENCE I MLSC 101",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MSC",
+    "number": "112",
+    "title": "MILITARY",
+    "wm_equiv": "SCIENCE II MLSC 102",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MSC",
+    "number": "201",
+    "title": "THE",
+    "wm_equiv": "EVOLUTION OF AIR & SPACE POWER MLSC 201",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MSC",
+    "number": "202",
+    "title": "THE",
+    "wm_equiv": "EVOLUTION OF AIR & SPACE POWER MLSC 202",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MSC",
+    "number": "211",
+    "title": "MILITARY",
+    "wm_equiv": "SCIENCE III MLSC 201",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MSC",
+    "number": "212",
+    "title": "MILITARY",
+    "wm_equiv": "SCIENCE IV MLSC 202",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "101",
+    "title": "FUNDAMENTALS",
+    "wm_equiv": "OF MUSIC MUSC 101 (2CR.)",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "111",
+    "title": "MUSIC",
+    "wm_equiv": "THEORY I MUSC 201",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "112",
+    "title": "MUSIC",
+    "wm_equiv": "THEORY II MUSC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "121",
+    "title": "MUSIC",
+    "wm_equiv": "IN SOCIETY TAKEN WITH MUSC 213 (3 CR.) ALV MUS 122 MUSIC APPRECIATION II",
+    "coll": "",
+    "notes": "TAKEN WITH MUSC 213 (3 CR.) ALV MUS 122 MUSIC APPRECIATION II"
+  },
+  {
+    "dept": "MUS",
+    "number": "125",
+    "title": "AMERICAN",
+    "wm_equiv": "MUSIC MUSC 373",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "129",
+    "title": "THEATRE/MUSICAL",
+    "wm_equiv": "WORKSHOP MUSC 350",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "131",
+    "title": "CLASS",
+    "wm_equiv": "VOICE I MUSC V01",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "132",
+    "title": "CLASS",
+    "wm_equiv": "VOICE II MUSC V02",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "136",
+    "title": "APPLIED",
+    "wm_equiv": "MUSIC – VOICE MUSC V10",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "137",
+    "title": "CHORUS",
+    "wm_equiv": "ENSEMBLE MUSC E05",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "138",
+    "title": "SMALL",
+    "wm_equiv": "VOCAL ENSEMBLE MUSC E04",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "140",
+    "title": "INTRO",
+    "wm_equiv": "TO RECORDING TECHNIQUES MUSC 281",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "141",
+    "title": "CLASS",
+    "wm_equiv": "PIANO I MUSC K01",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "142",
+    "title": "CLASS",
+    "wm_equiv": "PIANO II MUSC K02",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "145",
+    "title": "APPLIED",
+    "wm_equiv": "MUSIC – KEYBOARD MUSC K10",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "148",
+    "title": "ORCHESTRA",
+    "wm_equiv": "ENSEMBLE MUSC E06",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "149",
+    "title": "BAND",
+    "wm_equiv": "ENSEMBLE MUSC E03",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "150",
+    "title": "OLD",
+    "wm_equiv": "TIME STRING BAND MUSC E24",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "151",
+    "title": "MUSIC",
+    "wm_equiv": "TECHNOLOGY MUSC 261",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "155",
+    "title": "APPLIED",
+    "wm_equiv": "MUSIC – WOODWINDS NS MUSC",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "MUS",
+    "number": "157",
+    "title": "SOUND",
+    "wm_equiv": "STUDIO DESIGN MUSC 281",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "158",
+    "title": "RECORDING",
+    "wm_equiv": "STUDIO ELECTRONICS MUSC 281",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "159",
+    "title": "IMPROVISATIONAL",
+    "wm_equiv": "TECHNIQUES MUSC E09 (1 CR.)",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "161",
+    "title": "CLASS",
+    "wm_equiv": "STRINGS MUSC S10",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "163",
+    "title": "GUITAR",
+    "wm_equiv": "THEORY & PRACTICE I MUSC G10",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "164",
+    "title": "GUITAR",
+    "wm_equiv": "THEORY & PRACTICE II MUSC G20",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "165",
+    "title": "APPLIED",
+    "wm_equiv": "MUSIC - STRINGS NS MUSC",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "MUS",
+    "number": "175",
+    "title": "APPLIED",
+    "wm_equiv": "MUSIC – BRASS NS MUSC",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "MUS",
+    "number": "185",
+    "title": "APPLIED",
+    "wm_equiv": "MUSIC – PERCUSSION MUSC P10",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "211",
+    "title": "ADVANCED",
+    "wm_equiv": "MUSIC THEORY I MUSC 202 (3 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "212",
+    "title": "ADVANCED",
+    "wm_equiv": "MUSIC THEORY II MUSC 301 (3 CR.)",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "213",
+    "title": "COMPOSITION I",
+    "wm_equiv": "TAKEN WITH MUSC 207 (3 CR.) ARTS MUS 214 COMPOSITION II 18 MUS 221 HISTORY OF WESTERN MUSIC PRIOR TO 1750 TAKEN WITH MUSC 213 (3 CR.)",
+    "coll": "ALV",
+    "notes": "TAKEN WITH MUSC 207 (3 CR.) ARTS MUS 214 COMPOSITION II 18 MUS 221 HISTORY OF WESTERN MUSIC PRIOR TO 1750 TAKEN WITH MUSC 213 (3 CR.)"
+  },
+  {
+    "dept": "MUS",
+    "number": "222",
+    "title": "HISTORY",
+    "wm_equiv": "OF WESTERN MUSIC 1750 TO PRESENT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "225",
+    "title": "THE",
+    "wm_equiv": "HISTORY OF JAZZ MUSC 273",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "226",
+    "title": "WORLD",
+    "wm_equiv": "MUSIC MUSC 241",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "227",
+    "title": "EDITING",
+    "wm_equiv": "AND MIXDOWN TECHNIQUES MUSC 281",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "231",
+    "title": "ADVANCED",
+    "wm_equiv": "CLASS VOICE I MUSC V02",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "232",
+    "title": "ADVANCED",
+    "wm_equiv": "CLASS VOICE II MUSC V02",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "235",
+    "title": "ADVANCED",
+    "wm_equiv": "RECORDING TECHNIQUES MUSC 281",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "236",
+    "title": "ADVANCED",
+    "wm_equiv": "APPLIED MUSIC – VOICE MUSC V30",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "237",
+    "title": "CHORUS",
+    "wm_equiv": "ENSEMBLE MUSC E05",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "238",
+    "title": "SMALL",
+    "wm_equiv": "VOCAL ENSEMBLE MUSC E07",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "241",
+    "title": "ADVANCED",
+    "wm_equiv": "CLASS PIANO I MUSC K02",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "242",
+    "title": "ADVANCED",
+    "wm_equiv": "CLASS PIANO II MUSC K02",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "245",
+    "title": "ADVANCED",
+    "wm_equiv": "APPLIED MUSIC – KEYBOARD MUSC K30",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "248",
+    "title": "ORCHESTRA",
+    "wm_equiv": "MUSC E06",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "249",
+    "title": "BAND",
+    "wm_equiv": "ENSEMBLE MUSC E03",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "255",
+    "title": "ADVANCED",
+    "wm_equiv": "APPLIED MUSIC – WOODWINDS NS MUSC",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "MUS",
+    "number": "259",
+    "title": "ADVANCED",
+    "wm_equiv": "IMPROVISATIONAL TECHNIQUES MUSC E09",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "MUS",
+    "number": "265",
+    "title": "ADVANCED",
+    "wm_equiv": "APPLIED MUSIC – STRINGS NS MUSC",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "MUS",
+    "number": "275",
+    "title": "ADVANCED",
+    "wm_equiv": "APPLIED MUSIC – BRASS NS MUSC",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "MUS",
+    "number": "285",
+    "title": "ADVANCED",
+    "wm_equiv": "APPLIED MUSIC – PERCUSSION MUSC P30",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "130",
+    "title": "ELEMENTS",
+    "wm_equiv": "OF ASTRONOMY PHYS 171/177",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "131",
+    "title": "ASTRONOMY I",
+    "wm_equiv": "PHYS 171/177",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "132",
+    "title": "ASTRONOMY",
+    "wm_equiv": "II PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "145",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO NATURAL HISTORY BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "150",
+    "title": "HUMAN",
+    "wm_equiv": "BIOLOGY BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "160",
+    "title": "FIELD",
+    "wm_equiv": "ORNITHOLOGY BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "161",
+    "title": "HEALTH",
+    "wm_equiv": "SCIENCE I BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "162",
+    "title": "HEALTH",
+    "wm_equiv": "SCIENCE II BIOL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "171",
+    "title": "HUMAN",
+    "wm_equiv": "ANATOMY & PHYSIOLOGY I HHP 210/210L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "172",
+    "title": "HUMAN",
+    "wm_equiv": "ANATOMY & PHYSIOLOGY II HHP 320/320L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "185",
+    "title": "MICROBIOLOGY",
+    "wm_equiv": "BIOL 306",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "NAS",
+    "number": "215",
+    "title": "MAN",
+    "wm_equiv": "IN HIS ENVIRONMENT NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "95",
+    "title": "TOPICS",
+    "wm_equiv": "IN NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "99",
+    "title": "SUPERVISED",
+    "wm_equiv": "STUDY NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "100",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO PHILOSOPHY PHIL 201",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PHI",
+    "number": "101",
+    "title": "INTROUDCTION",
+    "wm_equiv": "TO PHILOSOPHY I PHIL 201 ALV 19 PHI 102 INTRODUCTION TO PHILOSOPHY II PHIL 201",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PHI",
+    "number": "111",
+    "title": "LOGIC I",
+    "wm_equiv": "PHIL 210",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PHI",
+    "number": "112",
+    "title": "LOGIC",
+    "wm_equiv": "II PHIL 301",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHI",
+    "number": "115",
+    "title": "PRACTICAL",
+    "wm_equiv": "REASONING PHIL 210",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PHI",
+    "number": "195",
+    "title": "TOPICS",
+    "wm_equiv": "IN NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "198",
+    "title": "SEMINAR",
+    "wm_equiv": "AND PROJECT NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "199",
+    "title": "SUPERVISED",
+    "wm_equiv": "STUDY NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "211",
+    "title": "THE",
+    "wm_equiv": "HISTORY OF WESTERN PHILOSOPHY I PHIL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PHI",
+    "number": "212",
+    "title": "THE",
+    "wm_equiv": "HISTORY OF WESTERN PHILOSOPHY II PHIL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PHI",
+    "number": "220",
+    "title": "ETHICS",
+    "wm_equiv": "PHIL 215",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PHI",
+    "number": "225",
+    "title": "SELECTED",
+    "wm_equiv": "PROBLEMS NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "226",
+    "title": "SOCIAL",
+    "wm_equiv": "ETHICS NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "227",
+    "title": "BIO-MEDICAL",
+    "wm_equiv": "ETHICS PHIL 315",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PHI",
+    "number": "260",
+    "title": "STUDIES",
+    "wm_equiv": "IN EASTERN THINKING NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "265",
+    "title": "PHILOSOPHY",
+    "wm_equiv": "OF RELIGION PHIL 311",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PHI",
+    "number": "276",
+    "title": "WOMEN",
+    "wm_equiv": "AND WESTERN PHILOSOPHY NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "293",
+    "title": "STUDIES",
+    "wm_equiv": "IN NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "295",
+    "title": "TOPICS",
+    "wm_equiv": "IN NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "298",
+    "title": "SEMINAR",
+    "wm_equiv": "AND PROJECT NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHI",
+    "number": "299",
+    "title": "SUPERVISED",
+    "wm_equiv": "STUDY NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHT",
+    "number": "105",
+    "title": "BASIC",
+    "wm_equiv": "PHOTOGRAPHY ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PHT",
+    "number": "130",
+    "title": "VIDEO I",
+    "wm_equiv": "NS FMST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHT",
+    "number": "131",
+    "title": "VIDEO",
+    "wm_equiv": "II NS FMST",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PHT",
+    "number": "135",
+    "title": "ELECTRONIC",
+    "wm_equiv": "DARKROOM ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PHT",
+    "number": "164",
+    "title": "DIGITAL",
+    "wm_equiv": "PHOTOGRAPHY ART ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PED",
+    "number": "160",
+    "title": "MODERN",
+    "wm_equiv": "DANCE DANC 111",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "PED",
+    "number": "161",
+    "title": "DANCE",
+    "wm_equiv": "PRODUCTION I DANC 301",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PED",
+    "number": "163",
+    "title": "JAZZ I",
+    "wm_equiv": "DANC 264",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PED",
+    "number": "164",
+    "title": "JAZZ",
+    "wm_equiv": "II DANC 264",
+    "coll": "ARTS, ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PED",
+    "number": "166",
+    "title": "BALLET",
+    "wm_equiv": "DANC 261",
+    "coll": "ARTS",
+    "notes": ""
+  },
+  {
+    "dept": "PED",
+    "number": "167",
+    "title": "DANCE",
+    "wm_equiv": "IMPROVISATION DANC 301",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "PED",
+    "number": "220",
+    "title": "ADULT",
+    "wm_equiv": "HEALTH AND DEVELOPMENT HHP ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "100",
+    "title": "ELEMENTS",
+    "wm_equiv": "OF PHYSICS PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "101",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO PHYSICS I PHYS 107/107L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "102",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO PHYSICS II PHYS 108/108L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "121",
+    "title": "PRINCIPLES",
+    "wm_equiv": "OF PHYSICS I PHYS 107/107L NQR 20 PHY 122 PRINCIPLES OF PHYSICS II PHYS 108/108L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "130",
+    "title": "SURVEY",
+    "wm_equiv": "OF APPLIED PHYSICS PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "131",
+    "title": "APPLIED",
+    "wm_equiv": "PHYSICS I PHYS 107/107L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "132",
+    "title": "APPLIED",
+    "wm_equiv": "PHYSICS II PHYS 108/108L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "141",
+    "title": "ASTRONOMY I",
+    "wm_equiv": "PHYS 171/177",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "142",
+    "title": "ASTRONOMY",
+    "wm_equiv": "II PHYS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "201",
+    "title": "GENERAL",
+    "wm_equiv": "COLLEGE PHYSICS I PHYS 107/107L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "202",
+    "title": "GENERAL",
+    "wm_equiv": "COLLEGE PHYSICS II PHYS 108/108L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "231",
+    "title": "GENERAL",
+    "wm_equiv": "UNIVERSITY PHYSICS I PHYS 101P/101L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "232",
+    "title": "GENERAL",
+    "wm_equiv": "UNIVERSITY PHYSICS II PHYS 102P/102L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "241",
+    "title": "UNIVERSITY",
+    "wm_equiv": "PHYSICS I PHYS 101P/101L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "242",
+    "title": "UNIVERSITY",
+    "wm_equiv": "PHYSICS II PHYS 102P/102L",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PHY",
+    "number": "243",
+    "title": "MODERN",
+    "wm_equiv": "PHYSICS PHYS 201",
+    "coll": "NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PLS",
+    "number": "120",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO POLITICAL SCIENCE GOVT ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PLS",
+    "number": "130",
+    "title": "BASICS",
+    "wm_equiv": "OF AMERICAN POLITICS GOVT 201",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PLS",
+    "number": "135",
+    "title": "U.S.",
+    "wm_equiv": "GOVERNMENT AND POLITICS GOVT 201",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PLS",
+    "number": "136",
+    "title": "STATE",
+    "wm_equiv": "AND LOCAL GOVERNMENT AND POLITICS GOVT 353",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PLS",
+    "number": "140",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO COMPARATIVE POLITICS GOVT 203",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PLS",
+    "number": "211",
+    "title": "US",
+    "wm_equiv": "GOVERNMENT I GOVT 201",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PLS",
+    "number": "212",
+    "title": "US",
+    "wm_equiv": "GOVERNMENT II GOVT ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PLS",
+    "number": "241",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO INTERNATIONAL RELATIONS I GOVT 204",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PLS",
+    "number": "242",
+    "title": "INTERNATIONAL",
+    "wm_equiv": "RELATIONS II GOVT ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "POR",
+    "number": "103",
+    "title": "BASIC",
+    "wm_equiv": "SPOKEN PORTUGUESE I GBST 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "POR",
+    "number": "104",
+    "title": "BASIC",
+    "wm_equiv": "SPOKEN PORTUGUESE II GBST 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "100",
+    "title": "PRINCIPLES",
+    "wm_equiv": "OF APPLIED PSYCHOLOGY PSYC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "116",
+    "title": "PSYCHOLOGY",
+    "wm_equiv": "OF DEATH AND DYING PSYC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "120",
+    "title": "HUMAN",
+    "wm_equiv": "RELATIONS PSYC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "125",
+    "title": "INTERPERSONAL",
+    "wm_equiv": "RELATIONSHIPS PSYC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "126",
+    "title": "PSYCHOLOGY",
+    "wm_equiv": "FOR BUSINESS & INDUSTRY PSYC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "135",
+    "title": "CHILD",
+    "wm_equiv": "CARE PSYCHOLOGY PSYC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "166",
+    "title": "PSYCHOLOGY",
+    "wm_equiv": "OF MARRIAGE PSYC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "200",
+    "title": "PRINCIPLES",
+    "wm_equiv": "OF PSYCHOLOGY PSYC ELT",
+    "coll": "NQR, CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "205",
+    "title": "PERSONAL",
+    "wm_equiv": "CONFLICT AND CRISIS MGMT PSYC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "211",
+    "title": "RESEARCH",
+    "wm_equiv": "METHODOLOGY FOR BEHAVIORAL SCIENCES PSYC 302",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "213",
+    "title": "STATISTICS",
+    "wm_equiv": "FOR BEHAVIORAL SCIENCES NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PSY",
+    "number": "215",
+    "title": "ABNORMAL",
+    "wm_equiv": "PSYCHOLOGY PSYC 318 CSI 21 PSY 216 SOCIAL PSYCHOLOGY PSYC 314",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "219",
+    "title": "CROSS-CULTURAL",
+    "wm_equiv": "PSYCHOLOGY PSYC 352",
+    "coll": "CSI, NQR",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "220",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO BEHAVIOR MODIFICATION PSYC ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "225",
+    "title": "THEORIES",
+    "wm_equiv": "OF PERSONALITY PSYC 312",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "230",
+    "title": "DEVELOPMENTAL",
+    "wm_equiv": "PSYCHOLOGY PSYC 310",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "231",
+    "title": "LIFE",
+    "wm_equiv": "SPAN HUMAN DEVELOPMENT I NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PSY",
+    "number": "232",
+    "title": "LIFE",
+    "wm_equiv": "SPAN HUMAN DEVELOPMENT II NS",
+    "coll": "",
+    "notes": "Needs syllabus"
+  },
+  {
+    "dept": "PSY",
+    "number": "235",
+    "title": "CHILD",
+    "wm_equiv": "PSYCHOLOGY PSYC 310",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "236",
+    "title": "ADOLESCENT",
+    "wm_equiv": "PSYCHOLOGY PSYC 470",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "237",
+    "title": "ADULT",
+    "wm_equiv": "PSYCHOLOGY PSYC 360",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "240",
+    "title": "HEALTH",
+    "wm_equiv": "PSYCHOLOGY PSYC 356",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "245",
+    "title": "EDUCATIONAL",
+    "wm_equiv": "PSYCHOLOGY PSYC 470 OR EDUC 301",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "255",
+    "title": "PSYCHOLOGICAL",
+    "wm_equiv": "ASPECTS OF CRIMINAL BEHAVIOR PSYC 470",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "260",
+    "title": "PSYCHOPHARMACOLOGY &",
+    "wm_equiv": "SUBSTANCE ABUSE PSYC 445",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "265",
+    "title": "PSYCHOLOGY",
+    "wm_equiv": "OF MEN AND WOMEN PSYC 470",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PSY",
+    "number": "270",
+    "title": "PSYCHOLOGY",
+    "wm_equiv": "OF HUMAN SEXUALITY PSYC 362",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "PBS",
+    "number": "115",
+    "title": "URBAN",
+    "wm_equiv": "AND ENVIRONMENTAL PROBLEMS SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "100",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO THE STUDY OF RELIGION RELG ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "200",
+    "title": "SURVEY",
+    "wm_equiv": "OF THE OLD TESTAMENT RELG ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "210",
+    "title": "SURVEY",
+    "wm_equiv": "OF THE NEW TESTAMENT RELG ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "215",
+    "title": "NEW",
+    "wm_equiv": "TESTAMENT AND EARLY CHRISTIANITY RELG 204",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "216",
+    "title": "LIFE",
+    "wm_equiv": "AND TEACHINGS OF JESUS RELG 358",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "217",
+    "title": "LIFE",
+    "wm_equiv": "AND LETTERS OF PAUL RELG 357",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "225",
+    "title": "SELECTED",
+    "wm_equiv": "TOPICS RELG ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "230",
+    "title": "RELIGIONS",
+    "wm_equiv": "OF THE WORLD RELG 201",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "231",
+    "title": "RELIGIONS",
+    "wm_equiv": "OF THE WORLD I RELG ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "232",
+    "title": "RELIGIONS",
+    "wm_equiv": "OF THE WORLD II RELG ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "233",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO ISLAM RELG 212",
+    "coll": "ALV, CSI",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "235",
+    "title": "MAJOR",
+    "wm_equiv": "RELIGIOUS THINKERS RELG ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "237",
+    "title": "EASTERN",
+    "wm_equiv": "RELIGIONS RELG ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "238",
+    "title": "WESTERN",
+    "wm_equiv": "RELIGIONS RELG ELT",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "240",
+    "title": "RELIGIONS",
+    "wm_equiv": "IN THE U.S. RELG 222",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "246",
+    "title": "CHRISTIANITY",
+    "wm_equiv": "RELG ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "247",
+    "title": "HISTORY",
+    "wm_equiv": "OF CHRISTIANITY RELG 210",
+    "coll": "ALV, CSI",
+    "notes": ""
+  },
+  {
+    "dept": "REL",
+    "number": "255",
+    "title": "SELECTED",
+    "wm_equiv": "PROBLEMS AND ISSUES RELG ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "RUS",
+    "number": "101",
+    "title": "BEGINNING",
+    "wm_equiv": "RUSSIAN I RUSN 1XX 22 RUS 102 BEGINNING RUSSIAN II RUSN 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "RUS",
+    "number": "201",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "RUSSIAN I RUSN 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "RUS",
+    "number": "202",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "RUSSIAN II RUSN 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "SSC",
+    "number": "101",
+    "title": "CONTEMPORARY",
+    "wm_equiv": "SOCIAL PROBLEMS I SOCL 204",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SSC",
+    "number": "102",
+    "title": "CONTEMPORARY",
+    "wm_equiv": "SOCIAL PROBLEMS II SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SSC",
+    "number": "107",
+    "title": "PROBLEMS",
+    "wm_equiv": "OF PEOPLE IN MODERN WORLD SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SSC",
+    "number": "115",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO GLOBAL AFFAIRS GBST ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SSC",
+    "number": "210",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO WOMEN’S STUDIES GSWS ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "200",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO SOCIOLOGY SOCL 250",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "201",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO SOCIOLOGY I SOCL 203",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "202",
+    "title": "INTRODUCTION",
+    "wm_equiv": "TO SOCIOLOGY II SOCL 203",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "207",
+    "title": "MEDICAL",
+    "wm_equiv": "SOCIOLOGY SOCL 362",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "210",
+    "title": "SURV",
+    "wm_equiv": "PHYSICAL & CULTURAL ANTHROPOLOGY ANTH 350",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "211",
+    "title": "CULTURAL",
+    "wm_equiv": "ANTHROPOLOGY ANTH 202",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "212",
+    "title": "PRINCIPLES",
+    "wm_equiv": "OF ANTHROPOLOGY ANTH 350",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "215",
+    "title": "SOCIOLOGY",
+    "wm_equiv": "OF THE FAMILY SOCL 332",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "218",
+    "title": "FAMILY",
+    "wm_equiv": "VIOLENCE SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "225",
+    "title": "SOCIOLOGY",
+    "wm_equiv": "OF GENDER SOCL 304",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "226",
+    "title": "HUMAN",
+    "wm_equiv": "SEXUALITY SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "235",
+    "title": "JUVENILE",
+    "wm_equiv": "DELINQUENCY SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "236",
+    "title": "CRIMINOLOGY",
+    "wm_equiv": "SOCL 302",
+    "coll": "CSI, NQR",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "245",
+    "title": "SOCIOLOGY",
+    "wm_equiv": "OF AGING SOCL 405",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "246",
+    "title": "DEATH",
+    "wm_equiv": "AND SOCIETY SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "247",
+    "title": "DEATH",
+    "wm_equiv": "AND DYING SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "250",
+    "title": "SOCIOLOGY",
+    "wm_equiv": "OF SPORT SOCL 360",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "253",
+    "title": "SOCIOLOGY",
+    "wm_equiv": "OF RELIGION SOCL 363",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "266",
+    "title": "RACE",
+    "wm_equiv": "AND ETHNICITY SOCL ELT",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SOC",
+    "number": "268",
+    "title": "SOCIAL",
+    "wm_equiv": "PROBLEMS SOCL 204",
+    "coll": "CSI",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "101",
+    "title": "BEGINNING",
+    "wm_equiv": "SPANISH I HISP 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "102",
+    "title": "BEGINNING",
+    "wm_equiv": "SPANISH II HISP 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "103",
+    "title": "BASIC",
+    "wm_equiv": "SPOKEN SPANISH I TAKEN WITH HISP 1XX (4 CR.)",
+    "coll": "",
+    "notes": "TAKEN WITH HISP 1XX (4 CR.)"
+  },
+  {
+    "dept": "SPA",
+    "number": "104",
+    "title": "BASIC",
+    "wm_equiv": "SPOKEN SPANISH II",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "111",
+    "title": "CONVERSATION",
+    "wm_equiv": "IN SPANISH I HISP 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "112",
+    "title": "CONVERSATION",
+    "wm_equiv": "IN SPANISH II HISP 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "115",
+    "title": "INTENSIVE",
+    "wm_equiv": "BEGINNING SPANISH HISP 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "150",
+    "title": "SPANISH",
+    "wm_equiv": "FOR LAW ENFORCEMENT HISP 2XX 23 SPA 163 SPANISH FOR HEALTH PROFESSIONALS HISP 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "201",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "SPANISH I HISP 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "202",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "SPANISH II HISP 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "203",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "SPANISH I HISP 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "204",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "SPANISH II HISP 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "205",
+    "title": "SPANISH",
+    "wm_equiv": "FOR HERITAGE SPEAKERS I HISP 2XX",
+    "coll": "FLP",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "206",
+    "title": "SPANISH",
+    "wm_equiv": "FOR HERITAGE SPEAKERS II HISP 207",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "211",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "SPANISH CONVERSATION I HISP 206",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "212",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "SPANISH CONVERSATION II HISP 206",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "225",
+    "title": "LIT",
+    "wm_equiv": "OF SPANISH SPEAKING COMMUNITIES HISP 208",
+    "coll": "ALV, FLP",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "233",
+    "title": "INTRO",
+    "wm_equiv": "TO SPANISH CIVILIZATION & LITERATURE I HISP 207",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "234",
+    "title": "INTRO",
+    "wm_equiv": "TO SPANISH CIVILIZATION & LITERATURE II HISP 207",
+    "coll": "ALV",
+    "notes": ""
+  },
+  {
+    "dept": "SPA",
+    "number": "271",
+    "title": "INTRO",
+    "wm_equiv": "LATIN AMERICAN CIVILIZATION & LITERATURE HISP 303",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "VTN",
+    "number": "101",
+    "title": "BEGINNING",
+    "wm_equiv": "VIETNAMESE I GBST 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "VTN",
+    "number": "102",
+    "title": "BEGINNING",
+    "wm_equiv": "VIETNAMESE II GBST 1XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "VTN",
+    "number": "201",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "VIETNAMESE I GBST 2XX",
+    "coll": "",
+    "notes": ""
+  },
+  {
+    "dept": "VTN",
+    "number": "202",
+    "title": "INTERMEDIATE",
+    "wm_equiv": "VIETNAMESE II GBST 2XX",
+    "coll": "FLP",
+    "notes": ""
+  }
 ]
