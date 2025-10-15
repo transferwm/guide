@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Other U.S. Colleges → William & Mary</title>
   <meta name="description" content="Checklist for students transferring to William & Mary from U.S. institutions outside VCCS/RBC." />
+
+  <!-- Favicons / manifest -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,14 +28,7 @@
     <aside class="sidebar">
       <h2>Pages</h2>
       <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
-      <ul class="nav-list" id="navList">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="vccs.html">VCCS (GAA)</a></li>
-        <li><a href="rbc.html">Richard Bland College</a></li>
-        <li><a href="other.html" class="current">Other U.S.</a></li>
-        <li><a href="international.html">International</a></li>
-        <li><a href="appendix.html">Appendix (Tables)</a></li>
-      </ul>
+      <ul class="nav-list" id="navList"><!-- populated by nav.js --></ul>
     </aside>
 
     <!-- CENTER: page content -->
@@ -91,6 +92,9 @@
       <nav id="toc"></nav>
     </aside>
   </div>
+
+  <!-- Build shared sidebar FIRST -->
+  <script src="nav.js"></script>
 
   <!-- Scripts: left filter + right ToC -->
   <script>
