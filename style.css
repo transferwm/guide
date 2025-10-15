@@ -92,6 +92,17 @@ a:focus, button:focus, input:focus, select:focus{
   border-radius:6px;
 }
 
+/* Pills / action links */
+.badge{
+  display:inline-block; text-decoration:none; color:var(--text);
+  padding:8px 12px; border-radius:999px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,0.08);
+  font-weight:600;
+}
+.badge:hover{background:rgba(255,255,255,0.16)}
+
+/* Checklists */
 ul.checklist{list-style:none; padding:0; margin:0}
 ul.checklist li{padding-left:26px; position:relative; margin:8px 0}
 ul.checklist li::before{content:"✓"; position:absolute; left:0; color:#a8ffd2; font-weight:700}
@@ -110,6 +121,46 @@ code{background:var(--code-bg); padding:.1em .35em; border-radius:6px}
 #toc li{margin:6px 0}
 #toc a{color:var(--link); text-decoration:none}
 #toc a.active{font-weight:700; text-decoration:underline}
+
+/* ===== VCCS lookup (minor UI polish) ===== */
+#equiv-db label span{font-weight:600; color:var(--text)}
+#equiv-db input,#equiv-db select{
+  padding:6px 8px; border:1px solid var(--border); border-radius:8px; min-width:160px;
+  background:rgba(255,255,255,0.08); color:var(--text);
+}
+#equiv-db details{
+  background:rgba(255,255,255,0.04); border:1px solid var(--border);
+  padding:8px 10px; border-radius:8px;
+}
+
+/* ===== Full-screen Disclaimer ===== */
+body.modal-open{ overflow:hidden; }
+.disclaimer-overlay{
+  position:fixed; inset:0; z-index:9999;
+  background:var(--wm-green);
+  display:flex; align-items:center; justify-content:center; padding:24px;
+}
+.disclaimer-modal{
+  width:min(800px, 92vw);
+  background:rgba(255,255,255,0.06);
+  border:1px solid var(--border);
+  border-radius:16px;
+  color:#fff;
+  padding:22px 20px;
+  box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+.disclaimer-modal h2{margin:0 0 8px 0; font-size:22px}
+.disclaimer-modal p{margin:8px 0}
+.disclaimer-modal ul{margin:10px 0 0 18px}
+.disclaimer-actions{display:flex; gap:12px; margin-top:16px; flex-wrap:wrap}
+.disclaimer-actions .btn{
+  cursor:pointer; padding:10px 14px; border-radius:10px; font-weight:700;
+  border:1px solid rgba(255,255,255,0.5); background:transparent; color:#fff;
+}
+.disclaimer-actions .btn.primary{
+  background:#fff; color:#115740; border:1px solid #fff;
+}
+.disclaimer-meta{font-size:13px; color:var(--muted); margin-top:8px}
 
 /* ===== Responsive ===== */
 @media (max-width: 1200px){
