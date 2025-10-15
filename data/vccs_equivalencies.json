@@ -1,0 +1,63 @@
+[
+  {"dept":"ACC","number":"211","title":"Principles of Accounting I","wm_equiv":"BUAD 203 + BUAD 2XX (total 6 cr)","coll":"","notes":"ACC 211 + 212 together award BUAD 203 (3 cr) and BUAD 2XX (3 cr)."},
+  {"dept":"ACC","number":"212","title":"Principles of Accounting II","wm_equiv":"BUAD 2XX (see note)","coll":"","notes":"Pairs with ACC 211."},
+
+  {"dept":"ADJ","number":"201","title":"Criminology","wm_equiv":"SOCL 302","coll":"CSI, NQR","notes":""},
+  {"dept":"ADJ","number":"100","title":"Survey of Criminal Justice","wm_equiv":"SOCL ELT","coll":"","notes":""},
+
+  {"dept":"ARA","number":"101","title":"Beginning Arabic I","wm_equiv":"ARAB 1XX","coll":"","notes":""},
+  {"dept":"ARA","number":"202","title":"Intermediate Arabic II","wm_equiv":"MDLL 2XX","coll":"FLP","notes":""},
+
+  {"dept":"ARC","number":"123","title":"Architectural Graphics I","wm_equiv":"ART ELT","coll":"ARTS","notes":""},
+  {"dept":"ARC","number":"201","title":"History of Modern Architecture","wm_equiv":"ARTH 272 (2 cr)","coll":"ALV, CSI","notes":""},
+
+  {"dept":"ART","number":"101","title":"History/Appreciation of Art I","wm_equiv":"ARTH 251","coll":"ALV, CSI","notes":""},
+  {"dept":"ART","number":"102","title":"History/Appreciation of Art II","wm_equiv":"ARTH 252","coll":"ALV, CSI","notes":""},
+  {"dept":"ART","number":"120","title":"Beginning Drawing","wm_equiv":"ART 211","coll":"ALV, ARTS","notes":""},
+  {"dept":"ART","number":"132","title":"Three-Dimensional Design","wm_equiv":"ART 212","coll":"ALV, ARTS","notes":""},
+
+  {"dept":"ASL","number":"202","title":"American Sign Language IV","wm_equiv":"INTR ELT","coll":"FLP","notes":""},
+
+  {"dept":"BIO","number":"101","title":"General Biology I","wm_equiv":"BIOL 203/203L","coll":"NQR","notes":""},
+  {"dept":"BIO","number":"102","title":"General Biology II","wm_equiv":"BIOL 204/204L","coll":"NQR","notes":""},
+  {"dept":"BIO","number":"141","title":"Human Anatomy & Physiology I","wm_equiv":"HHP 210/210L","coll":"NQR","notes":""},
+  {"dept":"BIO","number":"142","title":"Human Anatomy & Physiology II","wm_equiv":"HHP 320/320L","coll":"NQR","notes":""},
+
+  {"dept":"BUS","number":"216","title":"Probability & Statistics for Business & Econ","wm_equiv":"ECON 307","coll":"MATH","notes":""},
+  {"dept":"BUS","number":"224","title":"Statistical Analysis for Business","wm_equiv":"BUAD 231 (3 cr)","coll":"","notes":""},
+
+  {"dept":"CHM","number":"111","title":"General Chemistry I","wm_equiv":"CHEM 103/103L","coll":"NQR","notes":""},
+  {"dept":"CHM","number":"112","title":"General Chemistry II","wm_equiv":"CHEM 208/254","coll":"","notes":""},
+  {"dept":"CHM","number":"241","title":"Organic Chemistry I","wm_equiv":"CHEM 206","coll":"NQR","notes":""},
+  {"dept":"CHM","number":"242","title":"Organic Chemistry II","wm_equiv":"CHEM 207","coll":"","notes":""},
+
+  {"dept":"CSC","number":"201","title":"Computer Science I","wm_equiv":"CSCI 141","coll":"","notes":""},
+  {"dept":"CSC","number":"202","title":"Computer Science II","wm_equiv":"CSCI 141","coll":"","notes":"Department may place you; confirm."},
+  {"dept":"CSC","number":"208","title":"Introduction to Discrete Structures","wm_equiv":"CSCI 243","coll":"","notes":""},
+
+  {"dept":"CST","number":"100","title":"Principles of Public Speaking","wm_equiv":"SPCH 201","coll":"ARTS, ALV","notes":""},
+
+  {"dept":"ECO","number":"201","title":"Principles of Macroeconomics","wm_equiv":"ECON 102","coll":"CSI","notes":""},
+  {"dept":"ECO","number":"202","title":"Principles of Microeconomics","wm_equiv":"ECON 101","coll":"CSI","notes":""},
+
+  {"dept":"ENG","number":"111","title":"College Composition I","wm_equiv":"WRIT 101","coll":"","notes":""},
+  {"dept":"ENG","number":"112","title":"College Composition II","wm_equiv":"ENGL 210","coll":"","notes":""},
+  {"dept":"ENG","number":"200","title":"Introduction to Linguistics","wm_equiv":"ENGL 220","coll":"CSI","notes":""},
+
+  {"dept":"ENV","number":"121","title":"General Environmental Science I","wm_equiv":"ENSP 101 (3 cr)","coll":"","notes":"Often paired with ENV 122; confirm pairing."},
+
+  {"dept":"FRE","number":"202","title":"Intermediate French II","wm_equiv":"FREN 2XX","coll":"FLP","notes":""},
+
+  {"dept":"GEO","number":"200","title":"Intro to Physical Geography","wm_equiv":"GEOL 110","coll":"NQR","notes":""},
+  {"dept":"GOL","number":"105","title":"Physical Geology","wm_equiv":"GEOL 101/160","coll":"NQR","notes":""},
+
+  {"dept":"HIS","number":"101","title":"History of Western Civilization I","wm_equiv":"HIST 1XX","coll":"CSI, ALV","notes":""},
+  {"dept":"HIS","number":"102","title":"History of Western Civilization II","wm_equiv":"HIST 1XX","coll":"CSI, ALV","notes":""},
+
+  {"dept":"MTH","number":"154","title":"Quantitative Reasoning","wm_equiv":"MATH 1XX","coll":"MATH","notes":""},
+  {"dept":"MTH","number":"155","title":"Statistical Reasoning","wm_equiv":"MATH 1XX","coll":"MATH","notes":""},
+  {"dept":"MTH","number":"263","title":"Discrete Mathematics","wm_equiv":"MATH 214","coll":"MATH","notes":""},
+
+  {"dept":"PHY","number":"201","title":"General College Physics I","wm_equiv":"PHYS 101/101L","coll":"NQR","notes":""},
+  {"dept":"PHY","number":"202","title":"General College Physics II","wm_equiv":"PHYS 102/102L","coll":"NQR","notes":""}
+]
