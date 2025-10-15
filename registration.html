@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registration · W&M Transfer Guide</title>
+  <meta name="description" content="Transfer-friendly overview of registration at William & Mary with links to How to Register and PATH 101." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="site">
+    <h1>W&amp;M Transfer Guide</h1>
+    <div class="sub">Unofficial student resource — verify with official W&amp;M pages - SA Dept. of Accademic Affairs</div>
+  </header>
+
+  <div class="shell">
+    <!-- LEFT: nav -->
+    <aside class="sidebar">
+      <h2>Pages</h2>
+      <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vccs.html">VCCS (GAA)</a></li>
+        <li><a href="rbc.html">Richard Bland College</a></li>
+        <li><a href="other.html">Other U.S.</a></li>
+        <li><a href="international.html">International</a></li>
+        <li><a href="appendix.html">Appendix (Tables)</a></li>
+        <li><a href="registration.html" class="current">Registration</a></li>
+        <li><a href="registration-how.html">How to Register</a></li>
+        <li><a href="path101.html">PATH 101</a></li>
+      </ul>
+    </aside>
+
+    <!-- CENTER -->
+    <main id="content">
+      <article class="content">
+        <h1>Registration</h1>
+        <p class="small">This section summarizes how W&amp;M registration works for transfer students, and points you to the step-by-step “How to Register” and the “PATH 101” primer.</p>
+
+        <section class="card">
+          <h2>Start here</h2>
+          <p>
+            <a class="badge" href="registration-how.html">How to Register →</a>
+            &nbsp; <a class="badge" href="path101.html">PATH 101 →</a>
+            &nbsp; <a class="badge" href="https://registration.wm.edu/">Open PATH →</a>
+          </p>
+          <p class="small">Dates/times vary by term; see the Registrar’s “When to Register” and New Students timelines for the latest schedule.</p>
+        </section>
+
+        <section class="card">
+          <h2>Key ideas</h2>
+          <ul class="checklist">
+            <li>Before your time ticket opens, you **build a Primary Cart** in PATH and set **registration priorities** (1st, 2nd, …) and **alternatives**.</li>
+            <li>Co-requisites (e.g., lecture + lab) are processed together at the highest priority in the group.</li>
+            <li>Holds and unresolved registration errors can block cart processing—clear them **before** carts close.</li>
+          </ul>
+          <p class="small">See demos and the Registrar’s Quick Start PDF linked in <a href="path101.html">PATH 101</a>.</p>
+        </section>
+      </article>
+    </main>
+
+    <!-- RIGHT: TOC -->
+    <aside class="sidebar"><h2>Contents</h2><nav id="toc"></nav></aside>
+  </div>
+
+  <!-- Small helpers + TOC -->
+  <script>
+    function filterNav(){const q=(document.getElementById('navSearch').value||'').toLowerCase();
+      document.querySelectorAll('#navList li').forEach(li=>{li.style.display=li.textContent.toLowerCase().includes(q)?'':''})}
+    (function buildTOC(){const c=document.getElementById('toc');if(!c)return;
+      const heads=document.querySelectorAll('.content h2, .content h3');const ul=document.createElement('ul');
+      heads.forEach(h=>{if(!h.id){h.id=h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-')}
+        const li=document.createElement('li');li.style.marginLeft=h.tagName==='H3'?'12px':'0';
+        const a=document.createElement('a');a.href='#'+h.id;a.textContent=h.textContent;li.appendChild(a);ul.appendChild(li)});
+      c.appendChild(ul);
+      const links=c.querySelectorAll('a');
+      const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id));}})},{rootMargin:'-40% 0% -55% 0%',threshold:0.01});
+      document.querySelectorAll('.content h2,.content h3').forEach(h=>obs.observe(h));
+    })();
+  </script>
+  <script src="disclaimer.js" defer></script>
+</body>
+</html>
