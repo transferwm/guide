@@ -36,8 +36,14 @@
         <li><a href="other.html">Other U.S.</a></li>
         <li><a href="international.html">International</a></li>
         <li><a href="appendix.html">Appendix (Tables)</a></li>
+        <li><a href="coll-rules.html">COLL Rules &amp; Requirements</a></li>
+
+        <!-- Registration parent: link + caret toggle -->
         <li class="has-submenu">
-          <button class="submenu-toggle" aria-expanded="false">Registration</button>
+          <div class="submenu-head">
+            <a href="registration.html" class="parent-link">Registration</a>
+            <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle Registration submenu"></button>
+          </div>
           <ul class="submenu">
             <li><a href="registration-how.html">How to Register</a></li>
             <li><a href="path101.html">PATH 101</a></li>
@@ -57,6 +63,7 @@
           <ul class="checklist">
             <li>Know your path: <a href="vccs.html">VCCS (GAA)</a>, <a href="rbc.html">RBC</a>, <a href="other.html">Other U.S.</a>, or <a href="international.html">International</a>.</li>
             <li>Use the <a href="appendix.html">Appendix</a> for VCCS courses that meet W&amp;M COLL areas and sample equivalencies.</li>
+            <li>Review the new <a href="coll-rules.html">COLL Rules &amp; Requirements</a> page for what still must be completed in residence.</li>
             <li>When in doubt, verify against official W&amp;M pages linked throughout.</li>
           </ul>
         </section>
@@ -90,6 +97,12 @@
             <p>Apply via the Common App; English-proficiency testing is strongly recommended for non-native speakers. Course credit is evaluated from syllabi.</p>
             <p><a class="badge" href="international.html">View step-by-step →</a></p>
           </div>
+
+          <div class="card">
+            <h3>COLL Rules &amp; Requirements</h3>
+            <p>Understand exactly which COLL areas are waived or required based on your pathway (VCCS Passport/UC, RBC, AA/AS/AA&amp;S, or other transfers), and what must be completed at W&amp;M.</p>
+            <p><a class="badge" href="coll-rules.html">View the full rules &amp; tables →</a></p>
+          </div>
         </section>
 
         <section class="card">
@@ -107,6 +120,7 @@
             <li><a href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">W&amp;M Letter of Intent</a></li>
             <li><a href="https://www.transfervirginia.org/resources?f%5B0%5D=field_cc_from_school%3A88&f%5B1%5D=field_cc_resource_category%3A27">Transfer Virginia — W&amp;M program-specific guides</a></li>
             <li><a href="appendix.html">Appendix — VCCS COLL lists &amp; sample equivalencies</a></li>
+            <li><a href="coll-rules.html">COLL Rules &amp; Requirements — full rules &amp; tables</a></li>
           </ul>
         </section>
       </article>
@@ -119,7 +133,7 @@
     </aside>
   </div>
 
-  <!-- Scripts: left filter + right ToC -->
+  <!-- Scripts: left filter + right ToC + submenu toggle -->
   <script>
     function filterNav(){
       const q = (document.getElementById('navSearch').value || '').toLowerCase();
@@ -154,15 +168,20 @@
       document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
     })();
 
-    // Expandable Registration submenu
-    document.querySelectorAll('.submenu-toggle').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-        const submenu = btn.nextElementSibling;
-        if (submenu) submenu.style.display = expanded ? 'none' : 'block';
+    // Submenu: link navigates; caret toggles open/close
+    (function initSubmenu(){
+      const host   = document.querySelector('.has-submenu');
+      if(!host) return;
+      const toggle = host.querySelector('.submenu-toggle');
+      const submenu= host.querySelector('.submenu');
+
+      toggle.addEventListener('click', (e)=>{
+        e.preventDefault();
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        submenu.style.display = expanded ? 'none' : 'block';
       });
-    });
+    })();
   </script>
   <script src="disclaimer.js" defer></script>
 </body>
