@@ -1,13 +1,14 @@
 (() => {
-  const KEY = 'wmGuideAccepted';
+  const KEY_PERSIST = 'wmGuideAccepted';     // localStorage (forever)
+  const KEY_SESSION = 'wmGuideSeenSession';  // sessionStorage (current tab/session)
 
-  // Safe localStorage helpers
-  const canStore = (() => {
-    try { localStorage.setItem('__wm_test__','1'); localStorage.removeItem('__wm_test__'); return true; }
-    catch { return false; }
-  })();
-  const getAccepted = () => canStore ? localStorage.getItem(KEY) === '1' : false;
-  const setAccepted = () => { if (canStore) localStorage.setItem(KEY, '1'); };
+  // Storage helpers
+  const canLocal = (() => { try { localStorage.setItem('__t','1'); localStorage.removeItem('__t'); return true; } catch { return false; }})();
+  const canSession = (() => { try { sessionStorage.setItem('__t','1'); sessionStorage.removeItem('__t'); return true; } catch { return false; }})();
+  const getPersist = () => canLocal   ? localStorage.getItem(KEY_PERSIST) === '1' : false;
+  const setPersist = () => { if (canLocal)   localStorage.setItem(KEY_PERSIST, '1'); };
+  const getSession = () => canSession ? sessionStorage.getItem(KEY_SESSION) === '1' : false;
+  const setSession = () => { if (canSession) sessionStorage.setItem(KEY_SESSION, '1'); };
 
   function buildOverlay(){
     const wrap = document.createElement('div');
@@ -31,8 +32,8 @@
         </label>
 
         <div class="disclaimer-actions">
-          <button id="wm-continue" class="btn primary">I understand — continue</button>
-          <button id="wm-exit" class="btn" aria-label="Exit to official Registrar site">
+          <button id="wm-continue" class="btn primary" type="button">I understand — continue</button>
+          <button id="wm-exit" class="btn" type="button" aria-label="Exit to official Registrar site">
             Exit to official Registrar
           </button>
         </div>
@@ -43,8 +44,11 @@
   }
 
   function redirectHome(){
-    // Always route to Home after acknowledging (even if already there)
-    window.location.href = 'index.html';
+    // On GitHub Pages you might already be on index.html; if so, don't navigate.
+    const here = location.pathname.split('/').pop() || 'index.html';
+    if (here.toLowerCase() !== 'index.html') {
+      location.href = 'index.html';
+    }
   }
 
   function showDisclaimer(){
@@ -54,12 +58,11 @@
 
     const btnGo = overlay.querySelector('#wm-continue');
     const btnExit = overlay.querySelector('#wm-exit');
-    const dont = overlay.querySelector('#wm-dont');
+    const dont   = overlay.querySelector('#wm-dont');
 
-    // Focus the first control
     setTimeout(() => btnGo.focus(), 0);
 
-    // Simple focus trap
+    // Focus trap (simple)
     overlay.addEventListener('keydown', (e)=>{
       if(e.key !== 'Tab') return;
       const focusables = overlay.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
@@ -71,19 +74,24 @@
     });
 
     btnGo.addEventListener('click', ()=>{
-      if (dont.checked) setAccepted();
+      // Always remember for this session so it won't re-open on redirect
+      setSession();
+      // Persist forever only if they checked the box
+      if (dont.checked) setPersist();
+
       document.body.classList.remove('modal-open');
       overlay.remove();
       redirectHome();
     });
 
     btnExit.addEventListener('click', ()=>{
-      window.location.href = 'https://www.wm.edu/offices/registrar/';
+      location.href = 'https://www.wm.edu/offices/registrar/';
     });
   }
 
   // Boot
   document.addEventListener('DOMContentLoaded', () => {
-    if (!getAccepted()) showDisclaimer();
+    // Show if neither persisted nor acknowledged in this session
+    if (!(getPersist() || getSession())) showDisclaimer();
   });
 })();
