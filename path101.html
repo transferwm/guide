@@ -1,3 +1,6 @@
+Here’s the complete corrected path101.html.
+It replaces Markdown **bold** with proper <strong> tags, adds full favicon/manifest tags, and uses the collapsible Registration submenu (auto-open, with “PATH 101” current).
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,6 +8,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>PATH 101 · W&M</title>
   <meta name="description" content="Everything you need to know about PATH: carts, priorities, alternatives, co-requisites, errors, and demo videos." />
+
+  <!-- Favicons and manifest (place these files at site root) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,9 +30,13 @@
       <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
       <ul class="nav-list" id="navList">
         <li><a href="index.html">Home</a></li>
-        <li><a href="registration.html">Registration</a></li>
-        <li><a href="registration-how.html">How to Register</a></li>
-        <li><a href="path101.html" class="current">PATH 101</a></li>
+        <li class="has-submenu">
+          <button class="submenu-toggle" aria-expanded="false">Registration</button>
+          <ul class="submenu">
+            <li><a href="registration-how.html">How to Register</a></li>
+            <li><a href="path101.html" class="current">PATH 101</a></li>
+          </ul>
+        </li>
         <li><a href="vccs.html">VCCS (GAA)</a></li>
         <li><a href="rbc.html">RBC</a></li>
         <li><a href="other.html">Other U.S.</a></li>
@@ -36,36 +51,40 @@
         <p class="small">PATH is W&amp;M’s system for class search, carts, and registration. This page summarizes the features you’ll actually use.</p>
 
         <section class="card">
-          <h2>Primary & Alternatives carts</h2>
+          <h2>Primary &amp; Alternatives carts</h2>
           <ul class="checklist">
-            <li>Everyone has a **Primary Cart** (top choices) and an **Alternatives Cart** (backup sections/courses).</li>
-            <li>When you add a course to the Primary Cart, open **Edit Registration Options** to assign a **priority** (First–Ninth or **Auto**) and choose up to **two alternatives**; for multi-section courses, you can choose “**any other section**.”</li>
-            <li>You can keep a personal “scratch” cart if you like, but PATH only attempts the **Primary Cart** during the first registration phase.</li>
+            <li>Everyone has a <strong>Primary Cart</strong> (top choices) and an <strong>Alternatives Cart</strong> (backup sections/courses).</li>
+            <li>When you add a course to the Primary Cart, open <strong>Edit Registration Options</strong> to assign a <strong>priority</strong> (First–Ninth or <strong>Auto</strong>) and choose up to <strong>two alternatives</strong>; for multi-section courses, you can choose “<strong>any other section</strong>.”</li>
+            <li>You can keep a personal “scratch” cart if you like, but PATH only attempts the <strong>Primary Cart</strong> during the first registration phase.</li>
           </ul>
-          <p class="small"><a href="https://www.youtube.com/watch?v=zLfoTzXvuf4">Primary & Alternatives demo</a> • <a href="https://www.youtube.com/watch?v=4zw2U0sAhFA">Setting priorities demo</a> • <a href="https://www.wm.edu/offices/registrar/_documents/registration/path/ug-quick-start-reg-priorities.pdf">Quick Start PDF</a></p>
+          <p class="small">
+            <a href="https://www.youtube.com/watch?v=zLfoTzXvuf4">Primary &amp; Alternatives demo</a> •
+            <a href="https://www.youtube.com/watch?v=4zw2U0sAhFA">Setting priorities demo</a> •
+            <a href="https://www.wm.edu/offices/registrar/_documents/registration/path/ug-quick-start-reg-priorities.pdf">Quick Start PDF</a>
+          </p>
         </section>
 
         <section class="card">
-          <h2>Priorities, auto-priority & tie-breakers</h2>
+          <h2>Priorities, auto-priority &amp; tie-breakers</h2>
           <ul class="checklist">
-            <li>Assign First (highest) through Ninth, or use **Auto** to let PATH rank based on demand; Auto acts as a **tie-breaker** when you give the same number to multiple courses.</li>
-            <li>Co-requisites are treated as a **group** and attempted at the **highest priority** among the grouped sections.</li>
+            <li>Assign First (highest) through Ninth, or use <strong>Auto</strong> to let PATH rank based on demand; Auto acts as a <strong>tie-breaker</strong> when you give the same number to multiple courses.</li>
+            <li>Co-requisites are treated as a <strong>group</strong> and attempted at the <strong>highest priority</strong> among the grouped sections.</li>
           </ul>
         </section>
 
         <section class="card">
           <h2>Solving cart issues before carts close</h2>
           <ul class="checklist">
-            <li>**Holds** must be cleared or the cart won’t process.</li>
-            <li>Fix **registration errors** (pre/co-reqs, time conflicts, closed class, instructor approval) or swap to another section.</li>
-            <li>You can edit carts and priorities until **carts close**; after that, changes wait until real-time registration.</li>
+            <li><strong>Holds</strong> must be cleared or the cart won’t process.</li>
+            <li>Fix <strong>registration errors</strong> (pre/co-reqs, time conflicts, closed class, instructor approval) or swap to another section.</li>
+            <li>You can edit carts and priorities until <strong>carts close</strong>; after that, changes wait until real-time registration.</li>
           </ul>
         </section>
 
         <section class="card">
           <h2>Search smarter</h2>
           <ul class="checklist">
-            <li>In PATH, use filters (subject, attribute, day/time) and open a course’s **Details** to see restrictions and co-reqs.</li>
+            <li>In PATH, use filters (subject, attribute, day/time) and open a course’s <strong>Details</strong> to see restrictions and co-reqs.</li>
             <li>Use “any other section” as an alternate for multi-section courses to increase your chances.</li>
           </ul>
           <p class="small"><a class="badge" href="https://registration.wm.edu/">Open PATH</a></p>
@@ -77,17 +96,48 @@
   </div>
 
   <script>
-    function filterNav(){const q=(document.getElementById('navSearch').value||'').toLowerCase();
-      document.querySelectorAll('#navList li').forEach(li=>{li.style.display=li.textContent.toLowerCase().includes(q)?'':''})}
-    (function buildTOC(){const c=document.getElementById('toc');if(!c)return;
-      const heads=document.querySelectorAll('.content h2, .content h3');const ul=document.createElement('ul');
-      heads.forEach(h=>{if(!h.id){h.id=h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-')}
-        const li=document.createElement('li');li.style.marginLeft=h.tagName==='H3'?'12px':'0';
-        const a=document.createElement('a');a.href='#'+h.id;a.textContent=h.textContent;li.appendChild(a);ul.appendChild(li)});
+    function filterNav(){
+      const q=(document.getElementById('navSearch').value||'').toLowerCase();
+      document.querySelectorAll('#navList li').forEach(li=>{
+        li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    }
+
+    (function buildTOC(){
+      const c=document.getElementById('toc'); if(!c) return;
+      const heads=document.querySelectorAll('.content h2, .content h3');
+      const ul=document.createElement('ul');
+      heads.forEach(h=>{
+        if(!h.id){ h.id=h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-'); }
+        const li=document.createElement('li');
+        li.style.marginLeft = h.tagName==='H3' ? '12px' : '0';
+        const a=document.createElement('a'); a.href='#'+h.id; a.textContent=h.textContent;
+        li.appendChild(a); ul.appendChild(li);
+      });
       c.appendChild(ul);
       const links=c.querySelectorAll('a');
-      const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id));}})},{rootMargin:'-40% 0% -55% 0%',threshold:0.01});
-      document.querySelectorAll('.content h2,.content h3').forEach(h=>obs.observe(h));
+      const obs=new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){
+            links.forEach(a=>a.classList.toggle('active', a.hash === '#'+e.target.id));
+          }
+        });
+      }, { rootMargin:'-40% 0% -55% 0%', threshold:0.01 });
+      document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
+    })();
+
+    // Collapsible Registration submenu (auto-open on this page)
+    (function initSubmenu(){
+      const btn=document.querySelector('.has-submenu .submenu-toggle');
+      const submenu=document.querySelector('.has-submenu .submenu');
+      if(!btn || !submenu) return;
+      btn.setAttribute('aria-expanded','true');
+      submenu.style.display='block';
+      btn.addEventListener('click', ()=>{
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        submenu.style.display = expanded ? 'none' : 'block';
+      });
     })();
   </script>
   <script src="disclaimer.js" defer></script>
