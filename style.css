@@ -238,6 +238,33 @@ body.modal-open{ overflow:hidden; }
 }
 .disclaimer-dont input[type="checkbox"]{ width:1.05em; height:1.05em; accent-color:var(--focus); }
 
+/* ===== Centered faded background logo ===== */
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: url("wm_cypher_gold.png") no-repeat center center;
+  background-size: contain;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure all content layers above it */
+header.site, .shell, .disclaimer-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px){
+  .shell{grid-template-columns: 240px 1fr 240px}
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 1200px){
   .shell{grid-template-columns: 240px 1fr 240px}
