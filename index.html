@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>W&M Transfer Guide</title>
   <meta name="description" content="Student-built guide for transferring to William & Mary: VCCS (GAA), Richard Bland College, other U.S. colleges, and international transfers." />
+
+  <!-- Favicons and manifest -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -118,6 +127,7 @@
         li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
       });
     }
+
     (function buildTOC(){
       const container = document.getElementById('toc');
       if(!container) return;
@@ -144,7 +154,7 @@
       document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
     })();
 
-    // NEW: Expandable Registration menu
+    // Expandable Registration submenu
     document.querySelectorAll('.submenu-toggle').forEach(btn => {
       btn.addEventListener('click', () => {
         const expanded = btn.getAttribute('aria-expanded') === 'true';
