@@ -8,119 +8,175 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-  <h1>VCCS → W&amp;M (Guaranteed Admission Agreement)</h1>
-  <p class="small">Unofficial, student-built guide. Always verify details on official W&amp;M pages.</p>
-</header>
+  <!-- Top bar -->
+  <header class="site">
+    <h1>W&amp;M Transfer Guide</h1>
+    <div class="sub">Unofficial student resource — verify with official W&amp;M pages.</div>
+  </header>
 
-<nav aria-label="Primary">
-  <a href="index.html">Home</a>
-  <a href="vccs.html" aria-current="page">VCCS (GAA)</a>
-  <a href="rbc.html">RBC</a>
-  <a href="other.html">Other U.S.</a>
-  <a href="international.html">International</a>
-  <a href="appendix.html">Appendix (Tables)</a>
-</nav>
-
-<main id="main">
-  <section class="card">
-    <h2>Overview</h2>
-    <p>William &amp; Mary offers a <strong>Guaranteed Admission Agreement (GAA)</strong> for students completing an approved, transfer-oriented associate degree at a VCCS college and meeting all requirements. Admission to certain programs (e.g., Business/Education) is separate.</p>
-    <p class="small">Quick links: <a href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">Letter of Intent</a> • <a href="appendix.html#coll-lists">COLL area lists</a> • <a href="#equiv-db">Equivalency lookup</a> • <a href="appendix.html#equivalencies">Sample equivalencies</a></p>
-  </section>
-
-  <section>
-    <h2>Step-by-step checklist</h2>
-
-    <div class="card">
-      <h3>1) Confirm your degree path</h3>
-      <ul class="checklist">
-        <li>Choose a transfer-oriented associate degree (AA/AS/AA&amp;S). Only SCHEV-recognized A.S. in General Studies qualify as “transfer” degrees.</li>
-        <li>Plan early for your intended W&amp;M major (math/lab/sequence prerequisites).</li>
-        <li>Use <a href="appendix.html#coll-lists">COLL lists</a> to pick VCCS courses that satisfy W&amp;M general education areas (MATH, NQR, CSI, ALV, ARTS).</li>
+  <!-- 3-column shell -->
+  <div class="shell">
+    <!-- LEFT: site navigation -->
+    <aside class="sidebar">
+      <h2>Pages</h2>
+      <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vccs.html" class="current">VCCS (GAA)</a></li>
+        <li><a href="rbc.html">Richard Bland College</a></li>
+        <li><a href="other.html">Other U.S.</a></li>
+        <li><a href="international.html">International</a></li>
+        <li><a href="appendix.html">Appendix (Tables)</a></li>
       </ul>
-    </div>
+    </aside>
 
-    <div class="card">
-      <h3>2) File the Letter of Intent (LOI)</h3>
-      <ul class="checklist">
-        <li>Eligible after you complete <strong>≥ 15 post-HS VCCS credits</strong> with <strong>GPA ≥ 3.4</strong>.</li>
-        <li>Deadlines: <strong>Feb 1</strong> (for fall entry) • <strong>Sept 1</strong> (for spring entry).</li>
-        <li>Submit the LOI: <a href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">W&amp;M LOI form</a>.</li>
-      </ul>
-    </div>
+    <!-- CENTER: page content -->
+    <main id="content">
+      <article class="content">
+        <h1>VCCS → W&amp;M (Guaranteed Admission Agreement)</h1>
+        <p class="small">Unofficial, student-built guide. Always verify details on official W&amp;M pages.</p>
 
-    <div class="card">
-      <h3>3) Stay GAA-eligible while you finish</h3>
-      <ul class="checklist">
-        <li>Maintain <strong>GPA ≥ 3.4</strong>; remain <strong>continuously enrolled</strong> (summers excluded).</li>
-        <li>Earn at least <strong>45 post-HS VCCS credits</strong> applied to the degree.</li>
-        <li>Grades:
-          <ul>
-            <li><strong>B or better</strong> in a transferable <strong>200-level ENG</strong>.</li>
-            <li><strong>B or better</strong> in VCCS courses you’re using for W&amp;M COLL areas (MATH, ALV, CSI, NQR, ARTS).</li>
-            <li>Only courses with <strong>C or better</strong> transfer for credit.</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+        <section class="card">
+          <h2>Overview</h2>
+          <p>William &amp; Mary offers a <strong>Guaranteed Admission Agreement (GAA)</strong> for students completing an approved, transfer-oriented associate degree at a VCCS college and meeting all requirements. Admission to certain programs (e.g., Business/Education) is separate.</p>
+          <p class="small">Quick links: <a href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">Letter of Intent</a> • <a href="appendix.html#coll-lists">COLL area lists</a> • <a href="#equiv-db">Equivalency lookup</a> • <a href="appendix.html#equivalencies">Sample equivalencies</a></p>
+        </section>
 
-    <div class="card">
-      <h3>4) Apply to W&amp;M</h3>
-      <ul class="checklist">
-        <li>Submit the <strong>Common App for Transfer</strong> by <strong>Mar 1</strong> (fall) or <strong>Oct 1</strong> (spring).</li>
-        <li>Send <strong>official transcripts</strong> from all colleges; provide syllabi if requested.</li>
-      </ul>
-    </div>
+        <section>
+          <h2>Step-by-step checklist</h2>
 
-    <div class="card">
-      <h3>5) After you’re admitted</h3>
-      <ul class="checklist">
-        <li>Enter with <strong>junior standing</strong> (credit/degree rules apply).</li>
-        <li>Complete at least <strong>60 W&amp;M in-residence credits</strong> to graduate.</li>
-        <li>Finish remaining COLL items in residence (e.g., COLL 150, part of COLL 200, COLL 400; language/arts proficiencies if not met pre-matriculation).</li>
-      </ul>
-    </div>
-  </section>
+          <div class="card">
+            <h3>1) Confirm your degree path</h3>
+            <ul class="checklist">
+              <li>Choose a transfer-oriented associate degree (AA/AS/AA&amp;S). Only SCHEV-recognized A.S. in General Studies qualify as “transfer” degrees.</li>
+              <li>Plan early for your intended W&amp;M major (math/lab/sequence prerequisites).</li>
+              <li>Use <a href="appendix.html#coll-lists">COLL lists</a> to pick VCCS courses that satisfy W&amp;M general education areas (MATH, NQR, CSI, ALV, ARTS).</li>
+            </ul>
+          </div>
 
-  <!-- === SEARCHABLE EQUIVALENCY DATABASE === -->
-  <section class="card" id="equiv-db">
-    <h2>VCCS → W&amp;M Equivalency Lookup</h2>
-    <p class="small">This student-built tool searches a JSON copy of the public equivalency table. Always confirm with the current official guide.</p>
+          <div class="card">
+            <h3>2) File the Letter of Intent (LOI)</h3>
+            <ul class="checklist">
+              <li>Eligible after you complete <strong>≥ 15 post-HS VCCS credits</strong> with <strong>GPA ≥ 3.4</strong>.</li>
+              <li>Deadlines: <strong>Feb 1</strong> (for fall entry) • <strong>Sept 1</strong> (for spring entry).</li>
+              <li>Submit the LOI: <a href="https://admission.wm.edu/register/?id=53dfe04e-1fc6-4fea-a519-741425fd6ddd">W&amp;M LOI form</a>.</li>
+            </ul>
+          </div>
 
-    <form id="eq-form" onsubmit="event.preventDefault(); doSearch();">
-      <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end">
-        <label>
-          <span>Department</span><br>
-          <select id="deptSel" required>
-            <option value="">— select —</option>
-          </select>
-        </label>
-        <label>
-          <span>Course number</span><br>
-          <input id="numInput" inputmode="numeric" pattern="[0-9A-Za-z ]{1,}" placeholder="e.g., 101 or 201" required>
-        </label>
-        <button class="badge" style="padding:6px 12px">Search</button>
-        <label style="margin-left:auto">
-          <input type="checkbox" id="fuzzy"> Fuzzy (also search titles)
-        </label>
-      </div>
-    </form>
+          <div class="card">
+            <h3>3) Stay GAA-eligible while you finish</h3>
+            <ul class="checklist">
+              <li>Maintain <strong>GPA ≥ 3.4</strong>; remain <strong>continuously enrolled</strong> (summers excluded).</li>
+              <li>Earn at least <strong>45 post-HS VCCS credits</strong> applied to the degree.</li>
+              <li>Grades:
+                <ul>
+                  <li><strong>B or better</strong> in a transferable <strong>200-level ENG</strong>.</li>
+                  <li><strong>B or better</strong> in VCCS courses you’re using for W&amp;M COLL areas (MATH, ALV, CSI, NQR, ARTS).</li>
+                  <li>Only courses with <strong>C or better</strong> transfer for credit.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
 
-    <div id="eq-results" style="margin-top:12px"></div>
+          <div class="card">
+            <h3>4) Apply to W&amp;M</h3>
+            <ul class="checklist">
+              <li>Submit the <strong>Common App for Transfer</strong> by <strong>Mar 1</strong> (fall) or <strong>Oct 1</strong> (spring).</li>
+              <li>Send <strong>official transcripts</strong> from all colleges; provide syllabi if requested.</li>
+            </ul>
+          </div>
 
-    <details style="margin-top:10px">
-      <summary>How this works</summary>
-      <p class="small">No server needed. The page fetches <code>data/vccs_equivalencies.json</code>, builds a department list, and matches your course number (and title if “Fuzzy” is on).</p>
-    </details>
-  </section>
-</main>
+          <div class="card">
+            <h3>5) After you’re admitted</h3>
+            <ul class="checklist">
+              <li>Enter with <strong>junior standing</strong> (credit/degree rules apply).</li>
+              <li>Complete at least <strong>60 W&amp;M in-residence credits</strong> to graduate.</li>
+              <li>Finish remaining COLL items in residence (e.g., COLL 150, part of COLL 200, COLL 400; language/arts proficiencies if not met pre-matriculation).</li>
+            </ul>
+          </div>
+        </section>
 
-<footer>
-  <p class="small">Last updated: <span id="lu">today</span>. Unofficial student resource — verify with W&amp;M Admissions/Registrar.</p>
+        <!-- === SEARCHABLE EQUIVALENCY DATABASE === -->
+        <section class="card" id="equiv-db">
+          <h2>VCCS → W&amp;M Equivalency Lookup</h2>
+          <p class="small">This student-built tool searches a JSON copy of the public equivalency table. Always confirm with the current official guide.</p>
+
+          <form id="eq-form" onsubmit="event.preventDefault(); doSearch();">
+            <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end">
+              <label>
+                <span>Department</span><br>
+                <select id="deptSel" required>
+                  <option value="">— select —</option>
+                </select>
+              </label>
+              <label>
+                <span>Course number</span><br>
+                <input id="numInput" inputmode="numeric" pattern="[0-9A-Za-z ]{1,}" placeholder="e.g., 101 or 201" required>
+              </label>
+              <button class="badge" style="padding:6px 12px">Search</button>
+              <label style="margin-left:auto">
+                <input type="checkbox" id="fuzzy"> Fuzzy (also search titles)
+              </label>
+            </div>
+          </form>
+
+          <div id="eq-results" style="margin-top:12px"></div>
+
+          <details style="margin-top:10px">
+            <summary>How this works</summary>
+            <p class="small">No server needed. The page fetches <code>data/vccs_equivalencies.json</code>, builds a department list, and matches your course number (and title if “Fuzzy” is on).</p>
+          </details>
+        </section>
+      </article>
+    </main>
+
+    <!-- RIGHT: table of contents -->
+    <aside class="sidebar">
+      <h2>Contents</h2>
+      <nav id="toc"></nav>
+    </aside>
+  </div>
+
+  <!-- Scripts: left filter + right ToC + equivalency search -->
   <script>
-    document.getElementById('lu').textContent = new Date().toLocaleDateString();
+    // Left filter
+    function filterNav(){
+      const q = (document.getElementById('navSearch').value || '').toLowerCase();
+      document.querySelectorAll('#navList li').forEach(li=>{
+        li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    }
 
+    // Build a Table of Contents from h2/h3
+    (function buildTOC(){
+      const container = document.getElementById('toc');
+      if(!container) return;
+      const heads = document.querySelectorAll('.content h2, .content h3');
+      const ul = document.createElement('ul');
+      heads.forEach(h=>{
+        if(!h.id){
+          h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-');
+        }
+        const li = document.createElement('li');
+        li.style.marginLeft = h.tagName==='H3' ? '12px' : '0';
+        const a = document.createElement('a'); a.href = '#'+h.id; a.textContent = h.textContent;
+        li.appendChild(a); ul.appendChild(li);
+      });
+      container.appendChild(ul);
+
+      // Scrollspy
+      const links = container.querySelectorAll('a');
+      const obs = new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){
+            links.forEach(a=>a.classList.toggle('active', a.hash === '#'+e.target.id));
+          }
+        });
+      }, { rootMargin:'-40% 0% -55% 0%', threshold:0.01 });
+      document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
+    })();
+
+    // ===== Equivalency lookup logic =====
     const DATA_URL = 'data/vccs_equivalencies.json';
     let EQ = [];
 
@@ -195,6 +251,5 @@
 
     function esc(s){return (s||'').replace(/[&<>"']/g,m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
   </script>
-</footer>
 </body>
 </html>
