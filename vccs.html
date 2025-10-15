@@ -25,11 +25,26 @@
   <!-- 3-column shell -->
   <div class="shell">
     <!-- LEFT: site navigation -->
-    <aside class="sidebar">
-      <h2>Pages</h2>
-      <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
-      <ul class="nav-list" id="navList"><!-- populated by nav.js --></ul>
-    </aside>
+  <aside class="sidebar">
+  <h2>Pages</h2>
+  <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
+  <ul class="nav-list" id="navList">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="vccs.html">VCCS (GAA)</a></li>
+    <li><a href="rbc.html">Richard Bland College</a></li>
+    <li><a href="other.html" class="current">Other U.S.</a></li>
+    <li><a href="international.html">International</a></li>
+    <li><a href="coll-rules.html">COLL Rules & Requirements</a></li>
+    <li class="has-submenu">
+      <button class="submenu-toggle" aria-expanded="false">Registration</button>
+      <ul class="submenu">
+        <li><a href="registration-how.html">How to Register</a></li>
+        <li><a href="path101.html">PATH 101</a></li>
+      </ul>
+    </li>
+    <li><a href="appendix.html">Appendix (Tables)</a></li>
+  </ul>
+</aside>
 
     <!-- CENTER: page content -->
     <main id="content">
