@@ -1,6 +1,3 @@
-Here’s the complete corrected path101.html.
-It replaces Markdown **bold** with proper <strong> tags, adds full favicon/manifest tags, and uses the collapsible Registration submenu (auto-open, with “PATH 101” current).
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -30,13 +27,19 @@ It replaces Markdown **bold** with proper <strong> tags, adds full favicon/manif
       <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
       <ul class="nav-list" id="navList">
         <li><a href="index.html">Home</a></li>
+
+        <!-- Registration parent: link + caret toggle -->
         <li class="has-submenu">
-          <button class="submenu-toggle" aria-expanded="false">Registration</button>
+          <div class="submenu-head">
+            <a href="registration.html" class="parent-link">Registration</a>
+            <button class="submenu-toggle" aria-expanded="false" aria-label="Toggle Registration submenu"></button>
+          </div>
           <ul class="submenu">
             <li><a href="registration-how.html">How to Register</a></li>
             <li><a href="path101.html" class="current">PATH 101</a></li>
           </ul>
         </li>
+
         <li><a href="vccs.html">VCCS (GAA)</a></li>
         <li><a href="rbc.html">RBC</a></li>
         <li><a href="other.html">Other U.S.</a></li>
@@ -126,16 +129,21 @@ It replaces Markdown **bold** with proper <strong> tags, adds full favicon/manif
       document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
     })();
 
-    // Collapsible Registration submenu (auto-open on this page)
+    // Submenu: link navigates; caret toggles open/close (auto-open on this page)
     (function initSubmenu(){
-      const btn=document.querySelector('.has-submenu .submenu-toggle');
-      const submenu=document.querySelector('.has-submenu .submenu');
-      if(!btn || !submenu) return;
-      btn.setAttribute('aria-expanded','true');
+      const host   = document.querySelector('.has-submenu');
+      if(!host) return;
+      const toggle = host.querySelector('.submenu-toggle');
+      const submenu= host.querySelector('.submenu');
+
+      // Pre-open on PATH 101
+      toggle.setAttribute('aria-expanded','true');
       submenu.style.display='block';
-      btn.addEventListener('click', ()=>{
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
+
+      toggle.addEventListener('click', (e)=>{
+        e.preventDefault();
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
         submenu.style.display = expanded ? 'none' : 'block';
       });
     })();
