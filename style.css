@@ -238,6 +238,50 @@ body.modal-open{ overflow:hidden; }
 .disclaimer-dont input[type="checkbox"]{
   width:1.05em; height:1.05em; accent-color:var(--focus);
 }
+/* --- Sidebar visibility fix --- */
+.sidebar {
+  flex: 0 0 240px;       /* fixed width, never collapses */
+  min-width: 240px;
+  background-color: var(--wm-green);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 12px 16px;
+  position: relative;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 4px 0;
+}
+
+.nav-list a,
+.nav-list button {
+  display: block;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px 0;
+}
+
+.nav-list a.current {
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Keep nav search box visible */
+.nav-search {
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
 
 /* ===== Responsive ===== */
 @media (max-width: 1200px){
