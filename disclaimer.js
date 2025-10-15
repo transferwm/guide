@@ -1,4 +1,3 @@
-<script>
 (() => {
   const KEY = 'wmGuideAccepted';
 
@@ -57,10 +56,10 @@
     const btnExit = overlay.querySelector('#wm-exit');
     const dont = overlay.querySelector('#wm-dont');
 
-    // Focus the first meaningful control
+    // Focus the first control
     setTimeout(() => btnGo.focus(), 0);
 
-    // Trap Tab focus inside the modal (simple trap)
+    // Simple focus trap
     overlay.addEventListener('keydown', (e)=>{
       if(e.key !== 'Tab') return;
       const focusables = overlay.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
@@ -73,7 +72,6 @@
 
     btnGo.addEventListener('click', ()=>{
       if (dont.checked) setAccepted();
-      // Remove overlay before redirect to avoid flash on slow nav
       document.body.classList.remove('modal-open');
       overlay.remove();
       redirectHome();
@@ -89,4 +87,3 @@
     if (!getAccepted()) showDisclaimer();
   });
 })();
-</script>
