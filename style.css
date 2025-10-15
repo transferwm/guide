@@ -12,3 +12,6 @@ ul.checklist li::before{content:"✓";position:absolute;left:0;color:var(--wm-gr
 .table{width:100%;border-collapse:collapse;background:#fff} .table th,.table td{border:1px solid #ddd;padding:8px;vertical-align:top}
 .table th{background:#f7faf7;text-align:left}
 footer{padding:32px 16px;text-align:center;color:var(--muted)}
+#equiv-db label span { font-weight:600; color:#333; }
+#equiv-db input, #equiv-db select { padding:6px 8px; border:1px solid #cfd8cf; border-radius:8px; min-width:160px; }
+#equiv-db details { background:#f7faf7; border:1px solid #e1eee1; padding:8px 10px; border-radius:8px; }
