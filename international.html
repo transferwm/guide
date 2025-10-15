@@ -19,16 +19,31 @@
   <!-- Top bar -->
   <header class="site">
     <h1>W&amp;M Transfer Guide</h1>
-    <div class="sub">Unofficial student resource — verify with official W&amp;M pages — SA Dept. of Accademic Affairs</div>
+    <div class="sub">Unofficial student resource — verify with official W&amp;M pages — SA Dept. of Academic Affairs</div>
   </header>
 
   <!-- 3-column shell -->
   <div class="shell">
-    <!-- LEFT: site navigation -->
+    <!-- LEFT: site navigation (static so it’s always visible) -->
     <aside class="sidebar">
       <h2>Pages</h2>
       <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
-      <ul class="nav-list" id="navList"><!-- populated by nav.js --></ul>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vccs.html">VCCS (GAA)</a></li>
+        <li><a href="rbc.html">Richard Bland College</a></li>
+        <li><a href="other.html">Other U.S.</a></li>
+        <li><a href="international.html" class="current">International</a></li>
+        <li><a href="coll-rules.html">COLL Rules &amp; Requirements</a></li>
+        <li class="has-submenu">
+          <button class="submenu-toggle" aria-expanded="false">Registration</button>
+          <ul class="submenu">
+            <li><a href="registration-how.html">How to Register</a></li>
+            <li><a href="path101.html">PATH 101</a></li>
+          </ul>
+        </li>
+        <li><a href="appendix.html">Appendix (Tables)</a></li>
+      </ul>
     </aside>
 
     <!-- CENTER: content -->
@@ -100,17 +115,29 @@
     </aside>
   </div>
 
-  <!-- Build shared sidebar FIRST -->
-  <script src="nav.js"></script>
-
-  <!-- Scripts: left filter + right ToC -->
+  <!-- Scripts: left filter + right ToC + submenu -->
   <script>
+    // Left filter
     function filterNav(){
       const q = (document.getElementById('navSearch').value || '').toLowerCase();
       document.querySelectorAll('#navList li').forEach(li=>{
         li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
       });
     }
+
+    // Collapsible Registration submenu
+    (function(){
+      document.querySelectorAll('.submenu-toggle').forEach(btn=>{
+        const submenu = btn.nextElementSibling;
+        btn.addEventListener('click', ()=>{
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          if (submenu) submenu.style.display = expanded ? 'none' : 'block';
+        });
+      });
+    })();
+
+    // Build Table of Contents from h2/h3
     (function buildTOC(){
       const container = document.getElementById('toc');
       if(!container) return;
