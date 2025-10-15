@@ -1,83 +1,92 @@
-(function () {
-  // Keys: persistent (never show again) and per-session (hide until tab/browser closes)
-  const PERSIST_KEY = 'wm_transfer_disclaimer_v1';
-  const SESSION_KEY = 'wm_transfer_disclaimer_session_v1';
+<script>
+(() => {
+  const KEY = 'wmGuideAccepted';
 
-  // Reset helper: append ?resetDisclaimer=1 to any page to see it again
-  if (location.search.includes('resetDisclaimer=1')) {
-    localStorage.removeItem(PERSIST_KEY);
-    sessionStorage.removeItem(SESSION_KEY);
+  // Safe localStorage helpers
+  const canStore = (() => {
+    try { localStorage.setItem('__wm_test__','1'); localStorage.removeItem('__wm_test__'); return true; }
+    catch { return false; }
+  })();
+  const getAccepted = () => canStore ? localStorage.getItem(KEY) === '1' : false;
+  const setAccepted = () => { if (canStore) localStorage.setItem(KEY, '1'); };
+
+  function buildOverlay(){
+    const wrap = document.createElement('div');
+    wrap.className = 'disclaimer-overlay';
+    wrap.setAttribute('role','dialog');
+    wrap.setAttribute('aria-modal','true');
+    wrap.innerHTML = `
+      <div class="disclaimer-modal">
+        <h2>Student-built resource — please read</h2>
+        <p>This site is created by students for students. It is <strong>unofficial</strong>. The
+           <strong>William &amp; Mary Registrar</strong> and official W&amp;M pages are the final
+           authority for transfer credit, policies, and degree requirements.</p>
+        <ul>
+          <li>Information here may change at any time.</li>
+          <li>Always verify against official W&amp;M sources before making decisions.</li>
+        </ul>
+
+        <label class="disclaimer-dont">
+          <input id="wm-dont" type="checkbox" />
+          Don’t show again on this device
+        </label>
+
+        <div class="disclaimer-actions">
+          <button id="wm-continue" class="btn primary">I understand — continue</button>
+          <button id="wm-exit" class="btn" aria-label="Exit to official Registrar site">
+            Exit to official Registrar
+          </button>
+        </div>
+        <div class="disclaimer-meta">Choosing “Exit” will take you to the W&amp;M Registrar website.</div>
+      </div>
+    `;
+    return wrap;
   }
 
-  // If acknowledged before (persistently or for this session), do nothing
-  if (localStorage.getItem(PERSIST_KEY) === 'accepted' ||
-      sessionStorage.getItem(SESSION_KEY) === 'accepted') {
-    return;
+  function redirectHome(){
+    // Always route to Home after acknowledging (even if already there)
+    window.location.href = 'index.html';
   }
 
-  document.body.classList.add('modal-open');
+  function showDisclaimer(){
+    const overlay = buildOverlay();
+    document.body.appendChild(overlay);
+    document.body.classList.add('modal-open');
 
-  const overlay = document.createElement('div');
-  overlay.className = 'disclaimer-overlay';
-  overlay.setAttribute('role','dialog');
-  overlay.setAttribute('aria-modal','true');
-  overlay.setAttribute('aria-labelledby','disc-title');
+    const btnGo = overlay.querySelector('#wm-continue');
+    const btnExit = overlay.querySelector('#wm-exit');
+    const dont = overlay.querySelector('#wm-dont');
 
-  overlay.innerHTML = `
-    <div class="disclaimer-modal">
-      <h2 id="disc-title">Student-built resource — please read</h2>
-      <p>This site is created by students for students. It is <strong>unofficial</strong>.
-      The <strong>William &amp; Mary Registrar</strong> and official W&amp;M pages are the final authority
-      for transfer credit, policies, and degree requirements.</p>
-      <ul>
-        <li>Information here may change at any time.</li>
-        <li>Always verify against official W&amp;M sources before making decisions.</li>
-      </ul>
+    // Focus the first meaningful control
+    setTimeout(() => btnGo.focus(), 0);
 
-      <label class="disclaimer-dont" for="disc-noshow" style="display:flex;align-items:center;gap:8px;margin-top:12px;">
-        <input id="disc-noshow" type="checkbox" />
-        <span>Don’t show again on this device</span>
-      </label>
+    // Trap Tab focus inside the modal (simple trap)
+    overlay.addEventListener('keydown', (e)=>{
+      if(e.key !== 'Tab') return;
+      const focusables = overlay.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+      const f = Array.from(focusables).filter(el => !el.disabled && el.offsetParent !== null);
+      if (!f.length) return;
+      const first = f[0], last = f[f.length-1];
+      if (e.shiftKey && document.activeElement === first){ last.focus(); e.preventDefault(); }
+      else if (!e.shiftKey && document.activeElement === last){ first.focus(); e.preventDefault(); }
+    });
 
-      <div class="disclaimer-actions">
-        <button id="disc-accept" class="btn primary">I understand — continue</button>
-        <button id="disc-exit" class="btn" aria-describedby="disc-explain">Exit to official Registrar</button>
-      </div>
-      <div id="disc-explain" class="disclaimer-meta">
-        Choosing “Exit” will take you to the W&amp;M Registrar website.
-      </div>
-    </div>
-  `;
-  document.body.appendChild(overlay);
+    btnGo.addEventListener('click', ()=>{
+      if (dont.checked) setAccepted();
+      // Remove overlay before redirect to avoid flash on slow nav
+      document.body.classList.remove('modal-open');
+      overlay.remove();
+      redirectHome();
+    });
 
-  const acceptBtn = overlay.querySelector('#disc-accept');
-  const exitBtn   = overlay.querySelector('#disc-exit');
-  const dontShow  = overlay.querySelector('#disc-noshow');
+    btnExit.addEventListener('click', ()=>{
+      window.location.href = 'https://www.wm.edu/offices/registrar/';
+    });
+  }
 
-  // Focus trap
-  const focusables = overlay.querySelectorAll('a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])');
-  const first = focusables[0], last = focusables[focusables.length - 1];
-  first && first.focus();
-
-  overlay.addEventListener('keydown', (e) => {
-    if (e.key === 'Tab') {
-      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-    }
-    if (e.key === 'Escape') { e.preventDefault(); /* keep modal up */ }
-  });
-
-  acceptBtn.addEventListener('click', () => {
-    if (dontShow && dontShow.checked) {
-      localStorage.setItem(PERSIST_KEY, 'accepted');       // never show again on this device
-    } else {
-      sessionStorage.setItem(SESSION_KEY, 'accepted');     // hide for this session only
-    }
-    document.body.classList.remove('modal-open');
-    overlay.remove();
-  });
-
-  exitBtn.addEventListener('click', () => {
-    window.location.href = 'https://www.wm.edu/offices/registrar/';
+  // Boot
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!getAccepted()) showDisclaimer();
   });
 })();
+</script>
