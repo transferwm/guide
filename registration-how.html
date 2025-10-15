@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>How to Register · W&M</title>
   <meta name="description" content="Step-by-step instructions for transfers: carts, priorities, time tickets, add/drop, waitlist, and tips." />
+
+  <!-- Favicons and manifest (ensure these files are at the site root) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,22 +22,28 @@
   </header>
 
   <div class="shell">
+    <!-- LEFT: navigation -->
     <aside class="sidebar">
       <h2>Pages</h2>
       <input class="nav-search" id="navSearch" placeholder="Filter…" oninput="filterNav()">
       <ul class="nav-list" id="navList">
         <li><a href="index.html">Home</a></li>
-        <li><a href="registration.html">Registration</a></li>
-        <li><a href="registration-how.html" class="current">How to Register</a></li>
-        <li><a href="path101.html">PATH 101</a></li>
         <li><a href="vccs.html">VCCS (GAA)</a></li>
-        <li><a href="rbc.html">RBC</a></li>
+        <li><a href="rbc.html">Richard Bland College</a></li>
         <li><a href="other.html">Other U.S.</a></li>
         <li><a href="international.html">International</a></li>
         <li><a href="appendix.html">Appendix (Tables)</a></li>
+        <li class="has-submenu">
+          <button class="submenu-toggle" aria-expanded="false">Registration</button>
+          <ul class="submenu">
+            <li><a href="registration-how.html" class="current">How to Register</a></li>
+            <li><a href="path101.html">PATH 101</a></li>
+          </ul>
+        </li>
       </ul>
     </aside>
 
+    <!-- CENTER: content -->
     <main id="content">
       <article class="content">
         <h1>How to Register</h1>
@@ -38,20 +52,24 @@
         <section class="card">
           <h2>1) Build your cart in PATH</h2>
           <ul class="checklist">
-            <li>Log in to <a href="https://registration.wm.edu/">PATH</a> and use Class Search to add planned courses to your **Primary Cart**; save alternates in the **Alternatives Cart**.</li>
-            <li>Open each course’s **Registration Options** to set a priority (First, Second, …) and designate up to **two alternatives**; for multi-section courses you can choose “**any other section**.”</li>
-            <li>Add **all co-requisites** (e.g., lecture + lab + discussion); PATH will attempt the entire group at the **highest priority** among them.</li>
-            <li>Resolve **holds** and **registration errors** in the cart before carts close; unresolved issues block processing.</li>
+            <li>Log in to <a href="https://registration.wm.edu/">PATH</a> and use Class Search to add planned courses to your <strong>Primary Cart</strong>; save alternates in the <strong>Alternatives Cart</strong>.</li>
+            <li>Open each course’s <strong>Registration Options</strong> to set a priority (First, Second, …) and designate up to <strong>two alternatives</strong>; for multi-section courses you can choose “<strong>any other section</strong>.”</li>
+            <li>Add <strong>all co-requisites</strong> (e.g., lecture + lab + discussion); PATH will attempt the entire group at the <strong>highest priority</strong> among them.</li>
+            <li>Resolve <strong>holds</strong> and <strong>registration errors</strong> in the cart before carts close; unresolved issues block processing.</li>
           </ul>
-          <p class="small"><a href="https://www.youtube.com/watch?v=zLfoTzXvuf4">Primary & Alternatives demo</a> • <a href="https://www.youtube.com/watch?v=4zw2U0sAhFA">Setting registration priorities demo</a> • <a href="https://www.wm.edu/offices/registrar/_documents/registration/path/ug-quick-start-reg-priorities.pdf">Quick Start PDF</a></p>
+          <p class="small">
+            <a href="https://www.youtube.com/watch?v=zLfoTzXvuf4">Primary &amp; Alternatives demo</a>
+            • <a href="https://www.youtube.com/watch?v=4zw2U0sAhFA">Setting registration priorities demo</a>
+            • <a href="https://www.wm.edu/offices/registrar/_documents/registration/path/ug-quick-start-reg-priorities.pdf">Quick Start PDF</a>
+          </p>
         </section>
 
         <section class="card">
-          <h2>2) Time tickets & “When to Register”</h2>
-          <p>Your **time ticket** determines when PATH attempts to register your cart (Phase 1) and when real-time registration opens. Term outlines post on the Registrar’s **When to Register** page; times are listed in **Eastern Time**.</p>
+          <h2>2) Time tickets &amp; “When to Register”</h2>
+          <p>Your <strong>time ticket</strong> determines when PATH attempts to register your cart (Phase 1) and when real-time registration opens. Term outlines post on the Registrar’s <strong>When to Register</strong> page; times are listed in <strong>Eastern Time</strong>.</p>
           <ul class="checklist">
             <li>Typical pattern: carts open in late February (fall) or late September (spring); see “When to Register.”</li>
-            <li>New-student example (Fall 2025): during the July add/drop window, **transfer students** began at 11:00 a.m., followed by first-years at 12:00 p.m. (example only; check the current term).</li>
+            <li>New-student example (Fall 2025): during the July add/drop window, <strong>transfer students</strong> began at 11:00 a.m., followed by first-years at 12:00 p.m. (example only; check the current term).</li>
           </ul>
           <p class="small"><a href="https://www.wm.edu/offices/registrar/registration/whentoregister/index.php">When to Register</a> • <a href="https://registration.wm.edu/">Open PATH</a></p>
         </section>
@@ -59,10 +77,10 @@
         <section class="card">
           <h2>3) Add/Drop and Waitlist</h2>
           <ul class="checklist">
-            <li>During **Add/Drop**, you register in real time in PATH up to the stated credit limit for your group.</li>
-            <li>After the final Add/Drop deadline, schedule changes require a **withdrawal** (resulting in a “W”) and may need approval depending on load.</li>
-            <li>Use PATH’s **waitlist** when available; monitor status and conflicts.</li>
-            <li>Overrides from instructors still require **you** to add the class in PATH; instructors cannot register you.</li>
+            <li>During <strong>Add/Drop</strong>, you register in real time in PATH up to the stated credit limit for your group.</li>
+            <li>After the final Add/Drop deadline, schedule changes require a <strong>withdrawal</strong> (resulting in a “W”) and may need approval depending on load.</li>
+            <li>Use PATH’s <strong>waitlist</strong> when available; monitor status and conflicts.</li>
+            <li>Overrides from instructors still require <strong>you</strong> to add the class in PATH; instructors cannot register you.</li>
           </ul>
           <p class="small"><a href="https://www.wm.edu/offices/registrar/registration/how-to-register/add-drop-withdraw/index.php">Add/Drop/Withdraw</a> • <a href="https://www.wm.edu/offices/registrar/registration/how-to-register/waitlist/index.php">Waitlisting</a></p>
         </section>
@@ -70,29 +88,66 @@
         <section class="card">
           <h2>Pro tips</h2>
           <ul class="checklist">
-            <li>Put **more than the max hours** in your Primary Cart (PATH evaluates round-by-round until you’re registered up to the cap).</li>
-            <li>Use **Auto** priority as a tie-breaker if you set the same number on multiple courses.</li>
-            <li>Start early so you can clear **holds**, request **permissions**, and fix **pre/co-req** issues before carts close.</li>
+            <li>Put <strong>more than the max hours</strong> in your Primary Cart (PATH evaluates round-by-round until you’re registered up to the cap).</li>
+            <li>Use <strong>Auto</strong> priority as a tie-breaker if you set the same number on multiple courses.</li>
+            <li>Start early so you can clear <strong>holds</strong>, request <strong>permissions</strong>, and fix <strong>pre/co-req</strong> issues before carts close.</li>
           </ul>
         </section>
       </article>
     </main>
 
-    <aside class="sidebar"><h2>Contents</h2><nav id="toc"></nav></aside>
+    <!-- RIGHT: table of contents -->
+    <aside class="sidebar">
+      <h2>Contents</h2>
+      <nav id="toc"></nav>
+    </aside>
   </div>
 
+  <!-- Scripts: filter, TOC, and collapsible submenu -->
   <script>
-    function filterNav(){const q=(document.getElementById('navSearch').value||'').toLowerCase();
-      document.querySelectorAll('#navList li').forEach(li=>{li.style.display=li.textContent.toLowerCase().includes(q)?'':''})}
-    (function buildTOC(){const c=document.getElementById('toc');if(!c)return;
-      const heads=document.querySelectorAll('.content h2, .content h3');const ul=document.createElement('ul');
-      heads.forEach(h=>{if(!h.id){h.id=h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-')}
-        const li=document.createElement('li');li.style.marginLeft=h.tagName==='H3'?'12px':'0';
-        const a=document.createElement('a');a.href='#'+h.id;a.textContent=h.textContent;li.appendChild(a);ul.appendChild(li)});
+    function filterNav(){
+      const q=(document.getElementById('navSearch').value||'').toLowerCase();
+      document.querySelectorAll('#navList li').forEach(li=>{
+        li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    }
+
+    (function buildTOC(){
+      const c=document.getElementById('toc'); if(!c) return;
+      const heads=document.querySelectorAll('.content h2, .content h3');
+      const ul=document.createElement('ul');
+      heads.forEach(h=>{
+        if(!h.id){ h.id=h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-'); }
+        const li=document.createElement('li');
+        li.style.marginLeft = h.tagName==='H3' ? '12px' : '0';
+        const a=document.createElement('a'); a.href='#'+h.id; a.textContent=h.textContent;
+        li.appendChild(a); ul.appendChild(li);
+      });
       c.appendChild(ul);
       const links=c.querySelectorAll('a');
-      const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id));}})},{rootMargin:'-40% 0% -55% 0%',threshold:0.01});
-      document.querySelectorAll('.content h2,.content h3').forEach(h=>obs.observe(h));
+      const obs=new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){
+            links.forEach(a=>a.classList.toggle('active', a.hash === '#'+e.target.id));
+          }
+        });
+      }, { rootMargin:'-40% 0% -55% 0%', threshold:0.01 });
+      document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
+    })();
+
+    // Collapsible Registration submenu (auto-open on this page)
+    (function initSubmenu(){
+      const btn=document.querySelector('.has-submenu .submenu-toggle');
+      const submenu=document.querySelector('.has-submenu .submenu');
+      if(!btn || !submenu) return;
+      // Pre-open on How to Register
+      btn.setAttribute('aria-expanded','true');
+      submenu.style.display='block';
+      btn.addEventListener('click', ()=>{
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        submenu.style.display = expanded ? 'none' : 'block';
+      });
     })();
   </script>
   <script src="disclaimer.js" defer></script>
