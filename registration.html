@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Registration · W&M Transfer Guide</title>
   <meta name="description" content="Transfer-friendly overview of registration at William & Mary with links to How to Register and PATH 101." />
+
+  <!-- Favicons and manifest (place these files at site root) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -26,9 +34,13 @@
         <li><a href="other.html">Other U.S.</a></li>
         <li><a href="international.html">International</a></li>
         <li><a href="appendix.html">Appendix (Tables)</a></li>
-        <li><a href="registration.html" class="current">Registration</a></li>
-        <li><a href="registration-how.html">How to Register</a></li>
-        <li><a href="path101.html">PATH 101</a></li>
+        <li class="has-submenu">
+          <button class="submenu-toggle current" aria-expanded="false">Registration</button>
+          <ul class="submenu">
+            <li><a href="registration-how.html">How to Register</a></li>
+            <li><a href="path101.html">PATH 101</a></li>
+          </ul>
+        </li>
       </ul>
     </aside>
 
@@ -51,9 +63,9 @@
         <section class="card">
           <h2>Key ideas</h2>
           <ul class="checklist">
-            <li>Before your time ticket opens, you **build a Primary Cart** in PATH and set **registration priorities** (1st, 2nd, …) and **alternatives**.</li>
+            <li>Before your time ticket opens, you <strong>build a Primary Cart</strong> in PATH and set <strong>registration priorities</strong> (1st, 2nd, …) and <strong>alternatives</strong>.</li>
             <li>Co-requisites (e.g., lecture + lab) are processed together at the highest priority in the group.</li>
-            <li>Holds and unresolved registration errors can block cart processing—clear them **before** carts close.</li>
+            <li>Holds and unresolved registration errors can block cart processing—clear them <strong>before</strong> carts close.</li>
           </ul>
           <p class="small">See demos and the Registrar’s Quick Start PDF linked in <a href="path101.html">PATH 101</a>.</p>
         </section>
@@ -61,22 +73,61 @@
     </main>
 
     <!-- RIGHT: TOC -->
-    <aside class="sidebar"><h2>Contents</h2><nav id="toc"></nav></aside>
+    <aside class="sidebar">
+      <h2>Contents</h2>
+      <nav id="toc"></nav>
+    </aside>
   </div>
 
-  <!-- Small helpers + TOC -->
+  <!-- Scripts: filter + TOC + submenu -->
   <script>
-    function filterNav(){const q=(document.getElementById('navSearch').value||'').toLowerCase();
-      document.querySelectorAll('#navList li').forEach(li=>{li.style.display=li.textContent.toLowerCase().includes(q)?'':''})}
-    (function buildTOC(){const c=document.getElementById('toc');if(!c)return;
-      const heads=document.querySelectorAll('.content h2, .content h3');const ul=document.createElement('ul');
-      heads.forEach(h=>{if(!h.id){h.id=h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-')}
-        const li=document.createElement('li');li.style.marginLeft=h.tagName==='H3'?'12px':'0';
-        const a=document.createElement('a');a.href='#'+h.id;a.textContent=h.textContent;li.appendChild(a);ul.appendChild(li)});
+    function filterNav(){
+      const q = (document.getElementById('navSearch').value || '').toLowerCase();
+      document.querySelectorAll('#navList li').forEach(li=>{
+        li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    }
+
+    (function buildTOC(){
+      const c = document.getElementById('toc'); if(!c) return;
+      const heads = document.querySelectorAll('.content h2, .content h3');
+      const ul = document.createElement('ul');
+      heads.forEach(h=>{
+        if(!h.id){ h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-'); }
+        const li = document.createElement('li');
+        li.style.marginLeft = h.tagName==='H3' ? '12px' : '0';
+        const a = document.createElement('a'); a.href = '#'+h.id; a.textContent = h.textContent;
+        li.appendChild(a); ul.appendChild(li);
+      });
       c.appendChild(ul);
-      const links=c.querySelectorAll('a');
-      const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id));}})},{rootMargin:'-40% 0% -55% 0%',threshold:0.01});
-      document.querySelectorAll('.content h2,.content h3').forEach(h=>obs.observe(h));
+      const links = c.querySelectorAll('a');
+      const obs = new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){
+            links.forEach(a=>a.classList.toggle('active', a.hash === '#'+e.target.id));
+          }
+        });
+      }, { rootMargin:'-40% 0% -55% 0%', threshold:0.01 });
+      document.querySelectorAll('.content h2, .content h3').forEach(h=>obs.observe(h));
+    })();
+
+    // Collapsible Registration submenu
+    (function initSubmenu(){
+      const btn = document.querySelector('.has-submenu .submenu-toggle');
+      const submenu = document.querySelector('.has-submenu .submenu');
+      if(!btn || !submenu) return;
+
+      // Auto-open on Registration page
+      if (location.pathname.endsWith('registration.html') || document.title.toLowerCase().includes('registration')) {
+        btn.setAttribute('aria-expanded', 'true');
+        submenu.style.display = 'block';
+      }
+
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        submenu.style.display = expanded ? 'none' : 'block';
+      });
     })();
   </script>
   <script src="disclaimer.js" defer></script>
